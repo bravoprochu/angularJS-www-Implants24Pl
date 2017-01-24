@@ -1,0 +1,21 @@
+﻿<div ng-if="vm.startMode">
+    <md-grid-list md-row-height=1:1 md-cols="1" md-cols-gt-xs="3" style="cursor:pointer" id="arrow" ng-show="vm.menuShow()">
+        <md-grid-tile style="background-color:cadetblue" ui-sref="protezaBarkuAnatomiczna" bg-image="{{vm.getImageUrl(0)}}">
+            <md-grid-tile-header>
+                <h3>Proteza barku anatomiczna</h3>
+            </md-grid-tile-header>
+        </md-grid-tile>
+        <md-grid-tile style="background-color:deepskyblue" ui-sref="protezaBarkuOdwrocona" bg-image="{{vm.getImageUrl(1)}}">
+            <md-grid-tile-header>
+                <h3>Proteza barku odwrócona</h3>
+            </md-grid-tile-header>
+        </md-grid-tile>
+        <md-grid-tile style="background-color:goldenrod" ui-sref="inna" bg-image="{{vm.getImageUrl(2)}}">
+            <md-grid-tile-header>
+                <h3>Resurfacing</h3>
+            </md-grid-tile-header>
+        </md-grid-tile>
+    </md-grid-list>
+    <ui-view></ui-view>
+</div>
+<image-progress-info ng-if="!vm.startMode"></image-progress-info>

@@ -1,0 +1,29 @@
+﻿<div layout-gt-sm="row" layout-wrap ng-if="vm.menuShow()">
+    <md-card ui-sref="hipTrzpienie" flex-sm="100" flex-gt-lg="45" layout-align="space between start" style="cursor:pointer">
+        <img ng-src="images/hip_trzpienie.png" class="md-card-image" alt="hipAndGo_logo" />
+        <md-card-content>
+            <div class="md-title">Trzpienie</div>
+            <div class="md-body-1">
+                <div class="md-body-1">
+                    <p>
+                        Kliknij tutaj by poznać szczegóły...
+
+                    </p>
+                </div>
+            </div>
+        </md-card-content>
+    </md-card>
+    <md-card ui-sref="hipPanewki" flex-sm="100" flex-gt-lg="45" layout-align="space between start" style="cursor:pointer">
+        <img ng-src="images/hip_panewki.png" class="md-card-image" alt="hipAndGo_logo" />
+        <md-card-content>
+            <div class="md-title">Panewki</div>
+            <div class="md-body-1">
+                <p>
+                    Kliknij tutaj by poznać szczegóły...
+
+                </p>
+            </div>
+        </md-card-content>
+    </md-card>
+</div>
+<div ui-view></div>

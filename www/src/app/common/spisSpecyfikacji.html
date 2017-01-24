@@ -1,0 +1,13 @@
+﻿<md-content>
+    <div class="md-title">Specyfikacje</div>
+    <linia-pozioma></linia-pozioma>
+    <md-list>
+        <md-list-item ng-repeat="route in menu" ui-sref="{{route.name}}" ui-sref-active="podkreslenie">
+            <div class="md-list-item-text">{{route.data.caption}}</div>
+            <md-divider></md-divider>
+        </md-list-item>
+    </md-list>
+
+
+    <linia-pozioma></linia-pozioma>
+</md-content>

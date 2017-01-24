@@ -1,0 +1,14 @@
+<md-content layout-margin ng-if="vm.startMode">
+    <md-tabs md-dynamic-height md-border-bottom md-selected="vm.selectedIdx">
+        <!--ng-mouseover="vm.stopInterval()" ng-mouseleave="vm.resumeInterval()"-->
+        <md-tab label="OFERTA">
+            <main-menu></main-menu>
+        </md-tab>
+        <md-tab label="News">
+            <news-container></news-container>
+        </md-tab>
+        <md-tab label="VIDEO">
+            <video-container></video-container>
+        </md-tab>
+    </md-tabs>
+</md-content>

@@ -1,0 +1,104 @@
+﻿<div label="calcanail" layout-gt-sm="row" layout-wrap>
+
+
+    <md-card flex-sm="100" flex-gt-lg="45">
+        <md-card-content>
+            <div>
+                <div class="md-title">Wskazania</div>
+                <div class="md-body-1">
+                    <ul>
+                        <li>Śródstawowe złamania kości piętowej z przemieszczeniem;</li>
+                        <li>Artrodeza stawu skokowego tylnego po śródstawowym złamaniu kości piętowej (w wyniku choroby zwyrodnieniowej stawu skokowego tylnego oraz nieprawidłowego zrośnięcia);</li>
+                        <li>Zwyrodnienie stawu skokowego tylnego.</li>
+                    </ul>
+                </div>
+            </div>
+        </md-card-content>
+    </md-card>
+    <md-card flex-sm="100" flex-gt-lg="45">
+        <md-card-content>
+            <div class="md-title">Przeciwwskazania</div>
+            <div class="md-body-1">
+                <ul>
+                    <li>Infekcja w obrębie pięty, pacjenci z niecałkowicie wykształconym szkieletem, zewnątrzstawowe złamanie kości piętowej;</li>
+                    <li>Przeciwwskazania względne z powodu zwiększonego ryzyka niepowodzenia zabiegu chirurgicznego;</li>
+                    <li>Pacjenci niewspółpracujący lub cierpiący na zaburzenia neurologiczne, niepotrafiący wykonywać poleceń, bądź cierpiący na zaburzenia przemiany materii;</li>
+                    <li>Czynniki mające wpływ na gojenie się ran (odleżyny, cukrzyca, poważny niedobór białka i/lub niedożywienie).</li>
+                </ul>
+            </div>
+        </md-card-content>
+    </md-card>
+
+    <md-card flex-sm="100" flex-gt-lg="45">
+        <md-card-content>
+            <div class="md-title">Jak to działa ?</div>
+            <div class="md-body-1">
+                <ul>
+                    <li>Dojście do obszaru poddawanego leczeniu uzyskuje się poprzez piętę, używając rozwiertaka do wykonania kanału wewnątrz kości piętowej. Przy jednoczesnym zastosowaniu rozszerzacza stawu skokowego tylnego metoda ta umożliwia uzyskanie bezpośredniego, wewnątrzogniskowego dostępu do fragmentów stawu.</li>
+                    <li>Technika ta umożliwia skorygowanie przemieszczeń guzowatych kości piętowej i uzyskanie dobrego stopnia redukcji stawu w przypadku złamań śródstawowych, w których występują duże fragmenty, bądź też bezpośrednie wykonanie artrodezy w przypadku bardziej skomplikowanych złamań śródstawowych.</li>
+                    <li>Zredukowany staw i kość piętową utrzymuje się na miejscu, wykonując mocowanie przezskórne z wykorzystaniem gwoździa CALCANAIL®.</li>
+                </ul>
+                <div layout layout-align="center center">
+                    <a ng-href="images/foot_calcanail_how_it_works_big.png" target="_blank">
+                        <img ng-src="images/foot_calcanail_how_it_works.png" class="md-card-image" alt="foot_calcanail_how_it_works" />
+                        <md-tooltip md-direction="top">
+                            kliknij by powiększyć
+                        </md-tooltip>
+                    </a>
+                    </div>
+                </div>
+        </md-card-content>
+    </md-card>
+    <md-card flex-sm="100" flex-gt-lg="45">
+        <md-card-content>
+            <div class="md-title">Zalety</div>
+            <div class="md-body-1">
+                <ul>
+                    <li>Jest to technika mało inwazyjna: rekonstrukcja zamknięta anatomii stopy przy użyciu gwoździa i śrub kaniulowanych;</li>
+                    <li>Innowacyjna technika redukcji, która zmniejsza uraz chirurgiczny i ryzyko wystąpienia powikłań;</li>
+                    <li>Podczas drążenia kanału usunięty zostaje duży czop kostny, który można zastosować jako autoprzeszczep;</li>
+                    <li>Wewnątrzogniskowa redukcja przemieszczonych fragmentów śródstawowych jest łatwiejsza, gdy zastosuje się rozszerzacz stawu skokowego tylnego typu Caspar;</li>
+                    <li>Umieszczenie gwoździa unieruchamiającego pod powierzchnią stawu, która utrzymywana jest na odpowiedniej wysokości;</li>
+                    <li>Umieszczenie przeszczepów kostnych w przestrzeniach, które wymagałyby zastosowania implantów, ułatwia proces zrastania się kości;</li>
+                    <li>Możliwość wykonania artrodezy stawu skokowego tylnego z użyciem tego samego dojścia i tych samych narzędzi chirurgicznych (gwóźdź o średnicy 12 mm zamiast 10 mm).</li>
+                </ul>
+            </div>
+        </md-card-content>
+    </md-card>
+    <md-card flex-sm="100" flex-gt-lg="45">
+        <img ng-src="images/foot_calcanail01.png" class="md-card-image" alt="foot_calcanail01" />
+        <md-card-content>
+            <div class="md-title">Gwóźdź do leczenia złamań 10mm</div>
+            <div class="md-body-1">
+            </div>
+        </md-card-content>
+    </md-card>
+    <md-card flex-sm="100" flex-gt-lg="45">
+        <img ng-src="images/foot_calcanail02.png" class="md-card-image" alt="foot_calcanail02" />
+        <md-card-content>
+            <div class="md-title">Gwóźdź do leczenia złamań 12mm</div>
+            <div class="md-body-1">
+            </div>
+        </md-card-content>
+    </md-card>
+    <md-card flex-sm="100" flex-gt-lg="45">
+        <md-card-content>
+            <div class="md-title">Fracture</div>
+            <md-divider></md-divider>
+            <div layout layout-padding layout-align="space between start" ng-repeat="item in vm.fracture" style="line-height: 0.5em">
+                <div>{{item.c1}}</div>
+                <div>{{item.c2}}</div>
+            </div>
+            <div>&nbsp;</div>
+            <div class="md-title">Arthrodesis</div>
+            <md-divider></md-divider>
+            <div layout layout-padding layout-align="space between start" ng-repeat="item in vm.arthrodesis" style="line-height: 0.5em">
+                <div>{{item.c1}}</div>
+                <div>{{item.c2}}</div>
+            </div>
+        </md-card-content>
+    </md-card>
+
+
+
+</div>

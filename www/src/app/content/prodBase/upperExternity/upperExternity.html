@@ -1,0 +1,41 @@
+<div layout-gt-sm="row" layout-wrap ng-if="vm.menuShow()">
+    <md-card ui-sref="upperExternityArrow" flex-sm="100" flex-gt-lg="45" layout-align="space between start" style="cursor:pointer">
+        <img ng-src="images/arrow_logo.png" class="md-card-image" alt="hipAndGo_logo" />
+        <md-card-content>
+            <div class="md-title">System Arrow</div>
+            <div class="md-body-1">
+                <div class="md-body-1">
+                    <p>
+                        Kliknij tutaj by poznać szczegóły...
+
+                    </p>
+                </div>
+            </div>
+        </md-card-content>
+    </md-card>
+    <md-card ui-sref="upperExternityTelegraph" flex-sm="100" flex-gt-lg="45" layout-align="space between start" style="cursor:pointer">
+        <img ng-src="images/telegraph_logo.png" class="md-card-image" alt="telegraph_logo" />
+        <md-card-content>
+            <div class="md-title">Telegraph</div>
+            <div class="md-body-1">
+                <p>
+                    Kliknij tutaj by poznać szczegóły...
+
+                </p>
+            </div>
+        </md-card-content>
+    </md-card>
+    <md-card ui-sref="upperExternityTss" flex-sm="100" flex-gt-lg="45" layout-align="space between start" style="cursor:pointer">
+        <img ng-src="images/tss_logo.png" class="md-card-image" alt="telegraph_logo" />
+        <md-card-content>
+            <div class="md-title"><strong>T</strong>rauma <strong>S</strong>houlder <strong>S</strong>ystem (TSS)</div>
+            <div class="md-body-1">
+                <p>
+                    Kliknij tutaj by poznać szczegóły...
+
+                </p>
+            </div>
+        </md-card-content>
+    </md-card>
+</div>
+<div ui-view></div>

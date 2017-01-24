@@ -1,0 +1,76 @@
+.grid img {
+    margin:auto;
+    height: 100%;
+}
+
+.gridWybrany {
+background-color:white;
+
+}
+.pointer {
+cursor:pointer;
+}
+
+.lineHeightByk {
+    line-height:2em;
+    margin-top:10px;
+    margin-bottom: 5px;
+}
+
+.swipeInfo{
+    position:absolute;
+    top:50px;
+    right:25px;
+}
+
+.podkreslenie {
+font-style:italic;
+color:red;
+font-size:larger;
+}
+
+.splashPage {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+}
+
+.splashPageTextBox {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 2em; 
+    color:#808080;
+}
+
+
+
+
+
+
+
+
+/*.ng-leave {
+    transition: all 0.1s linear;
+}*/
+
+
+.ng-enter {
+    transition: all 1.2s ease;
+}
+
+.ng-enter {
+    opacity:0;
+}
+
+
+.ng-enter-active{
+    opacity: 1;
+}
+
+.ng-leave {
+    opacity: 1;
+}
+
+.ng-leave-active {
+    opacity: 0;
+}

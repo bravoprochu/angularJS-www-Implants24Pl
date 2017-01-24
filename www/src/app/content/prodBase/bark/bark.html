@@ -1,0 +1,16 @@
+<div ng-if="vm.startMode">
+    <md-grid-list md-row-height=1:1 md-cols="1" md-cols-gt-xs="3" style="cursor:pointer" ng-show="vm.menuShow()">
+        <md-grid-tile style="background-color:antiquewhite" ui-sref="arrow" bg-image="http://implants24.pl/images/test/test01.jpg">
+            <md-grid-tile-header>
+                <h3>Arrow</h3>
+            </md-grid-tile-header>
+
+        </md-grid-tile>
+        <md-grid-tile style="background-color:aqua" ui-sref="telegraph" bg-image="http://implants24.pl/images/test/test1x1.jpg">
+            <md-grid-tile-header>
+                <h3>Telegraph</h3>
+            </md-grid-tile-header>
+        </md-grid-tile>
+    </md-grid-list>
+    <ui-view></ui-view>
+</div>
