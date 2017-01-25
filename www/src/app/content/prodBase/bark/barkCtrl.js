@@ -12,6 +12,7 @@
         vm.title = 'bark';
         vm.idzDo = cF.idzDo;
         vm.goTop = cF.goTop;
+        vm.getImageUrl = function (idx) { return vm.images[idx]; };
         vm.isScreenSmall = cF.isScreenSmall();
         
 
@@ -21,14 +22,18 @@
             return cF.menuShowIfState(vm.title);
         };
 
+        vm.base = 'images/arrow/'
         vm.images = [
-            'http://implants24.pl/images/test/test01.jpg',
-            'http://implants24.pl/images/test/test1x1.jpg',
-            'http://implants24.pl/images/foot_miniMIS2_01_big.png',
-            'http://implants24.pl/images/foot_calcanail_how_it_works_big.png',
-            'http://implants24.pl/images/AR_arrowClosure3_big.png',
-            'http://implants24.pl/images/hip_panewki_hng_dual7_big.png'
+            'arrow_logo.png',
+            'telegraph_logo.png'
+
         ];
+
+        angular.forEach(vm.images, function (img) {
+            img = vm.base + img;
+        });
+
+        vm.images = cF.imageLinkUpdate(vm.images, vm.base);
 
         imagePreload.preload(vm.images, vm.title).then(function (ok) {
             imagePreload.setInfo("");

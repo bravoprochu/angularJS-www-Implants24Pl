@@ -248,13 +248,96 @@
                                    templateUrl: "app/content/prodBase/bark/arrow/protezaBarkuOdwrocona/arrowClosure.html",
                                })
 
-
-
-
-
-
-
-
+                        .state('resurfacingCap', {
+                            parent: 'arrow',
+                            data: {
+                                caption: 'Resurfacing Cap'
+                            },
+                            url: "/resurfacingCap",
+                            templateUrl: "app/content/prodBase/prodBaseSpecyfikacje.html",
+                            controller: 'resurfacingCapCtrl',
+                            controllerAs: 'vm',
+                        })
+                                .state('choiceOfSizeOfImplant', {
+                                    parent: 'resurfacingCap',
+                                    data: {
+                                        caption: 'Choice of size of implant'
+                                    },
+                                    url: "/choiceOfSizeOfImplant",
+                                    templateUrl: "app/content/prodBase/bark/arrow/resurfacingCap/choiceOfSizeOfImplant.html",
+                                })
+                                .state('patientSetUp', {
+                                    parent: 'resurfacingCap',
+                                    data: {
+                                        caption: 'Patient set up'
+                                    },
+                                    url: "/patientSetUp",
+                                    templateUrl: "app/content/prodBase/bark/arrow/resurfacingCap/patientSetUp.html",
+                                })
+                                .state('deltopectoralApproach', {
+                                    parent: 'resurfacingCap',
+                                    data: {
+                                        caption: 'Deltopectoral approach'
+                                    },
+                                    url: "/deltopectoralApproach",
+                                    templateUrl: "app/content/prodBase/bark/arrow/resurfacingCap/deltopectoralApproach.html",
+                                })
+                                .state('mackenzieAnteriosuperiorApproach', {
+                                    parent: 'resurfacingCap',
+                                    data: {
+                                        caption: 'Mackenzie anteriosuperior approach'
+                                    },
+                                    url: "/mackenzieAnteriosuperiorApproach",
+                                    templateUrl: "app/content/prodBase/bark/arrow/resurfacingCap/mackenzieAnteriosuperiorApproach.html",
+                                })
+                                .state('insertingThePin', {
+                                    parent: 'resurfacingCap',
+                                    data: {
+                                        caption: 'Inserting the pin'
+                                    },
+                                    url: "/insertingThePin",
+                                    templateUrl: "app/content/prodBase/bark/arrow/resurfacingCap/insertingThePin.html",
+                                })
+                                .state('reamingTheHeadOfTheHumerus', {
+                                    parent: 'resurfacingCap',
+                                    data: {
+                                        caption: 'Reaming the head of the humerus'
+                                    },
+                                    url: "/reamingTheHeadOfTheHumerus",
+                                    templateUrl: "app/content/prodBase/bark/arrow/resurfacingCap/reamingTheHeadOfTheHumerus.html",
+                                })
+                                .state('trialProsthesis', {
+                                    parent: 'resurfacingCap',
+                                    data: {
+                                        caption: 'Trial prosthesis'
+                                    },
+                                    url: "/trialProsthesis",
+                                    templateUrl: "app/content/prodBase/bark/arrow/resurfacingCap/trialProsthesis.html",
+                                })
+                                .state('pinPreparation', {
+                                    parent: 'resurfacingCap',
+                                    data: {
+                                        caption: 'Pin preparation'
+                                    },
+                                    url: "/pinPreparation",
+                                    templateUrl: "app/content/prodBase/bark/arrow/resurfacingCap/pinPreparation.html",
+                                })
+                                .state('fittingTheDefinitiveImplant', {
+                                    parent: 'resurfacingCap',
+                                    data: {
+                                        caption: 'Fitting the definitive implant'
+                                    },
+                                    url: "/fittingTheDefinitiveImplant",
+                                    templateUrl: "app/content/prodBase/bark/arrow/resurfacingCap/fittingTheDefinitiveImplant.html",
+                                })
+                                .state('implantsAndInstruments', {
+                                    parent: 'resurfacingCap',
+                                    data: {
+                                        caption: 'Implants and instruments'
+                                    },
+                                    url: "/implantsAndInstruments",
+                                    templateUrl: "app/content/prodBase/bark/arrow/resurfacingCap/implantsAndInstruments.html",
+                                })
 
 
 
