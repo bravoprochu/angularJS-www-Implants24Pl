@@ -340,6 +340,66 @@
                                 })
 
 
+                .state('telegraph', {
+                    parent: 'bark',
+                    data: {
+                        caption: 'Telegraph'
+                    },
+                    url: "/telegraph",
+                    templateUrl: "app/content/prodBase/prodBaseSpecyfikacje.html",
+                    controller: 'telegraphCtrl',
+//                    controllerAs: 'vm',
+                })
+                               .state('telegraphCommonRules', {
+                                   parent: 'telegraph',
+                                   data: {
+                                       caption: 'Common rules'
+                                   },
+                                   url: "/commonRules",
+                                   templateUrl: "app/content/prodBase/bark/telegraph/commonRules.html",
+                               })
+                               .state('telegraphTechniques', {
+                                   parent: 'telegraph',
+                                   data: {
+                                       caption: 'Techniques'
+                                   },
+                                   url: "/techniques",
+                                   templateUrl: "app/content/prodBase/bark/telegraph/techniques.html",
+                               })
+                               .state('telegraphShortTelegraphNail', {
+                                   parent: 'telegraph',
+                                   data: {
+                                       caption: 'Short Telegraph nail'
+                                   },
+                                   url: "/shortTelegraphNail",
+                                   templateUrl: "app/content/prodBase/bark/telegraph/shortTelegraphNail.html",
+                               })
+                               .state('telegraphLongTelegraphNail', {
+                                   parent: 'telegraph',
+                                   data: {
+                                       caption: 'Long Telegraph nail'
+                                   },
+                                   url: "/longTelegraphNail",
+                                   templateUrl: "app/content/prodBase/bark/telegraph/longTelegraphNail.html",
+                               })
+                               .state('telegraphRemovingTheMaterial', {
+                                   parent: 'telegraph',
+                                   data: {
+                                       caption: 'Removing the material'
+                                   },
+                                   url: "/removingTheMaterial",
+                                   templateUrl: "app/content/prodBase/bark/telegraph/removingTheMaterial.html",
+                               })
+                               .state('telegraphInstrumentation', {
+                                   parent: 'telegraph',
+                                   data: {
+                                       caption: 'Instrumentation'
+                                   },
+                                   url: "/instrumentation",
+                                   templateUrl: "app/content/prodBase/bark/telegraph/instrumentation.html",
+                               })
+
+
 
 
 
@@ -358,16 +418,6 @@
                     controllerAs: 'vm',
                 })
 
-                    //.state('calcanail', {
-                    //    parent: 'foot',
-                    //    controller: 'calcanailCtrl',
-                    //    controllerAs: 'vm',
-                    //    data: {
-                    //        caption: 'Calcanail'
-                    //    },
-                    //    url: "/calcanail",
-                    //    templateUrl: "app/content/prodBase/foot/calcanail/calcanail.html",
-                    //})
                     .state('calcanail', {
                         parent: 'foot',
                         data: {
@@ -501,77 +551,77 @@
                                })
 
 
-                .state('upperExternity', {
-                    parent: 'prodBase',
-                    data: {
-                        caption: 'Upper externity'
-                    },
-                    url: "/upperExternity",
-                    templateUrl: "app/content/prodBase/upperExternity/upperExternity.html",
-                    controller: 'upperExternityCtrl',
-                    controllerAs: 'vm',
-                })
-                    .state('upperExternityTelegraph', {
-                        parent: 'upperExternity',
-                        data: {
-                            caption: 'Telegraph'
-                        },
-                        url: "/telegraph",
-                        templateUrl: "app/content/prodBase/prodBaseSpecyfikacje.html",
-                        controller: 'telegraphCtrl',
-                        controllerAs: 'vm',
-                    })
-                               .state('telegraphEvolution', {
-                                   parent: 'upperExternityTelegraph',
-                                   data: {
-                                       caption: 'Evolution'
-                                   },
-                                   url: "/evolution",
-                                   templateUrl: "app/content/prodBase/upperExternity/telegraph/telegraphEvolution.html",
-                               })
-                               .state('telegraphImplantsReferences', {
-                                   parent: 'upperExternityTelegraph',
-                                   data: {
-                                       caption: 'Implants references'
-                                   },
-                                   url: "/implantsReferences",
-                                   templateUrl: "app/content/prodBase/upperExternity/telegraph/telegraphImplantsReferences.html",
-                               })
-                               .state('telegraphTipsAndTricks', {
-                                   parent: 'upperExternityTelegraph',
-                                   data: {
-                                       caption: 'Tips and tricks'
-                                   },
-                                   url: "/tipsAndTrics",
-                                   templateUrl: "app/content/prodBase/upperExternity/telegraph/telegraphTipsAndTricks.html",
-                               })
+                //.state('upperExternity', {
+                //    parent: 'prodBase',
+                //    data: {
+                //        caption: 'Upper externity'
+                //    },
+                //    url: "/upperExternity",
+                //    templateUrl: "app/content/prodBase/upperExternity/upperExternity.html",
+                //    controller: 'upperExternityCtrl',
+                //    controllerAs: 'vm',
+                //})
+                //    .state('upperExternityTelegraph', {
+                //        parent: 'upperExternity',
+                //        data: {
+                //            caption: 'Telegraph'
+                //        },
+                //        url: "/telegraph",
+                //        templateUrl: "app/content/prodBase/prodBaseSpecyfikacje.html",
+                //        controller: 'telegraphCtrl',
+                //        controllerAs: 'vm',
+                //    })
+                //               .state('telegraphEvolution', {
+                //                   parent: 'upperExternityTelegraph',
+                //                   data: {
+                //                       caption: 'Evolution'
+                //                   },
+                //                   url: "/evolution",
+                //                   templateUrl: "app/content/prodBase/upperExternity/telegraph/telegraphEvolution.html",
+                //               })
+                //               .state('telegraphImplantsReferences', {
+                //                   parent: 'upperExternityTelegraph',
+                //                   data: {
+                //                       caption: 'Implants references'
+                //                   },
+                //                   url: "/implantsReferences",
+                //                   templateUrl: "app/content/prodBase/upperExternity/telegraph/telegraphImplantsReferences.html",
+                //               })
+                //               .state('telegraphTipsAndTricks', {
+                //                   parent: 'upperExternityTelegraph',
+                //                   data: {
+                //                       caption: 'Tips and tricks'
+                //                   },
+                //                   url: "/tipsAndTrics",
+                //                   templateUrl: "app/content/prodBase/upperExternity/telegraph/telegraphTipsAndTricks.html",
+                //               })
 
-                    .state('upperExternityTss', {
-                        parent: 'upperExternity',
-                        data: {
-                            caption: 'TSS'
-                        },
-                        url: "/tss",
-                        templateUrl: "app/content/prodBase/prodBaseSpecyfikacje.html",
-                        controller: 'tssCtrl',
-                        controllerAs: 'vm',
-                    })
-                               .state('tssBasicInfo', {
-                                   parent: 'upperExternityTss',
-                                   data: {
-                                       caption: 'Info'
-                                   },
-                                   url: "/info",
-                                   templateUrl: "app/content/prodBase/upperExternity/tss/basicInfo.html",
-                               })
-                               .state('tssSurgicalTechnique', {
-                                   parent: 'upperExternityTss',
-                                   data: {
-                                       caption: 'Surgical technique'
-                                   },
-                                   url: "/surgicalTechnique",
-                                   templateUrl: "app/content/prodBase/upperExternity/tss/surgicalTechnique.html",
-                               })
+                //    .state('upperExternityTss', {
+                //        parent: 'upperExternity',
+                //        data: {
+                //            caption: 'TSS'
+                //        },
+                //        url: "/tss",
+                //        templateUrl: "app/content/prodBase/prodBaseSpecyfikacje.html",
+                //        controller: 'tssCtrl',
+                //        controllerAs: 'vm',
+                //    })
+                //               .state('tssBasicInfo', {
+                //                   parent: 'upperExternityTss',
+                //                   data: {
+                //                       caption: 'Info'
+                //                   },
+                //                   url: "/info",
+                //                   templateUrl: "app/content/prodBase/upperExternity/tss/basicInfo.html",
+                //               })
+                //               .state('tssSurgicalTechnique', {
+                //                   parent: 'upperExternityTss',
+                //                   data: {
+                //                       caption: 'Surgical technique'
+                //                   },
+                //                   url: "/surgicalTechnique",
+                //                   templateUrl: "app/content/prodBase/upperExternity/tss/surgicalTechnique.html",
+                //               })
 
   
 

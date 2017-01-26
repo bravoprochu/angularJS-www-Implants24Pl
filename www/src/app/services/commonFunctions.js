@@ -12,7 +12,7 @@
         var configData = {};
         var settings = {
             isHorizontal: ($window.innerWidth*0.8) >= $window.innerHeight ? true: false,
-            size: function () { console.log('mainHeight'); return ($window.innerWidth*0.8) >= $window.innerHeight ? Math.round($window.innerHeight * 0.7) : Math.round($window.innerWidth * 0.7) }(),
+            size: function () { return ($window.innerWidth*0.8) >= $window.innerHeight ? Math.round($window.innerHeight * 0.7) : Math.round($window.innerWidth * 0.7) }(),
         }
 
 

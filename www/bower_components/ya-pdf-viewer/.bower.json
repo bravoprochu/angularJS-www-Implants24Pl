@@ -1,0 +1,30 @@
+{
+  "name": "ya-pdf-viewer",
+  "description": "Angular directive for display PDF files",
+  "main": [
+    "dist/ya-pdf.js",
+    "dist/page.css"
+  ],
+  "dependencies": {
+    "angular": "^1.5.0",
+    "lodash": "^4.12.0",
+    "pdfjs-dist": "^1.5.0"
+  },
+  "authors": [
+    "Artem Borisov <timan.b@gmail.com>"
+  ],
+  "license": "APSL-2.0",
+  "ignore": [],
+  "private": false,
+  "homepage": "https://github.com/asborisov/ya-pdf-viewer",
+  "version": "0.0.4",
+  "_release": "0.0.4",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.0.4",
+    "commit": "ec776f24f82205cb1456d915481084ddb9390bcb"
+  },
+  "_source": "https://github.com/asborisov/ya-pdf-viewer.git",
+  "_target": "^0.0.4",
+  "_originalSource": "ya-pdf-viewer"
+}

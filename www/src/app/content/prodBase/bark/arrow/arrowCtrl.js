@@ -15,11 +15,6 @@
         vm.menuShow = menuShow
         vm.getImageUrl = function (idx) { return vm.images[idx]; }
         vm.settings = cF.settings;
-        activate();
-
-
-
-        function activate() { }
 
         function menuShow() {
             return cF.menuShowIfState(vm.title);

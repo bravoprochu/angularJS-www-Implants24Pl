@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../bower_components/angular-material/angular-material.css" />
     <link rel="stylesheet" href="../bower_components/angular-toastr/dist/angular-toastr.css" />
     <link rel="stylesheet" href="../bower_components/videogular-themes-default/videogular.css" />
+    <link rel="stylesheet" href="../bower_components/ya-pdf-viewer/dist/page.css" />
     <!-- endbower -->
     <!-- endbuild -->
    
@@ -67,6 +68,10 @@
     <script src="../bower_components/videogular-buffering/vg-buffering.js"></script>
     <script src="../bower_components/ng-youtube-embed/src/ng-youtube-embed.js"></script>
     <script src="../bower_components/angular-scroll/angular-scroll.js"></script>
+    <script src="../bower_components/lodash/lodash.js"></script>
+    <script src="../bower_components/pdfjs-dist/build/pdf.js"></script>
+    <script src="../bower_components/pdfjs-dist/build/pdf.worker.js"></script>
+    <script src="../bower_components/ya-pdf-viewer/dist/ya-pdf.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:js js/app.js -->
@@ -92,9 +97,9 @@
     <script src="/src/app/common/site/siteHeader.js"></script>
     <script src="/src/app/common/site/startCtrl.js"></script>
     <script src="/src/app/content/contact/contactCard.js"></script>
+    <script src="/src/app/content/home/homeCtrl.js"></script>
     <script src="/src/app/content/news/newsCard.js"></script>
     <script src="/src/app/content/news/newsContainer.js"></script>
-    <script src="/src/app/content/home/homeCtrl.js"></script>
     <script src="/src/app/content/prodBase/prodBaseCtrl.js"></script>
     <script src="/src/app/content/video/videoCard.js"></script>
     <script src="/src/app/content/video/videoContainer.js"></script>
@@ -102,20 +107,15 @@
     <script src="/src/app/content/prodBase/foot/footCtrl.js"></script>
     <script src="/src/app/content/prodBase/hip/hipCtrl.js"></script>
     <script src="/src/app/content/prodBase/knee/kneeCtrl.js"></script>
-    <script src="/src/app/content/prodBase/upperExternity/arrowCtrl.js"></script>
-    <script src="/src/app/content/prodBase/upperExternity/upperExternityCtrl.js"></script>
     <script src="/src/app/content/prodBase/spine/spineCtrl.js"></script>
     <script src="/src/app/content/prodBase/bark/arrow/arrowCtrl.js"></script>
+    <script src="/src/app/content/prodBase/bark/telegraph/telegraphCtrl.js"></script>
     <script src="/src/app/content/prodBase/foot/calcanail/calcanailCtrl.js"></script>
     <script src="/src/app/content/prodBase/foot/miniinwazyjna/footMiniinwazyjnaCtrl.js"></script>
     <script src="/src/app/content/prodBase/foot/screws/footScrewsCtrl.js"></script>
     <script src="/src/app/content/prodBase/foot/tenolig/footTenoligCtrl.js"></script>
     <script src="/src/app/content/prodBase/hip/panewki/panewkiCtrl.js"></script>
     <script src="/src/app/content/prodBase/hip/trzpienie/trzpienieCtrl.js"></script>
-    <script src="/src/app/content/prodBase/upperExternity/arrowAnatomical/arrowAnatomicalCtrl.js"></script>
-    <script src="/src/app/content/prodBase/upperExternity/arrowReverse/arrowReverseCtrl.js"></script>
-    <script src="/src/app/content/prodBase/upperExternity/telegraph/telegraphCtrl.js"></script>
-    <script src="/src/app/content/prodBase/upperExternity/tss/tssCtrl.js"></script>
     <script src="/src/app/content/prodBase/bark/arrow/protezaBarkuAnatomiczna/protezaBarkuAnatomicznaCtrl.js"></script>
     <script src="/src/app/content/prodBase/bark/arrow/protezaBarkuOdwrocona/protezaBarkuOdwroconaCtrl.js"></script>
     <script src="/src/app/content/prodBase/bark/arrow/resurfacingCap/resurfacingCapCtrl.js"></script>
