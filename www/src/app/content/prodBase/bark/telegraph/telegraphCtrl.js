@@ -3,44 +3,54 @@
 
     angular
         .module('app')
-        .controller('arrowCtrl', arrowCtrl);
+        .controller('telegraphCtrl', telegraphCtrl);
 
-    arrowCtrl.$inject = ['commonFunctions', 'imagePreload']; 
+    telegraphCtrl.$inject = ['commonFunctions', 'imagePreload']; 
 
-    function arrowCtrl(cF, imagePreload) {
+    function telegraphCtrl(cF, imagePreload) {
         /* jshint validthis:true */
         var vm = this;
-        vm.title = 'arrow';
+        vm.title = 'telegraph';
+        vm.menuShow = menuShow;
 
-        vm.menuShow = menuShow
+
+        vm.isScreenSmall = cF.isScreenSmall();
         vm.getImageUrl = function (idx) { return vm.images[idx]; }
         vm.settings = cF.settings;
 
         function menuShow() {
             return cF.menuShowIfState(vm.title);
         };
-        vm.base='images/arrow/anatomiczna/'
+        vm.menu = cF.menuPrepare(vm.title);
+
+        vm.base = 'images/telegraph/'
         vm.images = [
-            //menu
-            'proteza-barku-anatomiczna-1.jpg',
-            'proteza-barku-odwrocona-1.jpg',
-            'arrow_to_resurfacing_eng-1.jpg',
+
         ];
 
         angular.forEach(vm.images, function (img) {
             img = vm.base + img;
         });
 
-        vm.images=cF.imageLinkUpdate(vm.images, vm.base);
+        vm.images = cF.imageLinkUpdate(vm.images, vm.base);
 
         imagePreload.preload(vm.images, vm.title).then(function (ok) {
             vm.laoderInfo = "";
             vm.startMode = true;
         }, function (error) {
+            console.log('error !');
             console.log(error);
         }, function (notify) {
             vm.loaderInfo = notify;
         });
+
+
+
+
+
+
+
+
 
     }
 })();
