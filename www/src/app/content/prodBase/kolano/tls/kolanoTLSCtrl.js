@@ -11,38 +11,28 @@
         /* jshint validthis:true */
         var vm = this;
         vm.title = 'kolanoTLS';
-        vm.menuShow = menuShow
-        vm.getImageUrl = function (idx) { return cF.getImageUrl(idx,vm.title)}
-        vm.settings = cF.settings;
-        vm.menuShow = menuShow;
 
-
-        function menuShow() {
-            return cF.menuShowIfState(vm.title);
-        };
+        vm.images = cF.getImageList(vm.title);
+        vm.getImageUrl = getImageUrl;
         vm.menu = cF.menuPrepare(vm.title);
+        vm.menuShow = menuShow;
+        vm.settings = cF.settings;
+
+        function getImageUrl(idx) {
+            return cF.getImageUrl(idx, vm.title);
+        }
 
         function menuShow() {
             return cF.menuShowIfState(vm.title);
         };
-        vm.base = 'images/kolano/osteoPlus/'
-        vm.images = [
 
-        ];
-
-        angular.forEach(vm.images, function (img) {
-            img = vm.base + img;
-        });
-
-        vm.images = cF.imageLinkUpdate(vm.images, vm.base);
 
         imagePreload.preload(vm.images, vm.title).then(function (ok) {
-            vm.laoderInfo = "";
             vm.startMode = true;
         }, function (error) {
             console.log(error);
         }, function (notify) {
-            vm.loaderInfo = notify;
+            vm.preloadInfo = notify;
         });
 
     }

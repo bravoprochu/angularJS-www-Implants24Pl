@@ -12,34 +12,26 @@
         var vm = this;
         vm.title = 'arrow';
 
-        vm.menuShow = menuShow
-        vm.getImageUrl = function (idx) { return vm.images[idx]; }
+        vm.images = cF.getImageList(vm.title);
+        vm.getImageUrl = getImageUrl;
+        vm.menuShow = menuShow;
         vm.settings = cF.settings;
+
+        function getImageUrl(idx) {
+            return cF.getImageUrl(idx, vm.title);
+        }
 
         function menuShow() {
             return cF.menuShowIfState(vm.title);
         };
-        vm.base='images/arrow/anatomiczna/'
-        vm.images = [
-            //menu
-            'proteza-barku-anatomiczna-1.jpg',
-            'proteza-barku-odwrocona-1.jpg',
-            'arrow_to_resurfacing_eng-1.jpg',
-        ];
 
-        angular.forEach(vm.images, function (img) {
-            img = vm.base + img;
-        });
-
-        vm.images=cF.imageLinkUpdate(vm.images, vm.base);
 
         imagePreload.preload(vm.images, vm.title).then(function (ok) {
-            vm.laoderInfo = "";
             vm.startMode = true;
         }, function (error) {
             console.log(error);
         }, function (notify) {
-            vm.loaderInfo = notify;
+            vm.preloadInfo = notify;
         });
 
     }

@@ -265,14 +265,6 @@
                                     url: "/choiceOfSizeOfImplant",
                                     templateUrl: "app/content/prodBase/bark/arrow/resurfacingCap/choiceOfSizeOfImplant.html",
                                 })
-                                .state('patientSetUp', {
-                                    parent: 'resurfacingCap',
-                                    data: {
-                                        caption: 'Patient set up'
-                                    },
-                                    url: "/patientSetUp",
-                                    templateUrl: "app/content/prodBase/bark/arrow/resurfacingCap/patientSetUp.html",
-                                })
                                 .state('deltopectoralApproach', {
                                     parent: 'resurfacingCap',
                                     data: {
@@ -329,14 +321,7 @@
                                     url: "/fittingTheDefinitiveImplant",
                                     templateUrl: "app/content/prodBase/bark/arrow/resurfacingCap/fittingTheDefinitiveImplant.html",
                                 })
-                                .state('implantsAndInstruments', {
-                                    parent: 'resurfacingCap',
-                                    data: {
-                                        caption: 'Implants and instruments'
-                                    },
-                                    url: "/implantsAndInstruments",
-                                    templateUrl: "app/content/prodBase/bark/arrow/resurfacingCap/implantsAndInstruments.html",
-                                })
+
 
 
                 .state('telegraph', {

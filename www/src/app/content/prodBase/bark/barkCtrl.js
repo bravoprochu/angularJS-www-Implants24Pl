@@ -10,13 +10,11 @@
     function barkCtrl($state, cF, imagePreload) {
         var vm = this;
         vm.title = 'bark';
-        vm.idzDo = cF.idzDo;
-        vm.goTop = cF.goTop;
+
         vm.images = cF.getImageList(vm.title);
         vm.getImageUrl = getImageUrl;
         vm.menuShow = menuShow;
-
-        
+        vm.settings = cF.settings;
 
         function getImageUrl(idx) {
             return cF.getImageUrl(idx, vm.title);

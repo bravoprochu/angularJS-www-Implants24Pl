@@ -11,89 +11,29 @@
         /* jshint validthis:true */
         var vm = this;
         vm.title = 'protezaBarkuOdwrocona';
+
+        vm.images = cF.getImageList(vm.title);
+        vm.getImageUrl = getImageUrl;
+        vm.menu = cF.menuPrepare(vm.title);
         vm.menuShow = menuShow;
-        vm.isScreenSmall = cF.isScreenSmall();
-        vm.getImageUrl = function (idx) { return vm.images[idx];}
         vm.settings = cF.settings;
+
+        function getImageUrl(idx) {
+            return cF.getImageUrl(idx, vm.title);
+        }
 
         function menuShow() {
             return cF.menuShowIfState(vm.title);
         };
-        vm.menu = cF.menuPrepare(vm.title);
-        vm.moveNext = moveNext;
-        vm.movePrev = movePrev;
 
-
-
-        vm.base = 'images/arrow/protezaBarkuOdwrocona/'
-        vm.images = [
-            'arrow_positioningThePatient.png',
-            'ar_superiorLateralIncision1.png',
-            'ar_superiorLateralIncision2.png',
-            'ar_humeralPreparation1.png',
-            'ar_humeralPreparation2.png',
-            'ar_humeralPreparation3.png',
-            'ar_humeralPreparation4.png',
-            'ar_prepGlenoid1.png',
-            'ar_prepGlenoid2.png',
-            'ar_prepGlenoid3.png',
-            'ar_prepGlenoid4.png',
-            'ar_prepGlenoid5.png',
-            'ar_prepGlenoid6.png',
-            'ar_prepGlenoid7.png',
-            'ar_prepGlenoid8.png',
-            'ar_metalBlackGlenoid.png',
-            'ar_prosthesisTrials1.png',
-            'ar_prosthesisTrials2.png',
-            'ar_prosthesisTrials3.png',
-            'ar_definitiveImplants1.png',
-            'ar_definitiveImplants2.png',
-            'ar_definitiveImplants3.png',
-            'ar_definitiveImplants4.png',
-            'ar_definitiveImplants5.png',
-            'ar_arrowOptional.png',
-            'ar_arrowClosure1.png',
-            'ar_arrowClosure2.png',
-            'ar_arrowClosure3.png',
-
-        ];
-
-        angular.forEach(vm.images, function (img) {
-            img = vm.base + img;
-        });
-
-        vm.images = cF.imageLinkUpdate(vm.images, vm.base);
 
         imagePreload.preload(vm.images, vm.title).then(function (ok) {
-            vm.laoderInfo = "";
             vm.startMode = true;
         }, function (error) {
-            console.log('error !');
             console.log(error);
         }, function (notify) {
-            vm.loaderInfo = notify;
+            vm.preloadInfo = notify;
         });
-
-
-
-        
-
-
-
-
-
-
-
-
-
-        function moveNext() {
-            cF.slideToState(vm.menu);
-
-        }
-
-        function movePrev() {
-            cF.slideToState(vm.menu, false);
-        }
 
 
         vm.humeralStem = [
