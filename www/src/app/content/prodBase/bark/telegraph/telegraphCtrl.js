@@ -5,20 +5,14 @@
         .module('app')
         .controller('telegraphCtrl', telegraphCtrl);
 
-    telegraphCtrl.$inject = ['$scope', 'commonFunctions', 'imagePreload'];
+    telegraphCtrl.$inject = ['commonFunctions', 'imagePreload']; 
 
-    function telegraphCtrl($scope, cF, imagePreload) {
+    function telegraphCtrl(cF, imagePreload) {
         /* jshint validthis:true */
         var vm = this;
         vm.title = 'telegraph';
         vm.menuShow = menuShow;
 
-
-
-        //$scope.pdf = {
-        //    src: 'pdf/bark/telegraph/bd_telegraph_to_eng.pdf',
-        //};
-        //$scope.pdfUrl = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/149125/relativity.pdf';
 
         vm.isScreenSmall = cF.isScreenSmall();
         vm.getImageUrl = function (idx) { return vm.images[idx]; }

@@ -348,7 +348,7 @@
                     url: "/telegraph",
                     templateUrl: "app/content/prodBase/prodBaseSpecyfikacje.html",
                     controller: 'telegraphCtrl',
-//                    controllerAs: 'vm',
+                    controllerAs: 'vm',
                 })
                                .state('telegraphCommonRules', {
                                    parent: 'telegraph',
@@ -395,7 +395,7 @@
                                    data: {
                                        caption: 'Instrumentation'
                                    },
-                                   url: "/instrumentation",
+                                   url: "/removingTheMaterial",
                                    templateUrl: "app/content/prodBase/bark/telegraph/instrumentation.html",
                                })
 
