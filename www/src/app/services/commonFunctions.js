@@ -5,9 +5,9 @@
         .module('app')
         .factory('commonFunctions', commonFunctions);
 
-    commonFunctions.$inject = ['$mdDialog', '$mdMedia','$timeout', '$window', '$state', 'toastr', ];
+    commonFunctions.$inject = ['$mdDialog', '$mdMedia','$timeout', '$window', '$state', 'imagesUrl', 'toastr', ];
 
-    function commonFunctions($mdDialog, $mdMedia, $timeout, $window, $state, toastr) {
+    function commonFunctions($mdDialog, $mdMedia, $timeout, $window, $state, imagesUrl, toastr) {
 
         var configData = {};
         var settings = {
@@ -21,6 +21,8 @@
             configData: configData,
             dialogTakNie: dialogTakNie,
             fileNameFromUrl: fileNameFromUrl,
+            getImageUrl: getImageUrl,
+            getImageList:getImageList,
             goTop: goTop,
             imageLinkUpdate:imageLinkUpdate,
             isScreenSmall: isScreenSmall,
@@ -107,6 +109,20 @@
                 fileName : fileName.join(""),
                 rozszerzenie : rozszerzenie.join(""),
                 domena : urlArr.join("")
+            }
+        }
+
+        function getImageList(key) {
+            return angular.isDefined(imagesUrl[key]) == true ? imagesUrl[key] : [];
+        }
+
+        function getImageUrl(idx, key) {
+            var brakFotki = 'images/inProgress.png';
+            if(angular.isDefined(imagesUrl[key]) == true ){
+                var images = imagesUrl[key];
+                return images.length > idx ? images[idx] : brakFotki;
+            } else {
+                return brakFotki;
             }
         }
 

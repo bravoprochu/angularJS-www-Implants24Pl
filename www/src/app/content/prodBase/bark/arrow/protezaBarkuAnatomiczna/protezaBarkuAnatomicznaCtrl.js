@@ -37,48 +37,7 @@
 
         vm.base = 'images/arrow/anatomiczna/'
         vm.images = [
-            'arrow_positioningThePatient.png',
-            'ara_deltopectoralIncision1.png',
-            'ara_deltopectoralIncision2.png',
-            'ara_deltopectoralIncision3.png',
-            'ara_deltopectoralIncision5.png',
-            'ara_deltopectoralIncision6.png',
-            'ara_deltopectoralIncision7.png',
-            'ara_preparationofthehumerus1.png',
-            'ara_preparationofthehumerus2.png',
-            'ara_preparationofthehumerus3.png',
 
-            'ara_preparationofthehumerus4.png',
-            'ara_preparationofthehumerus5.png',
-            'ara_preparationofthehumerus6.png',
-            'ara_preparationofthehumerus7.png',
-            'ara_preparationOfTheGlenoid1.png',
-            'ara_preparationOfTheGlenoid2.png',
-            'ara_preparationOfTheGlenoid3.png',
-            'ara_preparationOfTheGlenoid4.png',
-            'ara_preparationOfTheGlenoid5.png',
-            'ara_preparationOfTheGlenoid6.png',
-
-            'ara_definitiveImplants1.png',
-            'ara_definitiveImplants2.png',
-            'ara_definitiveImplants3.png',
-            'ara_definitiveImplants4.png',
-            'ara_definitiveImplants5.png',
-            'ara_prepGlenoid2.png',
-            'ara_prepGlenoid3.png',
-            'ara_prepGlenoid4.png',
-            'ara_prepGlenoid5.png',
-            'ara_prepGlenoid6.png',
-
-            'ara_prepGlenoid7.png',
-            'ara_prepGlenoid8.png',
-            'ara_metalBlackGlenoid.png',
-            'ara_arrowAnatOptional.png',
-            'ara_closure1.png',
-            'ara_closure2.png',
-            'ara_closure3.png',
-            'ara_closure4.png',
-            'ara_closure5.png',
         ];
 
         angular.forEach(vm.images, function (img) {

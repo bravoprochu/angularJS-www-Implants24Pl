@@ -17,7 +17,6 @@
         'com.2fdevs.videogular.plugins.buffering',
         'ngYoutubeEmbed',
         'duScroll',
-        'ya.pdf'
 
 
 

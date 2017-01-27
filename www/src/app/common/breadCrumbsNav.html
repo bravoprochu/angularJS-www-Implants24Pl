@@ -5,7 +5,8 @@
                 <md-icon md-svg-icon="home"></md-icon>
             </md-button>
             <div ng-repeat="m in vm.menu track by $index" ng-mouseover="m.mOver=true" ng-mouseleave="m.mOver=false" ng-class="{'md-body-1': vm.isScreenSmall}">
-                <span ng-if="!$last" ui-sref="{{m.name}}" ng-class="{'pointer': m.mOver}">{{m.data.caption}}&nbsp;|&nbsp;</span>
+                <span ng-if="!$last" ui-sref="{{m.name}}" ng-class="{'pointer': m.mOver}">{{m.data.caption}}</span>
+                <span ng-if="!$last">|&nbsp;</span>
                 <span ng-if="$last">{{m.data.caption}}</span>
             </div>
         </div>
