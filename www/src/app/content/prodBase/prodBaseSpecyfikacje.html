@@ -1,14 +1,5 @@
-﻿<md-content layout-padding layout ng-if="vm.menuShow()" >
-    <div flex-xs="100" flex-gt-xs="50">
-
-        <spis-specyfikacji menu="vm.menu"></spis-specyfikacji>
-    </div>
-</md-content>
-<!--<swipe-info ng-if="vm.isScreenSmall"></swipe-info>-->
-
-<div layout layout-padding>
-        <ui-view flex="80"></ui-view>
-        <!--<div md-swipe-left="vm.moveNext()" md-swipe-right="vm.movePrev()" ui-view flex-xs="100" flex-sm="100" flex-gt-sm="80"></div>-->
-        <spis-specyfikacji ng-if="!vm.isScreenSmall && !vm.menuShow()" menu="vm.menu"></spis-specyfikacji>
+﻿<div layout layout-padding layout-wrap>
+        <ui-view flex="100" flex-gt-md="70"></ui-view>
+        <spis-specyfikacji flex="100" flex-gt-md="30" menu="vm.menu"></spis-specyfikacji>
 </div>
 <image-progress-info ng-if="!vm.startMode"></image-progress-info>

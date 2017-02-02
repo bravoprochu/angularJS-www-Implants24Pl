@@ -13,7 +13,7 @@
         vm.title = 'calcanail';
         vm.isScreenSmall = cF.isScreenSmall();
         vm.menuShow = menuShow;
-        vm.menu = cF.menuPrepare(vm.title);
+        
         vm.moveNext = moveNext;
         vm.movePrev = movePrev;
 

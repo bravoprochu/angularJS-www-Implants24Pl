@@ -15,7 +15,7 @@
 
         vm.images = cF.getImageList(vm.title);
         vm.getImageUrl = getImageUrl;
-        vm.menu = cF.menuPrepare(vm.title);
+        
         vm.menuShow = menuShow;
         vm.settings = cF.settings;
 

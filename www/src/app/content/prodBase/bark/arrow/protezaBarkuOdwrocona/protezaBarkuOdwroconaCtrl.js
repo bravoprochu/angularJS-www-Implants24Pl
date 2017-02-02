@@ -5,17 +5,21 @@
         .module('app')
         .controller('protezaBarkuOdwroconaCtrl', protezaBarkuOdwroconaCtrl);
 
-    protezaBarkuOdwroconaCtrl.$inject = ['commonFunctions','imagePreload'];
+    protezaBarkuOdwroconaCtrl.$inject = ['$state','commonFunctions','imagePreload', 'statesHelp'];
 
-    function protezaBarkuOdwroconaCtrl(cF, imagePreload) {
+    function protezaBarkuOdwroconaCtrl($state, cF, imagePreload, statesHelp) {
         /* jshint validthis:true */
         var vm = this;
         vm.title = 'protezaBarkuOdwrocona';
 
         vm.images = cF.getImageList(vm.title);
         vm.getImageUrl = getImageUrl;
-        vm.menu = cF.menuPrepare(vm.title);
+
         vm.menuShow = menuShow;
+        var parentState = statesHelp.getParent($state.current.name);
+        vm.parentStateName = parentState != null ? parentState.name : null;
+        vm.menu = statesHelp.prepMenu($state.current.name);
+        
         vm.settings = cF.settings;
 
         function getImageUrl(idx) {
@@ -34,7 +38,8 @@
         }, function (notify) {
             vm.preloadInfo = notify;
         });
-
+      
+        vm.video = cF.configData.config.videoCard.dane[1];
 
         vm.humeralStem = [
             { reference: "reference", diameter: "diameter", height: "height" },

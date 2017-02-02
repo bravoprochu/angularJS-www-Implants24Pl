@@ -10,10 +10,9 @@
     function startCtrl($location) {
         /* jshint validthis:true */
         var vm = this;
-        vm.title = 'startCtrl';
+        vm.title = 'start';
 
-        activate();
 
-        function activate() { }
+
     }
 })();

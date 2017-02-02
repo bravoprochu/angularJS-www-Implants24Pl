@@ -1,0 +1,11 @@
+﻿<md-content style="height:{{height}}px">
+    <md-list>
+            <md-list-item class="md-2-line" ui-sref="{{d.sref}}" ng-repeat="d in dane">
+                <img ng-src="{{d.poster}}" class="md-avatar" aria-label="{{d.title}}" />
+                <div class="md-list-item-text">
+                    <h3>{{d.title}}</h3>
+                    <p>{{d.descr}}</p>
+                </div>
+            </md-list-item>
+    </md-list>
+</md-content>

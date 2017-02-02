@@ -5,17 +5,25 @@
         .module('app')
         .controller('protezaBarkuAnatomicznaCtrl', protezaBarkuAnatomicznaCtrl);
 
-    protezaBarkuAnatomicznaCtrl.$inject = ['$state', 'commonFunctions', 'imagePreload'];
+    protezaBarkuAnatomicznaCtrl.$inject = ['$mdMedia', '$state', 'commonFunctions', 'imagePreload', 'statesHelp'];
 
-    function protezaBarkuAnatomicznaCtrl($state, cF, imagePreload) {
+    function protezaBarkuAnatomicznaCtrl($mdMedia, $state, cF, imagePreload, statesHelp) {
         /* jshint validthis:true */
         var vm = this;
         vm.title = 'protezaBarkuAnatomiczna';
 
-        vm.images = cF.getImageList(vm.title);
         vm.getImageUrl = getImageUrl;
-        vm.menu = cF.menuPrepare(vm.title);
+        vm.images = cF.getImageList(vm.title);
+        vm.isScreenSize = cF.isScreenSize;
+
         vm.menuShow = menuShow;
+        var parentState = statesHelp.getParent($state.current.name);
+        vm.parentStateName = parentState != null ? parentState.name : null;
+        vm.menu = statesHelp.prepMenu($state.current.name);
+
+        
+
+
         vm.settings = cF.settings;
 
         function getImageUrl(idx) {
@@ -35,10 +43,8 @@
             vm.preloadInfo = notify;
         });
 
-
-
-
-
+        vm.video1 = cF.configData.config.videoCard.dane[0];
+        vm.video2 = cF.configData.config.videoCard.dane[2];
 
         vm.humeralStem = [
             { c1: "reference", c2: "diameter", c3: "height" },

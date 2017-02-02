@@ -1,29 +1,15 @@
-﻿<md-content ng-if="!vm.isScreenSmall">
-    <md-toolbar>
-        <div class="md-toolbar-tools md-subhead">
-            <md-button class="md-icon-button" ui-sref="home" aria-label="goHome">
-                <md-icon md-svg-icon="home"></md-icon>
-            </md-button>
-            <div ng-repeat="m in vm.menu track by $index" ng-mouseover="m.mOver=true" ng-mouseleave="m.mOver=false" ng-class="{'md-body-1': vm.isScreenSmall}">
-                <span ng-if="!$last" ui-sref="{{m.name}}" ng-class="{'pointer': m.mOver}">{{m.data.caption}}</span>
-                <span ng-if="!$last">|&nbsp;</span>
-                <span ng-if="$last">{{m.data.caption}}</span>
-            </div>
-        </div>
-    </md-toolbar>
-</md-content>
-
-<!--<md-content ng-if="vm.isScreenSmall">
-    <md-toolbar>
-        <div class="md-toolbar-tools md-subhead">
-            <div ng-repeat="m in vm.menu track by $index" ng-mouseover="m.mOver=true" ng-mouseleave="m.mOver=false" ng-class="{'md-body-1': vm.isScreenSmall}">
-                <span ng-if="$last">{{m.data.caption}}</span>
-            </div>
-            <div flex></div>
-            <md-button class="md-icon-button" aria-label="hip" ng-click="vm.menuParent()">
-                <md-icon md-svg-icon="arrowUp"></md-icon>
-            </md-button>
-        </div>
-    </md-toolbar>
-    <div ng-repeat="w in vm.menu">{{v.data.caption}}</div>
-</md-content>-->
+﻿<div layout layout-align="start center" hide show-gt-md>
+    <div layout layout-align="start center" ng-if="!isHome">
+        <span>|</span>
+        <span>|</span>
+        <md-button class="md-icon-button" ui-sref="home" aria-label="goHome">
+            <md-icon md-svg-icon="home"></md-icon>
+        </md-button>
+        <span>&nbsp;|&nbsp;</span>
+    </div>
+    <div ng-repeat="m in menuCrumb track by $index">
+        <span ng-if="!$last" ng-click="goTo(m.name)" style="cursor:pointer" >{{m.data.caption}}</span>
+        <span ng-if="!$last">|&nbsp;</span>
+        <span ng-if="$last" ng-click="goTo(m.name)" style="cursor:pointer">{{m.data.caption}}</span>
+    </div>
+</div>

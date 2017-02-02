@@ -56,7 +56,7 @@
             imagesTotal = imagesLinks.length;
 
             angular.forEach(imagesLinks, function (img) {
-                deferAll.push(preloadImage(img));
+                if (img != null) { deferAll.push(preloadImage(img)); }
             });
 
             $q.all(deferAll).then(function (ok) {

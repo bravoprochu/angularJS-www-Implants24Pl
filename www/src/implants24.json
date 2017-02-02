@@ -7,26 +7,29 @@
                 "Poster"
             ],
             "dane": [
-                {
-                    "url": "http://implants24.pl/video/ARROW_piste_1.mp4",
-                    "title": "ARROW_piste_1.mp4",
-                    "poster": "video/ARROW_piste_1_poster.jpg"
-                },
-                {
-                    "url": "http://implants24.pl/video/ARROW_piste_4.mp4",
-                    "title": "ARROW_piste_4.mp4",
-                    "poster": "video/ARROW_piste_4_poster.jpg"
-                },
-                {
-                    "url": "http://implants24.pl/video/Vi_RSA_CADAVERIC.m4v",
-                    "title": "Arrow, drugi filmik",
-                    "poster": "video/Vi_RSA_CADAVERIC_poster.jpg"
-                },
-                {
-                    "url": "http://implants24.pl/video/Clip_Arrow_Reverse_PARIS SHOULDER_2013.mp4",
-                    "title": "Arrow, drugi filmik",
-                    "poster": "video/Clip_Arrow_Reverse_PARIS SHOULDER_2013_poster.jpg"
-                }
+              {
+
+                "url": "http://implants24.pl/video/ARROW_piste_1.mp4",
+                "title": "Proteza Arrow Anatomiczna",
+                "poster": "video/ARROW_piste_1_poster.jpg",
+                "sref": "protezaBarkuAnatomicznaFilm1",
+                "descr": "Zabieg operacyjny: endoproteza anatomiczna stawu barkowego model ARROW."
+              },
+              {
+                "url": "http://implants24.pl/video/ARROW_piste_4.mp4",
+                "title": "Proteza Arrow Odwrócona",
+                "poster": "video/ARROW_piste_4_poster.jpg",
+                "sref":  "protezaBarkuOdwroconaFilm1",
+                "descr": "Zabieg operacyjny: endoproteza odwrócona stawu barkowego model ARROW."
+              },
+
+              {
+                "url": "http://implants24.pl/video/Clip_Arrow_Reverse_PARIS SHOULDER_2013.mp4",
+                "title": "Dojście Supero Lateral",
+                "poster": "video/Clip_Arrow_Reverse_PARIS SHOULDER_2013_poster.jpg",
+                "sref": "protezaBarkuAnatomicznaDrPhilippeValenti",
+                "descr": "Zabieg operacyjny dr Philippe Valenti.: endoproteza stawu barkowego model ARROW- z dojścia bocznego."
+              }
             ]
         },
         "newsCard": {

@@ -5,14 +5,17 @@
         .module('app')
         .factory('commonFunctions', commonFunctions);
 
-    commonFunctions.$inject = ['$mdDialog', '$mdMedia','$timeout', '$window', '$state', 'imagesUrl', 'toastr', ];
+    commonFunctions.$inject = ['$mdDialog', '$mdMedia','$timeout', '$window', '$state', 'imagesUrl', 'toastr', 'statesHelp'];
 
-    function commonFunctions($mdDialog, $mdMedia, $timeout, $window, $state, imagesUrl, toastr) {
+    function commonFunctions($mdDialog, $mdMedia, $timeout, $window, $state, imagesUrl, toastr, statesHelp) {
 
         var configData = {};
         var settings = {
+            height:$window.innerHeight,
             isHorizontal: ($window.innerWidth*0.8) >= $window.innerHeight ? true: false,
-            size: function () { return ($window.innerWidth*0.8) >= $window.innerHeight ? Math.round($window.innerHeight * 0.7) : Math.round($window.innerWidth * 0.7) }(),
+            size: function () { return ($window.innerWidth * 0.8) >= $window.innerHeight ? Math.round($window.innerHeight * 0.8) : Math.round($window.innerWidth * 0.8) }(),
+            sizeFull: function () { return ($window.innerWidth) >= $window.innerHeight ? Math.round($window.innerHeight*0.9) : Math.round($window.innerWidth*0.9) }(),
+            width:$window.innerWidth
         }
 
 
@@ -20,12 +23,14 @@
             checkMenuStates: checkMenuStates,
             configData: configData,
             dialogTakNie: dialogTakNie,
+            emailSend: emailSend,
             fileNameFromUrl: fileNameFromUrl,
             getImageUrl: getImageUrl,
             getImageList:getImageList,
             goTop: goTop,
             imageLinkUpdate:imageLinkUpdate,
             isScreenSmall: isScreenSmall,
+            isScreenSize: isScreenSize,
             idzDo:idzDo,
             info: info,
             menuShowIfState: menuShowIfState,
@@ -74,6 +79,10 @@
             .cancel('Nie');
 
             return $mdDialog.show(confirm);
+        };
+
+        function emailSend(email) {
+            $window.open("mailto:" + email + "?subject= Pytanie ofertowe &body=" , "_self");
         };
 
         function fileNameFromUrl(url) {
@@ -151,6 +160,10 @@
             } else return false;
         };
 
+        function isScreenSize(value) {
+            return $mdMedia(value);
+        }
+
         function idzDo(state) {
             if (isScreenSmall) {
                 return $timeout(function () {
@@ -164,14 +177,15 @@
         function menuShowIfState(stateName) {
             return $state.current.name == stateName ? true : false;
         }
-        function menuPrepare(parentState) {
-            var states = [];
-            angular.forEach($state.get(), function (state) {
-                if (state.parent == parentState) {
-                    states.push(state);
-                }
-            });
-            return states;
+
+        function menuPrepare() {
+            var currState = $state.current
+            if (statesHelp.isParent(currState.name)==false) {
+                return angular.isDefined(currState.parent) == true ? statesHelp.prepMenu(currState.parent) : null;
+            }
+            return null;
+
+
         };
 
         function slideToState(menu, nextOrPrev) {

@@ -27,26 +27,31 @@
             .icon('add', 'fonts/ic_add_24px.svg', 24)
             .icon('add_person', 'fonts/ic_person_add_24px.svg', 24)
             .icon('arrowUp', 'fonts/ic_arrow_drop_up_24px.svg', 24)
+            .icon('arrowUpward', 'fonts/ic_arrow_upward_white_24px.svg', 24)
             .icon('arrowDown', 'fonts/ic_arrow_drop_down_24px.svg', 24)
             .icon('back', 'fonts/ic_arrow_back_24px.svg', 24)
             .icon('cancel', 'fonts/ic_cancel_24px.svg', 24)
             .icon('clone', 'fonts/ic_clone_24px.svg',48)
             .icon('code', 'fonts/ic_code_24px.svg', 24)
+            .icon('contact', 'fonts/ic_contact_mail_black_24px.svg', 24)
             .icon('delete', 'fonts/ic_delete_24px.svg', 24)
             .icon('done_all', 'fonts/ic_done_all_24px.svg', 24)
             .icon('edit', 'fonts/ic_edit_24px.svg', 24)
-            .icon('exit', 'fonts/ic_exit_to_app_24px.svg', 24)
+            .icon('email', 'fonts/ic_email_black_24px.svg', 24)
+            .icon('exit', 'fonts/ic_exit_to_app_black_24px.svg', 24)
             .icon('exit2', 'fonts/ic_power_settings_new_24px.svg', 24)
+            .icon('fax', 'fonts/fax-top-view.svg', 24)
             .icon('home', 'fonts/ic_home_24px.svg', 24)
             .icon('list', 'fonts/ic_format_list_numbered_24px.svg', 24)
             .icon('list2', 'fonts/ic_list_black_24px.svg', 24)
             .icon('login', 'fonts/login_24px.svg', 24)
-            .icon('location', 'fonts/ic_location_on_24px.svg')
+            .icon('location', 'fonts/ic_location_on_black_24px.svg')
             .icon('menu', 'fonts/ic_menu_24px.svg', 24)
             .icon('more_vert', 'fonts/ic_more_vert_24px.svg', 24)
             .icon('qrCode', 'fonts/qrcode-512px.svg', 24)
             .icon('pause', 'fonts/ic_pause_circle_outline_black_24px.svg', 24)
             .icon('play', 'fonts/ic_play_circle_outline_black_24px.svg', 24)
+            .icon('phone', 'fonts/ic_phone_black_24px.svg', 24)
             .icon('refresh', 'fonts/ic_refresh_24px.svg', 24)
             .icon('register', 'fonts/register_24px.svg', 24)
             .icon('remove_circle', 'fonts/ic_remove_circle_outline_24px.svg', 24)
@@ -63,12 +68,12 @@
         .primaryPalette('blue')
         .accentPalette('orange')
         .warnPalette('indigo')
-        .backgroundPalette('lime', {
-            'default': '50', // by default use shade 400 from the pink palette for primary intentions
-            'hue-1': 'A100', // use shade 100 for the <code>md-hue-1</code> class
-            'hue-2': 'A200', // use shade 600 for the <code>md-hue-2</code> class
-            'hue-3': 'A400' // use shade A100 for the <code>md-hue-3</code> class
-        });
+        //.backgroundPalette('lime', {
+        //    'default': '50', // by default use shade 400 from the pink palette for primary intentions
+        //    'hue-1': 'A100', // use shade 100 for the <code>md-hue-1</code> class
+        //    'hue-2': 'A200', // use shade 600 for the <code>md-hue-2</code> class
+        //    'hue-3': 'A400' // use shade A100 for the <code>md-hue-3</code> class
+        //});
 
 
         //$mdThemingProvider.theme('default')

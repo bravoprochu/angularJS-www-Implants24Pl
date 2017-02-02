@@ -5,38 +5,78 @@
         .module('app')
         .controller('homeCtrl', homeCtrl);
 
-    homeCtrl.$inject = [ '$http','$rootScope','$scope', 'commonFunctions', '$state', 'slajdy'];
+    homeCtrl.$inject = ['$interval', '$http', '$scope', 'commonFunctions', '$state', 'imagePreload'];
 
-    function homeCtrl($http,$rootScope, $scope, cF, $state, slajdy) {
+    function homeCtrl($interval, $http, $scope, cF, $state, imagePreload) {
         /* jshint validthis:true */
         var vm = this;
-        vm.title = 'Home';
+        vm.title = 'home';
         vm.subTitle = 'Start';
-        vm.isScreenSmall = cF.isScreenSmall();
+        vm.isScreenSize = cF.isScreenSize;
 
         vm.dane = {};
         vm.idzDo = cF.idzDo;
-        vm.startMode = false;
-        vm.screenSmall = cF.isScreenSmall();
+
+
+        vm.images = cF.getImageList(vm.title);
+        vm.getImageUrl = getImageUrl;
+        vm.menuShow = menuShow;
+        vm.settings = cF.settings;
+        vm.zmiana = true;
+
+        $interval(function () {
+            vm.zmiana = !vm.zmiana;
+        },5000)
+
+
+        function getImageUrl(idx) {
+            return cF.getImageUrl(idx, vm.title);
+        }
+
+        function menuShow() {
+            return cF.menuShowIfState(vm.title);
+        };
+
+
+
+
+
+        imagePreload.preload(vm.images, vm.title).then(function (ok) {
+            vm.startMode = true;
+        }, function (error) {
+            console.log(error);
+        }, function (notify) {
+            vm.preloadInfo = notify;
+        });
+
+
+
+
+
+
+
+
+
+
 
 //        siteMap();
 
 
 
-        vm.tabSelectedIndex = slajdy.tabSelectedIndex;
-        vm.stopInterval = slajdy.stopInterval;
-        vm.resumeInterval = slajdy.resumeInterval;
+        //vm.tabSelectedIndex = slajdy.tabSelectedIndex;
+        //vm.stopInterval = slajdy.stopInterval;
+        //vm.resumeInterval = slajdy.resumeInterval;
 
        
-        $scope.$watch('vm.tabSelectedIndex()', function (newVal) {
-            vm.selectedIdx=newVal
-        });
+        //$scope.$watch('vm.tabSelectedIndex()', function (newVal) {
+        //    vm.selectedIdx=newVal
+        //});
 
-        $rootScope.$watch('configDataLoaded', function (newVal) {
-            if (newVal == true) {
-                vm.startMode = true;
-            }
-        })
+        //$rootScope.$watch('configDataLoaded', function (newVal) {
+        //    if (newVal == true && vm.startMode==true) {
+        //        vm.startMode = true;
+        //    }
+        //})
 
         function siteMap() {
             var result = [];

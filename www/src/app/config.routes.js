@@ -26,6 +26,9 @@
             })
 
             .state('home', {
+                data:{
+                    caption: 'Strona startowa'
+                },
                 parent: 'main',
                 url: "/home",
                 templateUrl: "app/content/home/home.html",
@@ -34,6 +37,9 @@
             })
 
             .state('contact', {
+                data: {
+                    caption: 'Kontakt'
+                },
                 parent: 'main',
                 url: "/contact",
                 templateUrl: "app/content/contact/contact.html",
@@ -153,6 +159,22 @@
                                    url: "/closure",
                                    templateUrl: "app/content/prodBase/bark/arrow/protezaBarkuAnatomiczna/arrowAnatClosure.html",
                                })
+                                .state('protezaBarkuAnatomicznaFilm1', {
+                                    parent: 'protezaBarkuAnatomiczna',
+                                    data: {
+                                        caption: 'Zabieg operacyjny (video)'
+                                    },
+                                    url: "/zabiegOperacyjny",
+                                    templateUrl: "app/content/prodBase/bark/arrow/protezaBarkuAnatomiczna/zabiegOperacyjny.html",
+                                })
+                                .state('protezaBarkuAnatomicznaDrPhilippeValenti', {
+                                    parent: 'protezaBarkuAnatomiczna',
+                                    data: {
+                                        caption: 'Zabieg operacyjny dr Philippe Valenti (video)'
+                                    },
+                                    url: "/zabiegOperacyjnyDrPhilippeValenti",
+                                    templateUrl: "app/content/prodBase/bark/arrow/protezaBarkuAnatomiczna/zabiegOperacyjnyDrPhilippeValenti.html",
+                                })
 
 
 
@@ -166,7 +188,7 @@
                             controller: 'protezaBarkuOdwroconaCtrl',
                             controllerAs: 'vm',
                         })
-                                .state('arrowReverseTradeReferences', {
+                                .state('protezaBarkuOdwroconaTradeReferences', {
                                     parent: 'protezaBarkuOdwrocona',
                                     data: {
                                         caption: 'Trade references'
@@ -174,7 +196,7 @@
                                     url: "/tradeReferences",
                                     templateUrl: "app/content/prodBase/bark/arrow/protezaBarkuOdwrocona/tradeReferences.html",
                                 })
-                               .state('arrowReversePositioningThePatient', {
+                               .state('protezaBarkuOdwroconaPositioningThePatient', {
                                    parent: 'protezaBarkuOdwrocona',
                                    data: {
                                        caption: 'Positioning the patient'
@@ -182,7 +204,7 @@
                                    url: "/positioningThePatient",
                                    templateUrl: "app/content/prodBase/bark/arrow/protezaBarkuOdwrocona/positioningThePatient.html",
                                })
-                               .state('arrowReverseSuperiorLateralIncision', {
+                               .state('protezaBarkuOdwroconaSuperiorLateralIncision', {
                                    parent: 'protezaBarkuOdwrocona',
                                    data: {
                                        caption: 'Superior lateral incision'
@@ -190,7 +212,7 @@
                                    url: "/superiorLateralIncision",
                                    templateUrl: "app/content/prodBase/bark/arrow/protezaBarkuOdwrocona/superiorLateralIncision.html",
                                })
-                               .state('arrowReverseHumeralPreparation', {
+                               .state('protezaBarkuOdwroconaHumeralPreparation', {
                                    parent: 'protezaBarkuOdwrocona',
                                    data: {
                                        caption: 'Humeral preparation'
@@ -198,7 +220,7 @@
                                    url: "/humeralPreparation",
                                    templateUrl: "app/content/prodBase/bark/arrow/protezaBarkuOdwrocona/humeralPreparation.html",
                                })
-                               .state('arrowReversePreparationOfTheGlenoid', {
+                               .state('protezaBarkuOdwroconaPreparationOfTheGlenoid', {
                                    parent: 'protezaBarkuOdwrocona',
                                    data: {
                                        caption: 'Preparation of the glenoid'
@@ -206,7 +228,7 @@
                                    url: "/preparationOfTheGlenoid",
                                    templateUrl: "app/content/prodBase/bark/arrow/protezaBarkuOdwrocona/preparationOfTheGlenoid.html",
                                })
-                               .state('arrowReverseMetalBackGlenoidBase', {
+                               .state('protezaBarkuOdwroconaMetalBackGlenoidBase', {
                                    parent: 'protezaBarkuOdwrocona',
                                    data: {
                                        caption: 'Metal back glenoid base'
@@ -214,7 +236,7 @@
                                    url: "/metalBackGlenoidBase",
                                    templateUrl: "app/content/prodBase/bark/arrow/protezaBarkuOdwrocona/metalBackGlenoidBase.html",
                                })
-                               .state('arrowReverseProsthesisTrials', {
+                               .state('protezaBarkuOdwroconaProsthesisTrials', {
                                    parent: 'protezaBarkuOdwrocona',
                                    data: {
                                        caption: 'Prosthesis trials'
@@ -222,7 +244,7 @@
                                    url: "/prosthesisTrials",
                                    templateUrl: "app/content/prodBase/bark/arrow/protezaBarkuOdwrocona/prosthesisTrials.html",
                                })
-                               .state('arrowReverseDefinitiveImplants', {
+                               .state('protezaBarkuOdwroconaDefinitiveImplants', {
                                    parent: 'protezaBarkuOdwrocona',
                                    data: {
                                        caption: 'Definitive implants'
@@ -230,7 +252,7 @@
                                    url: "/definitiveImplants",
                                    templateUrl: "app/content/prodBase/bark/arrow/protezaBarkuOdwrocona/definitiveImplants.html",
                                })
-                               .state('arrowReverseArrowOptional', {
+                               .state('protezaBarkuOdwroconaArrowOptional', {
                                    parent: 'protezaBarkuOdwrocona',
                                    data: {
                                        caption: 'Optional'
@@ -238,7 +260,7 @@
                                    url: "/arrowOptional",
                                    templateUrl: "app/content/prodBase/bark/arrow/protezaBarkuOdwrocona/arrowOptional.html",
                                })
-                               .state('arrowReverseArrowClosure', {
+                               .state('protezaBarkuOdwroconaArrowClosure', {
                                    parent: 'protezaBarkuOdwrocona',
                                    data: {
                                        caption: 'Closure'
@@ -246,6 +268,17 @@
                                    url: "/arrowClosure",
                                    templateUrl: "app/content/prodBase/bark/arrow/protezaBarkuOdwrocona/arrowClosure.html",
                                })
+                                .state('protezaBarkuOdwroconaFilm1', {
+                                    parent: 'protezaBarkuOdwrocona',
+                                    data: {
+                                        caption: 'Zabieg operacyjny (video)'
+                                    },
+                                    url: "/zabiegOperacyjny",
+                                    templateUrl: "app/content/prodBase/bark/arrow/protezaBarkuOdwrocona/zabiegOperacyjny.html",
+                                })
+
+
+
 
                         .state('resurfacingCap', {
                             parent: 'arrow',
@@ -503,6 +536,20 @@
                         controller: 'kolanoTLSCtrl',
                         controllerAs: 'vm',
                     })
+
+
+
+                .state('kregoslup', {
+                    parent: 'prodBase',
+                    data: {
+                        caption: 'Kregos³up'
+                    },
+                    url: "/kolano",
+                    templateUrl: "app/content/prodBase/kolano/kolano.html",
+                    controller: 'kregoslupCtrl',
+                    controllerAs: 'vm',
+                })
+
 
 
 

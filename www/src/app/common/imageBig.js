@@ -23,7 +23,9 @@
             var url = attrs['src'];
             var isHorizontal = cF.settings.isHorizontal;
             var maxHeight = Math.round(cF.settings.size * 0.8);
-            var size = isHorizontal ? ' height="' + maxHeight + '"' : ' width="' + maxHeight+'"';
+            maxHeight = "100%";
+            var size = isHorizontal ? ' height="' + maxHeight + '"' : ' width="' + maxHeight + '"';
+            size = " width=70%";
 
             var file = cF.fileNameFromUrl(url);
             var bigUrl = file.domena + "/" + file.fileName + "_big." + file.rozszerzenie;

@@ -15,13 +15,15 @@
         var directive = {
             link: link,
             restrict: 'EA',
-            scope:true,
+            scope: {
+                idx:'@'
+            },
             templateUrl:'app/content/video/videoContainer.html'
         };
         return directive;
 
         function link(scope, element, attrs) {
-            scope.dane = cF.configData.config.videoCard.dane;
+            scope.dane = cF.configData.config.videoCard.dane[scope.idx];
         }
     }
 

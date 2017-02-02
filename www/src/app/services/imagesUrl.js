@@ -10,8 +10,19 @@
     function imagesUrl($http) {
 
         return {
+            home: [
+                'images/home/bark_logo.jpg',
+                'images/home/biodro_logo.jpg',
+                'images/home/kolano_logo.jpg',
+                'images/home/kregoslup_logo.jpg',
+                'images/home/stopa_logo.jpg',
+                'images/home/contact_logo.jpg',
+                'images/home/implantsCardAddress_logo.png',
+                'images/home/news_logo.png',
+
+            ],
             bark: [
-                'images/bark/arrow_logo.png',
+                'images/bark/arrow_logo.jpg',
                 'images/bark/telegraph_logo.png'
             ],
             arrow: [
@@ -97,7 +108,6 @@
 
             ],
             biodro: [
-            'images/biodro/atlante_logo.png',
             'images/biodro/atlas_logo.png',
             'images/biodro/hipAndGo_logo.png',
             ],

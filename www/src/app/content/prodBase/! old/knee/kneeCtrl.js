@@ -18,7 +18,7 @@
         function menuShow() {
             return cF.menuShowIfState(vm.title);
         };
-        vm.menu = cF.menuPrepare(vm.title);
+        
         vm.moveNext = moveNext;
         vm.movePrev = movePrev;
 
