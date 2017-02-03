@@ -39,7 +39,6 @@
 
             $rootScope.$on('$stateChangeSuccess',
             function (event, toState, toParams, fromState, fromParams) {
-                console.log('---- state change ----');
                 parentState = statesHelp.getParent(toState.name);
                 scope.parentState = parentState != null ? parentState.name : null;
                 scope.menu = statesHelp.prepMenu(toState.name);

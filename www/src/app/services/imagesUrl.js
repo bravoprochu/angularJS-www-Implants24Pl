@@ -105,8 +105,32 @@
             'images/bark/arrow/protezaBarkuOdwrocona/ar_arrowClosure3.png',
             ],
             resurfacingCap: [
+                'images/bark/arrow/resurfacingCap/resurfacingCap01_arrowInstrumentation.png',
+                'images/bark/arrow/resurfacingCap/resurfacingCap02_shapes.jpg',
+                'images/bark/arrow/resurfacingCap/resurfacingCap03_patientSetUp.png',
+                'images/bark/arrow/resurfacingCap/resurfacingCap04_patientSetUp.png',
+                'images/bark/arrow/resurfacingCap/resurfacingCap05_deltopectoral-groove-vertically.png',
+                'images/bark/arrow/resurfacingCap/resurfacingCap06_retractors.png',
+                'images/bark/arrow/resurfacingCap/resurfacingCap07_subscapularis.png',
+                'images/bark/arrow/resurfacingCap/resurfacingCap08_more_lateral_than_the_deltopectoral.png',
+                'images/bark/arrow/resurfacingCap/resurfacingCap09_coracoacromial_ligament.png',
+                'images/bark/arrow/resurfacingCap/resurfacingCap10_external_rotation.png',
+                'images/bark/arrow/resurfacingCap/resurfacingCap11_two_directional_guide_rods.png',
+                'images/bark/arrow/resurfacingCap/resurfacingCap12_rod.png',
+                'images/bark/arrow/resurfacingCap/resurfacingCap13_inserting_the_pin.png',
+                'images/bark/arrow/resurfacingCap/resurfacingCap14_first_reaming.png',
+                'images/bark/arrow/resurfacingCap/resurfacingCap15_subseqent_reaming_for_size_correction.png',
+                'images/bark/arrow/resurfacingCap/resurfacingCap16_trial_prosthesis.png',
+                'images/bark/arrow/resurfacingCap/resurfacingCap17_pin_preparation.png',
+                'images/bark/arrow/resurfacingCap/resurfacingCap18_fitting_the_definitive_implant.png',
+                'images/bark/arrow/resurfacingCap/resurfacingCap19_implants.png',
 
             ],
+
+            telegraph:[
+            'images/bark/arrow/resurfacingCap/resurfacingCap19_implants.png',
+            ],
+
             biodro: [
             'images/biodro/atlas_logo.png',
             'images/biodro/hipAndGo_logo.png',
@@ -133,7 +157,7 @@
             trzpienESOP: [
 
             ],
-//KOLANO
+            //KOLANO
 
             kolano: [
 

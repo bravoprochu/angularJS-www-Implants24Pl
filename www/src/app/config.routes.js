@@ -181,7 +181,7 @@
                         .state('protezaBarkuOdwrocona', {
                             parent: 'arrow',
                             data: {
-                                caption: 'Proteza barku odwrócona - Arrow reverse (eng)'
+                                caption: 'Proteza barku odwrocona - Arrow reverse (eng)'
                             },
                             url: "/protezaBarkuOdwrocona",
                             templateUrl: "app/content/prodBase/prodBaseSpecyfikacje.html",

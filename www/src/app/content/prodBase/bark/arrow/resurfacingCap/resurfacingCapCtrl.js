@@ -5,18 +5,26 @@
         .module('app')
         .controller('resurfacingCapCtrl', resurfacingCapCtrl);
 
-    resurfacingCapCtrl.$inject = ['commonFunctions', 'imagePreload']; 
+    resurfacingCapCtrl.$inject = ['$state', 'commonFunctions', 'imagePreload', 'statesHelp'];
 
-    function resurfacingCapCtrl(cF,imagePreload) {
+    function resurfacingCapCtrl($state, cF, imagePreload, statesHelp) {
         /* jshint validthis:true */
         var vm = this;
         vm.title = 'resurfacingCap';
 
 
-        vm.images = cF.getImageList(vm.title);
         vm.getImageUrl = getImageUrl;
-        
+        vm.images = cF.getImageList(vm.title);
+        vm.isScreenSize = cF.isScreenSize;
+
         vm.menuShow = menuShow;
+        var parentState = statesHelp.getParent($state.current.name);
+        vm.parentStateName = parentState != null ? parentState.name : null;
+        vm.menu = statesHelp.prepMenu($state.current.name);
+
+
+
+
         vm.settings = cF.settings;
 
         function getImageUrl(idx) {

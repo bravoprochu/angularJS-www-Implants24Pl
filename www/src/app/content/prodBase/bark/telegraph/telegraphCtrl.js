@@ -5,18 +5,26 @@
         .module('app')
         .controller('telegraphCtrl', telegraphCtrl);
 
-    telegraphCtrl.$inject = ['commonFunctions', 'imagePreload']; 
+    telegraphCtrl.$inject = ['$state', 'commonFunctions', 'imagePreload', 'statesHelp'];
 
-    function telegraphCtrl(cF, imagePreload) {
+    function telegraphCtrl($state, cF, imagePreload, statesHelp) {
         /* jshint validthis:true */
         var vm = this;
         vm.title = 'telegraph';
-        vm.menuShow = menuShow;
 
-        vm.images = cF.getImageList(vm.title);
+
         vm.getImageUrl = getImageUrl;
-        
+        vm.images = cF.getImageList(vm.title);
+        vm.isScreenSize = cF.isScreenSize;
+
         vm.menuShow = menuShow;
+        var parentState = statesHelp.getParent($state.current.name);
+        vm.parentStateName = parentState != null ? parentState.name : null;
+        vm.menu = statesHelp.prepMenu($state.current.name);
+
+
+
+
         vm.settings = cF.settings;
 
         function getImageUrl(idx) {
@@ -35,6 +43,8 @@
         }, function (notify) {
             vm.preloadInfo = notify;
         });
+
+
 
     }
 })();
