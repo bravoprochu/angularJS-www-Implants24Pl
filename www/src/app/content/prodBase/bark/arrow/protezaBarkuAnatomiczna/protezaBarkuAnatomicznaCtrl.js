@@ -14,26 +14,15 @@
 
         vm.getImageUrl = getImageUrl;
         vm.images = cF.getImageList(vm.title);
-        vm.isScreenSize = cF.isScreenSize;
-
-        vm.menuShow = menuShow;
+        vm.menu = statesHelp.prepMenu($state.current.name);
+        vm.menuShow = cF.menuShowIfState;
         var parentState = statesHelp.getParent($state.current.name);
         vm.parentStateName = parentState != null ? parentState.name : null;
-        vm.menu = statesHelp.prepMenu($state.current.name);
-
-        
-
-
         vm.settings = cF.settings;
 
         function getImageUrl(idx) {
             return cF.getImageUrl(idx, vm.title);
         }
-
-        function menuShow() {
-            return cF.menuShowIfState(vm.title);
-        };
-
 
         imagePreload.preload(vm.images, vm.title).then(function (ok) {
             vm.startMode = true;
@@ -42,6 +31,10 @@
         }, function (notify) {
             vm.preloadInfo = notify;
         });
+
+
+
+
 
         vm.video1 = cF.configData.config.videoCard.dane[0];
         vm.video2 = cF.configData.config.videoCard.dane[2];

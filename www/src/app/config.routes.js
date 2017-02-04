@@ -412,7 +412,7 @@
                                    data: {
                                        caption: 'Instrumentation'
                                    },
-                                   url: "/removingTheMaterial",
+                                   url: "/instrumentation",
                                    templateUrl: "app/content/prodBase/bark/telegraph/instrumentation.html",
                                })
 

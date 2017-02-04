@@ -5,9 +5,9 @@
         .module('app')
         .controller('homeCtrl', homeCtrl);
 
-    homeCtrl.$inject = ['$interval', '$http', '$scope', 'commonFunctions', '$state', 'imagePreload'];
+    homeCtrl.$inject = ['$interval', '$http', '$scope', '$rootScope', 'commonFunctions', '$state', 'imagePreload'];
 
-    function homeCtrl($interval, $http, $scope, cF, $state, imagePreload) {
+    function homeCtrl($interval, $http, $scope, $rootScope, cF, $state, imagePreload) {
         /* jshint validthis:true */
         var vm = this;
         vm.title = 'home';
@@ -24,9 +24,9 @@
         vm.settings = cF.settings;
         vm.zmiana = true;
 
-        $interval(function () {
-            vm.zmiana = !vm.zmiana;
-        },5000)
+        //$interval(function () {
+        //    vm.zmiana = !vm.zmiana;
+        //},5000)
 
 
         function getImageUrl(idx) {

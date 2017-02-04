@@ -12,14 +12,12 @@
         var vm = this;
         vm.title = 'protezaBarkuOdwrocona';
 
-        vm.images = cF.getImageList(vm.title);
         vm.getImageUrl = getImageUrl;
-
+        vm.images = cF.getImageList(vm.title);
+        vm.menu = statesHelp.prepMenu($state.current.name);
         vm.menuShow = menuShow;
         var parentState = statesHelp.getParent($state.current.name);
         vm.parentStateName = parentState != null ? parentState.name : null;
-        vm.menu = statesHelp.prepMenu($state.current.name);
-        
         vm.settings = cF.settings;
 
         function getImageUrl(idx) {

@@ -32,16 +32,7 @@
             <md-icon md-svg-src="menu"></md-icon>
         </md-button>
         <img ng-src="images/home/implants24_logo.png" style="max-height:100%; margin-right:0.5em;" ui-sref="home" ng-if="isScreenSize('gt-md')" />
-        <!--<div layout layout-align="center center" ng-if="isScreenSize('gt-md')">
-            <div ng-repeat="m in menu track by $index">
-                <span ng-if="!$last" ui-sref="{{m.name}}" style ng-class="{'pointer': m.mOver}">{{m.data.caption}}</span>
-                <span ng-if="!$last">|&nbsp;</span>
-                <span ng-if="$last">{{m.data.caption}}</span>
-            </div>
-        </div>-->
-
         <bread-crumbs-nav></bread-crumbs-nav>
-
         <div flex></div>
         <img ng-src="images/home/implants24_logo.png" style="max-height:100%; margin-right:0.5em;" ui-sref="home" ng-if="!isScreenSize('gt-md')" />
     </div>

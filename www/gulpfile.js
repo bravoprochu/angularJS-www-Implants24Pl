@@ -41,8 +41,9 @@ gulp.task('watchme', function () {
     
 });
 
-gulp.task('optimize', ['inject', 'images', 'fonts'], function () {
-    log('Optimize javascript, html, css');
+//gulp.task('optimize', ['inject','images', 'fonts'], function () {
+gulp.task('optimize', ['inject', 'fonts'], function () {
+    log('Optimize javascript, html, css, bez fotek !!!');
 
     //    var assets = useref.assets({searchPath: './'});
     var templateCache = config.temp + config.templateCache.file;
