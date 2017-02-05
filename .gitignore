@@ -2,6 +2,7 @@
 **/node_modules/
 **/.bin/
 **/.build/
+**/.vscode/
 
 
 ## Ignore Visual Studio temporary files, build results, and
