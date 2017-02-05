@@ -1,6 +1,7 @@
-$GIT_DIR/www/bower_components
-$GIT_DIR/www/node_modules
-$GIT_DIR/www/.bin
+**/bower_components/
+**/node_modules/
+**/.bin/
+**/.build/
 
 
 ## Ignore Visual Studio temporary files, build results, and
