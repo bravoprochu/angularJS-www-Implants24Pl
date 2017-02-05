@@ -8,7 +8,7 @@
     appRoutes.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider'];
     function appRoutes($stateProvider, $urlRouterProvider, $locationProvider) {
 
-        $locationProvider.html5Mode(true);
+       // $locationProvider.html5Mode(true);
        //             $urlRouterProvider.deferIntercept();
 
         $urlRouterProvider.when('', '/home');
@@ -486,7 +486,7 @@
                                .state('trzpienESOP', {
                                    parent: 'biodro',
                                    data: {
-                                       caption: 'Trzpieñ ESOP'
+                                       caption: 'Trzpieï¿½ ESOP'
                                    },
                                    url: "/trzpienESOP",
                                    templateUrl: "app/content/prodBase/prodBaseSpecyfikacje.html",
@@ -542,7 +542,7 @@
                 .state('kregoslup', {
                     parent: 'prodBase',
                     data: {
-                        caption: 'Kregos³up'
+                        caption: 'Kregosï¿½up'
                     },
                     url: "/kolano",
                     templateUrl: "app/content/prodBase/kolano/kolano.html",
