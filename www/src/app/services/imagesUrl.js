@@ -150,18 +150,11 @@
             'images/biodro/atlas_logo.png',
             'images/biodro/hipAndGo_logo.png',
             ],
-            panewkaAtlante2: [
-            'images/biodro/panewkaAtlante2/panewkaAtlante1.png',
-            'images/biodro/panewkaAtlante2/panewkaAtlante2.png',
-            'images/biodro/panewkaAtlante2/panewkaAtlante3.png',
-            'images/biodro/panewkaAtlante2/panewkaAtlante4.png',
-            'images/biodro/panewkaAtlante2/panewkaAtlante5.png',
-            'images/biodro/panewkaAtlante2/panewkaAtlante6.png',
-            'images/biodro/panewkaAtlante2/panewkaAtlante7.png',
-            'images/biodro/panewkaAtlante2/panewkaAtlante8.png',
-            ],
-            panewkaAtlas: [
 
+            panewkaAtlas: [
+"images/biodro/panewkaAtlas/panewka_atlas00_IIIP.png",
+"images/biodro/panewkaAtlas/panewkaAtlas01_IVP.png",
+"images/biodro/panewkaAtlas/panewkaAtlas02_MS.png"
             ],
             panewkaHipNGo: [
 
