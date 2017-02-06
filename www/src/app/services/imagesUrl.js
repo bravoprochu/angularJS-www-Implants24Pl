@@ -154,7 +154,14 @@
             panewkaAtlas: [
 "images/biodro/panewkaAtlas/panewka_atlas00_IIIP.png",
 "images/biodro/panewkaAtlas/panewkaAtlas01_IVP.png",
-"images/biodro/panewkaAtlas/panewkaAtlas02_MS.png"
+"images/biodro/panewkaAtlas/panewkaAtlas02_MS.png",
+"images/biodro/panewkaAtlas/panewkaAtlas03_press_fit.png",
+"images/biodro/panewkaAtlas/panewkaAtlas04_stability_of_the_insertt.png",
+"images/biodro/panewkaAtlas/panewkaAtlas05_coating.png",
+"images/biodro/panewkaAtlas/panewkaAtlas06_prosthetic_comp.png",
+"images/biodro/panewkaAtlas/panewkaAtlas06_prosthetic_comp_big.png",
+"images/biodro/panewkaAtlas/panewkaAtlas07_description.png",
+"images/biodro/panewkaAtlas/panewkaAtlas07_description_big.png",
             ],
             panewkaHipNGo: [
 
