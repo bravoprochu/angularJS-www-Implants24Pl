@@ -5,29 +5,27 @@
         .module('app')
         .controller('protezaBarkuOdwroconaCtrl', protezaBarkuOdwroconaCtrl);
 
-    protezaBarkuOdwroconaCtrl.$inject = ['$state','commonFunctions','imagePreload', 'statesHelp'];
+    protezaBarkuOdwroconaCtrl.$inject = ['$state', '$rootScope','commonFunctions','imagePreload', 'statesHelp'];
 
-    function protezaBarkuOdwroconaCtrl($state, cF, imagePreload, statesHelp) {
+    function protezaBarkuOdwroconaCtrl($state, $rootScope, cF, imagePreload, statesHelp) {
         /* jshint validthis:true */
         var vm = this;
         vm.title = 'protezaBarkuOdwrocona';
+        vm.stateName = $state.current.name;
 
         vm.getImageUrl = getImageUrl;
         vm.images = cF.getImageList(vm.title);
-        vm.menu = statesHelp.prepMenu($state.current.name);
-        vm.menuShow = menuShow;
-        var parentState = statesHelp.getParent($state.current.name);
-        vm.parentStateName = parentState != null ? parentState.name : null;
+        vm.menu = statesHelp.prepMenu(vm.stateName);
         vm.settings = cF.settings;
+        vm.isParent = statesHelp.isParent(vm.stateName)
+
+        $rootScope.$on('$stateChangeStart', function (event, toState, toParams, fromState, fromParams) {
+            vm.isParent = statesHelp.isParent(toState.name);
+        });
 
         function getImageUrl(idx) {
             return cF.getImageUrl(idx, vm.title);
         }
-
-        function menuShow() {
-            return cF.menuShowIfState(vm.title);
-        };
-
 
         imagePreload.preload(vm.images, vm.title).then(function (ok) {
             vm.startMode = true;

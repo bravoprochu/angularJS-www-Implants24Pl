@@ -13,11 +13,14 @@
         // Creates:
         // 
         var directive = {
+            //controller: 'spisSpecyfikacjiCtrl',
+            //controllerAs: 'vm',
             link: link,
             restrict: 'E',
             templateUrl: 'app/common/spisSpecyfikacji.html',
             scope: {
-                menu:'=',
+                menu: '=',
+                menuShow:'='
             }
 
         };

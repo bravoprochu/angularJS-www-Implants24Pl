@@ -5,20 +5,23 @@
         .module('app')
         .controller('protezaBarkuAnatomicznaCtrl', protezaBarkuAnatomicznaCtrl);
 
-    protezaBarkuAnatomicznaCtrl.$inject = ['$mdMedia', '$state', 'commonFunctions', 'imagePreload', 'statesHelp'];
+    protezaBarkuAnatomicznaCtrl.$inject = ['$mdMedia', '$state', '$rootScope', 'commonFunctions', 'imagePreload', 'statesHelp'];
 
-    function protezaBarkuAnatomicznaCtrl($mdMedia, $state, cF, imagePreload, statesHelp) {
+    function protezaBarkuAnatomicznaCtrl($mdMedia, $state, $rootScope, cF, imagePreload, statesHelp) {
         /* jshint validthis:true */
         var vm = this;
         vm.title = 'protezaBarkuAnatomiczna';
+        vm.stateName = $state.current.name;
 
         vm.getImageUrl = getImageUrl;
         vm.images = cF.getImageList(vm.title);
-        vm.menu = statesHelp.prepMenu($state.current.name);
-        vm.menuShow = cF.menuShowIfState;
-        var parentState = statesHelp.getParent($state.current.name);
-        vm.parentStateName = parentState != null ? parentState.name : null;
+        vm.menu = statesHelp.prepMenu(vm.stateName);
         vm.settings = cF.settings;
+        vm.isParent = statesHelp.isParent(vm.stateName)
+
+        $rootScope.$on('$stateChangeStart', function (event, toState, toParams, fromState, fromParams) {
+            vm.isParent = statesHelp.isParent(toState.name);
+        });
 
         function getImageUrl(idx) {
             return cF.getImageUrl(idx, vm.title);
