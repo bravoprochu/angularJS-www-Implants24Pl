@@ -426,26 +426,6 @@
                     controller: 'biodroCtrl',
                     controllerAs: 'vm',
                 })
-                               .state('panewkaAtlante2', {
-                                   parent: 'biodro',
-                                   data: {
-                                       caption: 'Panewka Atlante 2'
-                                   },
-                                   url: "/panewkaAtlante2",
-                                   templateUrl: "app/content/prodBase/prodBaseSpecyfikacje.html",
-                                   controller: 'panewkaAtlante2Ctrl',
-                                   controllerAs: 'vm',
-                               })
-                                   .state('panewkaAtlante2Specyfikacja', {
-                                       parent: 'panewkaAtlante2',
-                                       data: {
-                                           caption: 'Specyfikacja'
-                                       },
-                                       url: "/specyfikacja",
-                                       templateUrl: "app/content/prodBase/biodro/panewkaAtlante2/panewkaAtlante2.html",
-                                   })
-
-
 
                                .state('panewkaAtlas', {
                                    parent: 'biodro',
@@ -457,6 +437,19 @@
                                    controller: 'panewkaAtlasCtrl',
                                    controllerAs: 'vm',
                                })
+                                   .state('panewkaAtlasMetalBack', {
+                                       parent: 'panewkaAtlas',
+                                       data: {
+                                           caption: 'Metal Back'
+                                       },
+                                       url: "/metalBack",
+                                       templateUrl: "app/content/prodBase/biodro/panewkaAtlas/metalBack.html",
+                                   })
+
+
+
+
+
 
 
 

@@ -5,28 +5,36 @@
         .module('app')
         .controller('telegraphCtrl', telegraphCtrl);
 
-    telegraphCtrl.$inject = ['$state', 'commonFunctions', 'imagePreload', 'statesHelp'];
+    telegraphCtrl.$inject = ['$state', '$rootScope', 'commonFunctions', 'imagePreload', 'statesHelp'];
 
-    function telegraphCtrl($state, cF, imagePreload, statesHelp) {
+    function telegraphCtrl($state, $rootScope, cF, imagePreload, statesHelp) {
         /* jshint validthis:true */
         var vm = this;
         vm.title = 'telegraph';
 
+        vm.stateName = $state.current.name;
+
         vm.getImageUrl = getImageUrl;
         vm.images = cF.getImageList(vm.title);
-        vm.menu = statesHelp.prepMenu($state.current.name);
-        vm.menuShow = menuShow;
-        var parentState = statesHelp.getParent($state.current.name);
-        vm.parentStateName = parentState != null ? parentState.name : null;
+        vm.menu = statesHelp.prepMenu(vm.stateName);
         vm.settings = cF.settings;
+        vm.isParent = statesHelp.isParent(vm.stateName)
+
+        $rootScope.$on('$stateChangeStart', function (event, toState, toParams, fromState, fromParams) {
+            vm.isParent = statesHelp.isParent(toState.name);
+        });
 
         function getImageUrl(idx) {
             return cF.getImageUrl(idx, vm.title);
         }
 
-        function menuShow() {
-            return cF.menuShowIfState(vm.title);
-        };
+        imagePreload.preload(vm.images, vm.title).then(function (ok) {
+            vm.startMode = true;
+        }, function (error) {
+            console.log(error);
+        }, function (notify) {
+            vm.preloadInfo = notify;
+        });
 
 
         imagePreload.preload(vm.images, vm.title).then(function (ok) {
