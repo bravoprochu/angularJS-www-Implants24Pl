@@ -12,19 +12,31 @@
         var vm = this;
         vm.title = 'kolano';
 
-        vm.images = cF.getImageList(vm.title);
+        vm.stateName = $state.current.name;
+
         vm.getImageUrl = getImageUrl;
-        
-        vm.menuShow = menuShow;
+        vm.images = cF.getImageList(vm.title);
+        vm.menu = statesHelp.prepMenu(vm.stateName);
         vm.settings = cF.settings;
+        vm.isParent = statesHelp.isParent(vm.stateName);
+        vm.stateNext = statesHelp.goNext;
+        vm.statePrev = statesHelp.goPrev;
+
+        $rootScope.$on('$stateChangeStart', function (event, toState, toParams, fromState, fromParams) {
+            vm.isParent = statesHelp.isParent(toState.name);
+        });
 
         function getImageUrl(idx) {
             return cF.getImageUrl(idx, vm.title);
         }
 
-        function menuShow() {
-            return cF.menuShowIfState(vm.title);
-        };
+        imagePreload.preload(vm.images, vm.title).then(function (ok) {
+            vm.startMode = true;
+        }, function (error) {
+            console.log(error);
+        }, function (notify) {
+            vm.preloadInfo = notify;
+        });
 
 
         imagePreload.preload(vm.images, vm.title).then(function (ok) {

@@ -18,6 +18,9 @@
         vm.menu = statesHelp.prepMenu(vm.stateName);
         vm.settings = cF.settings;
         vm.isParent = statesHelp.isParent(vm.stateName)
+        vm.stateNext = statesHelp.goNext;
+        vm.statePrev = statesHelp.goPrev;
+        
 
         $rootScope.$on('$stateChangeStart', function (event, toState, toParams, fromState, fromParams) {
             vm.isParent = statesHelp.isParent(toState.name);

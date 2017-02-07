@@ -8,7 +8,7 @@
     appRoutes.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider'];
     function appRoutes($stateProvider, $urlRouterProvider, $locationProvider) {
 
-       // $locationProvider.html5Mode(true);
+       //             $locationProvider.html5Mode(true);
        //             $urlRouterProvider.deferIntercept();
 
         $urlRouterProvider.when('', '/home');
@@ -445,8 +445,22 @@
                                        url: "/metalBack",
                                        templateUrl: "app/content/prodBase/biodro/panewkaAtlas/metalBack.html",
                                    })
-
-
+                                   .state('panewkaAtlasWersjePanewki', {
+                                       parent: 'panewkaAtlas',
+                                       data: {
+                                           caption: 'Wersje panewki'
+                                       },
+                                       url: "/wersjePanewki",
+                                       templateUrl: "app/content/prodBase/biodro/panewkaAtlas/wersjePanewki.html",
+                                   })
+                                   .state('panewkaAtlasWkladyPanewkowe', {
+                                       parent: 'panewkaAtlas',
+                                       data: {
+                                           caption: 'Wklady panewkowe'
+                                       },
+                                       url: "/wkladyPanewkowe",
+                                       templateUrl: "app/content/prodBase/biodro/panewkaAtlas/wkladyPanewkowe.html",
+                                   })
 
 
 
@@ -509,6 +523,31 @@
                         controller: 'kolanoFHKCtrl',
                         controllerAs: 'vm',
                     })
+                                .state('kolanoFHKTechnikiOperacyjne', {
+                                    parent: 'kolanoFHK',
+                                    data: {
+                                        caption: 'Techniki operacyjne'
+                                    },
+                                    url: "/technikiOperacyjne",
+                                    templateUrl: "app/content/prodBase/kolano/kolanoFHK/technikiOperacyjne.html",
+                                })
+                                .state('kolanoFHKTechnikiOperacyjne2', {
+                                    parent: 'kolanoFHK',
+                                    data: {
+                                        caption: 'Techniki operacyjne'
+                                    },
+                                    url: "/technikiOperacyjne",
+                                    templateUrl: "app/content/prodBase/kolano/kolanoFHK/technikiOperacyjne.html",
+                                })
+
+
+
+
+
+
+
+
+
                     .state('kolanoOsteoPlus', {
                         parent: 'kolano',
                         data: {

@@ -29,19 +29,21 @@
 
             var file = cF.fileNameFromUrl(url);
             var bigUrl = file.domena + "/" + file.fileName + "_big." + file.rozszerzenie;
-            imagePreload.checkIfExists(bigUrl).then(function (ok) {
-                var newEl = '<div><md-tooltip md-direction="top">Kliknij by powiększyć '+ file.fileName+'</md-tooltip><img src=' + url + size + '/></div>';
-                element.append($compile(newEl)(scope));
-                element.bind('click', function ($event) {
-                    $window.open(bigUrl, '_blank');
-                });
+            //imagePreload.checkIfExists(bigUrl).then(function (ok) {
+            //    var newEl = '<div><md-tooltip md-direction="top">Kliknij by powiększyć '+ file.fileName+'</md-tooltip><img src=' + url + size + '/></div>';
+            //    element.append($compile(newEl)(scope));
+            //    element.bind('click', function ($event) {
+            //        $window.open(bigUrl, '_blank');
+            //    });
                 
-            }, function (url_brakFoty) {
-                //                var newEl = '<img ng-src=' + url + size + '/>';
-                var newEl = '<div><md-tooltip md-direction="top">'+file.fileName +'</md-tooltip><img src=' + url + size + '/></div>';
-                element.append($compile(newEl)(scope));
-//                element.append(newEl);
-            });
+            //}, function (url_brakFoty) {
+            //    var newEl = '<div><md-tooltip md-direction="top">'+file.fileName +'</md-tooltip><img src=' + url + size + '/></div>';
+            //    element.append($compile(newEl)(scope));
+            //});
+
+            var newEl = '<div><md-tooltip md-direction="top">' + file.fileName + '</md-tooltip><img src=' + url + size + '/></div>';
+            element.append($compile(newEl)(scope));
+
         }
     }
 

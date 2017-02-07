@@ -24,6 +24,8 @@
         vm.settings = cF.settings;
         vm.zmiana = true;
 
+        vm.videoBgId = "RJZl98ZQrnc";
+
         //$interval(function () {
         //    vm.zmiana = !vm.zmiana;
         //},5000)

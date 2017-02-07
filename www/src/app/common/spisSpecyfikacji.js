@@ -5,9 +5,9 @@
         .module('app')
         .directive('spisSpecyfikacji', spisSpecyfikacji);
 
-    spisSpecyfikacji.$inject = ['commonFunctions'];
+    spisSpecyfikacji.$inject = ['$state'];
     
-    function spisSpecyfikacji (cF) {
+    function spisSpecyfikacji ($state) {
         // Usage:
         //     <spisSpecyfikacji></spisSpecyfikacji>
         // Creates:
@@ -20,13 +20,17 @@
             templateUrl: 'app/common/spisSpecyfikacji.html',
             scope: {
                 menu: '=',
-                menuShow:'='
             }
 
         };
         return directive;
 
         function link(scope, element, attrs) {
+            scope.goTo = goTo;
+
+            function goTo(stateName) {
+                $state.go(stateName);
+            }
         }
     }
 

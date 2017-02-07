@@ -19,7 +19,9 @@
         }();
 
         var service = {
-            getParent:getParent,
+            getParent: getParent,
+            goNext:goNext,
+            goPrev: goPrev,
             stateByName: stateByName,
             prepMenu: prepMenu,
             prepMenuCrumb: prepMenuCrumb,
@@ -36,6 +38,24 @@
                 return parent != undefined ? parent: null;
             }
             return null;
+        }
+
+        function goNext() {
+            var menu = prepMenu($state.current.name);
+            if (menu.length == 0) return;
+            var currState = $state.current;
+            var idx = menu.indexOf(currState);
+            if (idx - 1 < 0) return;
+            $state.go(menu[idx - 1].name);
+        }
+
+        function goPrev(menu) {
+            var menu = prepMenu($state.current.name);
+            if (menu.length == 0) return;
+            var currState = $state.current;
+            var idx = menu.indexOf(currState);
+            if (idx + 1 == menu.length) return;
+            $state.go(menu[idx + 1].name);
         }
 
         function isParent(stateName) {

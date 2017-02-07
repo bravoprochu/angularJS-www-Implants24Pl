@@ -1,4 +1,4 @@
-﻿<div ng-if="vm.startMode">
+﻿<div ng-if="vm.startMode" md-swipe-left="vm.statePrev()" md-swipe-right="vm.stateNext()">
     <div ng-if="!vm.isParent" layout layout-padding layout-wrap>
         <ui-view flex="100" flex-gt-md="70"></ui-view>
         <spis-specyfikacji hide show-gt-md flex-gt-md="30" menu="vm.menu"></spis-specyfikacji>

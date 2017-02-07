@@ -20,6 +20,19 @@
             
         </div>
     </div>
+
+    <div style="width:100%;height:400px" ng-if="vm.isScreenSize('gt-sm')">
+        <video-bg video-id="vm.videoBgId" allow-click-events="true" loop="true">
+        </video-bg>
+    </div>
+
+    <md-card hide show-gt-sm >
+        <md-card-content layout layout-align="center center">
+
+
+        </md-card-content>
+    </md-card>
+   
     <main-menu></main-menu>
 
     <div layout="column" layout-gt-sm="row" layout-padding layout-wrap>

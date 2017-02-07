@@ -13,7 +13,7 @@
         var settings = {
             height:$window.innerHeight,
             isHorizontal: ($window.innerWidth*0.8) >= $window.innerHeight ? true: false,
-            size: function () { return ($window.innerWidth * 0.8) >= $window.innerHeight ? Math.round($window.innerHeight * 0.8) : Math.round($window.innerWidth * 0.8) }(),
+            size: function () { return $window.innerWidth >= $window.innerHeight ? Math.round($window.innerHeight * 0.9) : Math.round($window.innerWidth * 0.9) }(),
             sizeFull: function () { return ($window.innerWidth) >= $window.innerHeight ? Math.round($window.innerHeight*0.9) : Math.round($window.innerWidth*0.9) }(),
             width:$window.innerWidth
         }
