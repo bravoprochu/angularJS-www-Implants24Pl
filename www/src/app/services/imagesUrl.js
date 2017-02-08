@@ -188,6 +188,14 @@
                 "images/biodro/hipAndGo/tripodDualMobility/tripodDualMobility_19_instruments.png",
                 "images/biodro/hipAndGo/tripodDualMobility/tripodDualMobility_20_references.png",
                 "images/biodro/hipAndGo/tripodDualMobility/tripodDualMobility_21_otherImplants.png",
+                "images/biodro/hipAndGo/cementlessDualMobility/cementlessDualMobility_22_press-fit.png",
+                "images/biodro/hipAndGo/cementlessDualMobility/cementlessDualMobility_23_press-fitOfTheMetal-back.png",
+                "images/biodro/hipAndGo/cementlessDualMobility/cementlessDualMobility_24_metal-back.png",
+                "images/biodro/hipAndGo/cementlessDualMobility/cementlessDualMobility_25_PeInsert.png",
+                "images/biodro/hipAndGo/cementlessDualMobility/cementlessDualMobility_26_ceramicInsert.png",
+                "images/biodro/hipAndGo/cementlessDualMobility/cementlessDualMobility_27_correspondence.png",
+                "images/biodro/hipAndGo/cementlessDualMobility/cementlessDualMobility_28_ref.png",
+                "images/biodro/hipAndGo/cementlessDualMobility/cementlessDualMobility_29_otherImplants.png",
 
 
             ],
