@@ -176,7 +176,7 @@
                 "images/biodro/hipAndGo/cementedDualMobility/cementedDualMobility_07_dualMobility.png",
                 "images/biodro/hipAndGo/cementedDualMobility/cementedDualMobility_08_rangeAndMaterials.png",
                 "images/biodro/hipAndGo/cementedDualMobility/cementedDualMobility_09_stability.png",
-                "images/biodro/hipAndGo/cementedDualMobility/cementedDualMobility_10_inserts.png.png",
+                "images/biodro/hipAndGo/cementedDualMobility/cementedDualMobility_10_inserts.png",
                 "images/biodro/hipAndGo/cementedDualMobility/cementedDualMobility_11_acetebular.png",
                 "images/biodro/hipAndGo/cementedDualMobility/cementedDualMobility_12_references.png",
                 "images/biodro/hipAndGo/cementedDualMobility/cementedDualMobility_13_otherImplants.png",
