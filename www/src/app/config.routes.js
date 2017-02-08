@@ -446,14 +446,14 @@
                 url: "/metalBack",
                 templateUrl: "app/content/prodBase/biodro/panewkaAtlas/metalBack.html",
             })
-            .state('panewkaAtlasWkladyPanewkowe', {
-                parent: 'panewkaAtlas',
-                data: {
-                    caption: 'Wklady panewkowe'
-                },
-                url: "/wkladyPanewkowe",
-                templateUrl: "app/content/prodBase/biodro/panewkaAtlas/wkladyPanewkowe.html",
-            })
+                .state('panewkaAtlasWkladyPanewkowe', {
+                    parent: 'panewkaAtlas',
+                    data: {
+                        caption: 'Wklady panewkowe'
+                    },
+                    url: "/wkladyPanewkowe",
+                    templateUrl: "app/content/prodBase/biodro/panewkaAtlas/wkladyPanewkowe.html",
+                })
 
 
 
@@ -470,6 +470,42 @@
             controller: 'panewkaHipNGoCtrl',
             controllerAs: 'vm',
         })
+
+                .state('panewkaHipNGoCementedDualMobility', {
+                    parent: 'panewkaHipNGo',
+                    data: {
+                        caption: 'Cemented dual mobility'
+                    },
+                    url: "/cementedDualMobility",
+                    templateUrl: "app/content/prodBase/biodro/panewkaHipNGo/cementedDualMobility.html",
+                })
+                .state('panewkaHipNGoCementlessDualMobility', {
+                    parent: 'panewkaHipNGo',
+                    data: {
+                        caption: 'Cementless dual mobility'
+                    },
+                    url: "/cementlessDualMobility",
+                    templateUrl: "app/content/prodBase/biodro/panewkaHipNGo/cementlessDualMobility.html",
+                })
+                .state('panewkaHipNGoPressFitDualMobility', {
+                    parent: 'panewkaHipNGo',
+                    data: {
+                        caption: 'Pres-fit dual mobility'
+                    },
+                    url: "/pressFitDualMobility",
+                    templateUrl: "app/content/prodBase/biodro/panewkaHipNGo/pressFitDualMobility.html",
+                })
+                .state('panewkaHipNGoTripodDualMobility', {
+                    parent: 'panewkaHipNGo',
+                    data: {
+                        caption: 'Tripod dual mobility'
+                    },
+                    url: "/tripodDualMobility",
+                    templateUrl: "app/content/prodBase/biodro/panewkaHipNGo/tripodDualMobility.html",
+                })
+
+
+
 
 
         .state('systemProtezyBipolarnejPharo', {
