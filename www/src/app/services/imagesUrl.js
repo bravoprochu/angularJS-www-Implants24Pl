@@ -165,10 +165,33 @@
                 "images/biodro/panewkaAtlas/wkladyPanewkowe/wkladyPanewkowe10_tabela.png",
                 "images/biodro/panewkaAtlas/wkladyPanewkowe/wkladyPanewkowe10_tabela_big.png",
             ],
-
             panewkaHipNGo: [
+                "images/biodro/hipAndGo/press-fitDualMobility/press-fitDualMobility_00_press-fit.png",
+                "images/biodro/hipAndGo/press-fitDualMobility/press-fitDualMobility_01_press-fit2.png",
+                "images/biodro/hipAndGo/press-fitDualMobility/press-fitDualMobility_02_stability.png",
+                "images/biodro/hipAndGo/press-fitDualMobility/press-fitDualMobility_03_insert.png",
+                "images/biodro/hipAndGo/press-fitDualMobility/press-fitDualMobility_04_instrumentationt.png",
+                "images/biodro/hipAndGo/press-fitDualMobility/press-fitDualMobility_05_references.png",
+                "images/biodro/hipAndGo/press-fitDualMobility/press-fitDualMobility_06_references.png",
+                "images/biodro/hipAndGo/cementedDualMobility/cementedDualMobility_07_dualMobility.png",
+                "images/biodro/hipAndGo/cementedDualMobility/cementedDualMobility_08_rangeAndMaterials.png",
+                "images/biodro/hipAndGo/cementedDualMobility/cementedDualMobility_09_stability.png",
+                "images/biodro/hipAndGo/cementedDualMobility/cementedDualMobility_10_inserts.png.png",
+                "images/biodro/hipAndGo/cementedDualMobility/cementedDualMobility_11_acetebular.png",
+                "images/biodro/hipAndGo/cementedDualMobility/cementedDualMobility_12_references.png",
+                "images/biodro/hipAndGo/cementedDualMobility/cementedDualMobility_13_otherImplants.png",
+                "images/biodro/hipAndGo/tripodDualMobility/tripodDualMobility_14_dualMobility.png",
+                "images/biodro/hipAndGo/tripodDualMobility/tripodDualMobility_15_press-fit.png",
+                "images/biodro/hipAndGo/tripodDualMobility/tripodDualMobility_16_stability.png",
+                "images/biodro/hipAndGo/tripodDualMobility/tripodDualMobility_17_insert.png",
+                "images/biodro/hipAndGo/tripodDualMobility/tripodDualMobility_18_plugsAndMallebleLug.png",
+                "images/biodro/hipAndGo/tripodDualMobility/tripodDualMobility_19_instruments.png",
+                "images/biodro/hipAndGo/tripodDualMobility/tripodDualMobility_20_references.png",
+                "images/biodro/hipAndGo/tripodDualMobility/tripodDualMobility_21_otherImplants.png",
+
 
             ],
+
             systemProtezyBipolarnejPharo: [
 
             ],
