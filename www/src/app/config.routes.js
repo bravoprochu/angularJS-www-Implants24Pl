@@ -9,7 +9,7 @@
 
     function appRoutes($stateProvider, $urlRouterProvider, $locationProvider) {
 
-        //             $locationProvider.html5Mode(true);
+         //            $locationProvider.html5Mode(true);
         //             $urlRouterProvider.deferIntercept();
 
         $urlRouterProvider.when('', '/home');
@@ -471,37 +471,37 @@
             controllerAs: 'vm',
         })
 
-        .state('panewkaHipNGoCementedDualMobility', {
+            .state('panewkaHipNGoCementowaDwumobilna', {
                 parent: 'panewkaHipNGo',
                 data: {
-                    caption: 'Cemented dual mobility'
+                    caption: 'Cementowa dwumobilna'
                 },
-                url: "/cementedDualMobility",
-                templateUrl: "app/content/prodBase/biodro/panewkaHipNGo/cementedDualMobility.html",
+                url: "/cementowaDwumobilna",
+                templateUrl: "app/content/prodBase/biodro/panewkaHipNGo/cementowaDwumobilna.html",
             })
-            .state('panewkaHipNGoCementlessDualMobility', {
+            .state('panewkaHipNGoBezcementowaDwumobilna', {
                 parent: 'panewkaHipNGo',
                 data: {
-                    caption: 'Cementless dual mobility'
+                    caption: 'Bezcementowa dwumobilna'
                 },
-                url: "/cementlessDualMobility",
-                templateUrl: "app/content/prodBase/biodro/panewkaHipNGo/cementlessDualMobility.html",
+                url: "/bezcementowaDwumobilna",
+                templateUrl: "app/content/prodBase/biodro/panewkaHipNGo/bezcementowaDwumobilna.html",
             })
-            .state('panewkaHipNGoPressFitDualMobility', {
+            .state('panewkaHipNGoPressFitBezcementowa', {
                 parent: 'panewkaHipNGo',
                 data: {
-                    caption: 'Pres-fit dual mobility'
+                    caption: 'Pres-fit bezcementowa'
                 },
-                url: "/pressFitDualMobility",
-                templateUrl: "app/content/prodBase/biodro/panewkaHipNGo/press-FitDualMobility.html",
+                url: "/pressFitBezcementowa",
+                templateUrl: "app/content/prodBase/biodro/panewkaHipNGo/pressFitBezcementowa.html",
             })
-            .state('panewkaHipNGoTripodDualMobility', {
+            .state('panewkaHipNGoDwumobilnaTripod', {
                 parent: 'panewkaHipNGo',
                 data: {
-                    caption: 'Tripod dual mobility'
+                    caption: 'Dwumobilna Tripod'
                 },
-                url: "/tripodDualMobility",
-                templateUrl: "app/content/prodBase/biodro/panewkaHipNGo/tripodDualMobility.html",
+                url: "/dwumobilnaTripod",
+                templateUrl: "app/content/prodBase/biodro/panewkaHipNGo/dwumobilnaTripod.html",
             })
 
 
