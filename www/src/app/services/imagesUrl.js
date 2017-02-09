@@ -209,6 +209,12 @@
             //KOLANO
 
             kolano: [
+                "images/kolano/fhk/technikiOperacyjne_00_sequence1.png",
+                "images/kolano/fhk/technikiOperacyjne_01_sequence2.png",
+                "images/kolano/fhk/technikiOperacyjne_02_sequence3.png",
+                "images/kolano/fhk/technikiOperacyjne_03_sequence4.png",
+                "images/kolano/fhk/technikiOperacyjne_04_sequence5.png",
+                "images/kolano/fhk/technikiOperacyjne_05_preOperative.png",
 
             ]
 
