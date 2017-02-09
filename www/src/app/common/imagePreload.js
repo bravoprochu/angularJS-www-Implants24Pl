@@ -31,7 +31,7 @@
             var img = new Image();
             img.src = url;
             img.onload = function ($event) {
-                deferImg.resolve(url);
+                deferImg.resolve(img);
             }
             img.onerror = function ($event) {
                 deferImg.reject(url);
@@ -73,8 +73,8 @@
                 var img = new Image();
                 img.src = srcImg;
                 img.onload = function ($event) {
-                    resolved.push(srcImg);
-                    deferImg.resolve(srcImg);
+                    resolved.push(img);
+                    deferImg.resolve(img);
                     setInfo("Trwa pobieranie: " + fromWho+" "+ resolved.length + "/" + imagesTotal);
                     defer.notify('pobrałem: ' + srcImg);
                 }

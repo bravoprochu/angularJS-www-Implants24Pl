@@ -26,8 +26,9 @@
         };
 
 
-        imagePreload.preload(vm.images, vm.title).then(function (ok) {
+        imagePreload.preload(vm.images, vm.title).then(function (images) {
             vm.startMode = true;
+            console.log(images);
         }, function (error) {
             console.log(error);
         }, function (notify) {
