@@ -5,9 +5,9 @@
         .module('app')
         .controller('kolanoOsteoPlusCtrl', kolanoOsteoPlusCtrl);
 
-    kolanoOsteoPlusCtrl.$inject = ['commonFunctions', 'imagePreload'];
+    kolanoOsteoPlusCtrl.$inject = ['$rootScope', '$state', 'commonFunctions', 'imagePreload', 'statesHelp'];
 
-    function kolanoOsteoPlusCtrl(cF, imagePreload) {
+    function kolanoOsteoPlusCtrl($rootScope, $state, cF, imagePreload, statesHelp) {
         /* jshint validthis:true */
         var vm = this;
         vm.title = 'kolanoOsteoPlus';

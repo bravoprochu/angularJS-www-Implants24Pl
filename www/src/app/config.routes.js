@@ -9,7 +9,7 @@
 
     function appRoutes($stateProvider, $urlRouterProvider, $locationProvider) {
 
-         //            $locationProvider.html5Mode(true);
+        //            $locationProvider.html5Mode(true);
         //             $urlRouterProvider.deferIntercept();
 
         $urlRouterProvider.when('', '/home');
@@ -547,7 +547,7 @@
                 data: {
                     caption: 'FHK'
                 },
-                url: "/fhk",
+                url: "/FHK",
                 templateUrl: "app/content/prodBase/prodBaseSpecyfikacje.html",
                 controller: 'kolanoFHKCtrl',
                 controllerAs: 'vm',
@@ -558,45 +558,12 @@
                     caption: 'Techniki operacyjne'
                 },
                 url: "/technikiOperacyjne",
-                templateUrl: "app/content/prodBase/kolano/kolanoFHK/technikiOperacyjne.html",
-            })
-            .state('kolanoFHKTechnikiOperacyjne2', {
-                parent: 'kolanoFHK',
-                data: {
-                    caption: 'Techniki operacyjne'
-                },
-                url: "/technikiOperacyjne",
-                templateUrl: "app/content/prodBase/kolano/kolanoFHK/technikiOperacyjne.html",
+                templateUrl: "app/content/prodBase/kolano/fhk/technikiOperacyjne.html",
             })
 
 
 
 
-
-
-
-
-
-        .state('kolanoOsteoPlus', {
-                parent: 'kolano',
-                data: {
-                    caption: 'Osteo+'
-                },
-                url: "/osteoPlus",
-                templateUrl: "app/content/prodBase/prodBaseSpecyfikacje.html",
-                controller: 'kolanoOsteoPlusCtrl',
-                controllerAs: 'vm',
-            })
-            .state('kolanoTLS', {
-                parent: 'kolano',
-                data: {
-                    caption: 'TLS'
-                },
-                url: "/tls",
-                templateUrl: "app/content/prodBase/prodBaseSpecyfikacje.html",
-                controller: 'kolanoTLSCtrl',
-                controllerAs: 'vm',
-            })
 
 
 

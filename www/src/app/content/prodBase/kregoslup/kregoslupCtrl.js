@@ -5,9 +5,9 @@
         .module('app')
         .controller('kregoslupCtrl', kregoslupCtrl);
 
-    kregoslupCtrl.$inject = ['commonFunctions', 'imagePreload'];
+    kregoslupCtrl.$inject = ['$rootScope', '$state', 'commonFunctions', 'imagePreload', 'statesHelp'];
 
-    function kregoslupCtrl(cF, imagePreload) {
+    function kregoslupCtrl($rootScope, $state, cF, imagePreload, statesHelp) {
         /* jshint validthis:true */
         var vm = this;
         vm.title = 'kregoslup';

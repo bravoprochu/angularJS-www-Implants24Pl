@@ -5,9 +5,9 @@
         .module('app')
         .controller('kolanoFHKCtrl', kolanoFHKCtrl);
 
-    kolanoFHKCtrl.$inject = ['commonFunctions', 'imagePreload'];
+    kolanoFHKCtrl.$inject = ['$rootScope', '$state','commonFunctions', 'imagePreload', 'statesHelp'];
 
-    function kolanoFHKCtrl(cF, imagePreload) {
+    function kolanoFHKCtrl($rootScope, $state, cF, imagePreload, statesHelp) {
         /* jshint validthis:true */
         var vm = this;
         vm.title = 'kolanoFHK';
