@@ -5,9 +5,9 @@
         .module('app')
         .controller('kolanoTLSCtrl', kolanoTLSCtrl);
 
-    kolanoTLSCtrl.$inject = ['commonFunctions', 'imagePreload'];
+    kolanoTLSCtrl.$inject = ['$rootScope', '$state', 'commonFunctions', 'imagePreload', 'statesHelp'];
 
-    function kolanoTLSCtrl(cF, imagePreload) {
+    function kolanoTLSCtrl($rootScope, $state, cF, imagePreload, statesHelp) {
         /* jshint validthis:true */
         var vm = this;
         vm.title = 'kolanoTLS';
