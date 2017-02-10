@@ -11,46 +11,30 @@
         /* jshint validthis:true */
         var vm = this;
         vm.title = 'home';
-        vm.subTitle = 'Start';
-        vm.isScreenSize = cF.isScreenSize;
-
+        vm.videoBgId = "RJZl98ZQrnc";
         vm.dane = {};
-        vm.idzDo = cF.idzDo;
-
 
         vm.images = cF.getImageList(vm.title);
         vm.getImageUrl = getImageUrl;
         vm.menuShow = menuShow;
         vm.settings = cF.settings;
-        vm.zmiana = true;
-
-        vm.videoBgId = "RJZl98ZQrnc";
-
-        //$interval(function () {
-        //    vm.zmiana = !vm.zmiana;
-        //},5000)
-
-
-        function getImageUrl(idx) {
-            return cF.getImageUrl(idx, vm.title);
-        }
 
         function menuShow() {
             return cF.menuShowIfState(vm.title);
         };
 
 
+        function getImageUrl(idx) {
+            return cF.getImageUrl(idx, vm.title);
+        }
 
-
-
-        imagePreload.preload(vm.images, vm.title).then(function (ok) {
+        imagePreload.preload(vm.images, vm.title).then(function (images) {
             vm.startMode = true;
         }, function (error) {
             console.log(error);
         }, function (notify) {
             vm.preloadInfo = notify;
         });
-
 
 
 

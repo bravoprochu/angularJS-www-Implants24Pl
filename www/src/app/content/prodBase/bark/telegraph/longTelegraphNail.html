@@ -1,4 +1,4 @@
-﻿<md-content style="height:{{vm.settings.size}}px">
+﻿<md-content style="height:{{vm.settings.viewHeight}}px">
     <section>
         <md-subheader class="md-primary">LONG TELEGRAPH® NAIL</md-subheader>
         <p>
@@ -22,7 +22,7 @@
             Passing the fracture site is typically easy. Setting the length
             and proximal locking are standard (§1.3 and 1.4).
         </p>
-        <image-big src="{{vm.getImageUrl(9)}}"></image-big>
+        <image-big pic="vm.getImageByIdx(9)"></image-big>
     </section>
     <section>
         <md-subheader class="md-primary">
@@ -84,6 +84,6 @@
             The technique is identical, but without the stages described
             in chapter 3.2.
         </p>
-        <image-big src="{{vm.getImageUrl(10)}}"></image-big>
+        <image-big pic="vm.getImageByIdx(10)"></image-big>
     </section>
 </md-content>

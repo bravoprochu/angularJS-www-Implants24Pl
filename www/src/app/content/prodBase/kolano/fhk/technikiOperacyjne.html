@@ -1,4 +1,4 @@
-﻿<md-content style="height:{{vm.settings.size}}px">
+﻿<md-content style="height:{{vm.settings.viewHeight}}px">
     <section>
         <md-subheader class="md-primary">FHK® Total knee prosthesis</md-subheader>
         <p>The installation of a total prosthesis of the knee requires four essential elements to be adhered to:<br> • Correct alignment of the mechanical axis of the lower limb (Hip Knee Ankle angle at 180°);<br> • The stability of articulation achieved
@@ -8,17 +8,17 @@
     </section>
     <section>
         <md-subheader class="md-primary">SEQUENCE OF OPERATING PHASES</md-subheader>
-        <image-big src="{{vm.getImageUrl(00)}}"></image-big>
-        <image-big src="{{vm.getImageUrl(01)}}"></image-big>
-        <image-big src="{{vm.getImageUrl(02)}}"></image-big>
-        <image-big src="{{vm.getImageUrl(03)}}"></image-big>
-        <image-big src="{{vm.getImageUrl(04)}}"></image-big>
+        <image-big pic="vm.getImageByIdx(00)"></image-big>
+        <image-big pic="vm.getImageByIdx(01)"></image-big>
+        <image-big pic="vm.getImageByIdx(02)"></image-big>
+        <image-big pic="vm.getImageByIdx(03)"></image-big>
+        <image-big pic="vm.getImageByIdx(04)"></image-big>
     </section>
     <section>
         <md-subheader class="md-primary">PRE-OPERATIVE PLANNING</md-subheader>
         <p><strong> must consist of:</strong> • front and profile X-rays with monopodal support;<br> • an axial image of the two knee joints, with the knee bent at 30°;<br> • a frontal image in stress on the healthy compartment to assess the degree of bone
             wear in the concavity and the reducibility proportion of the deformation associated with this wear. One can also assess the relative proportions of the deviation due to the actual morphological deformation and to the ligament retraction;<br>            • a goniometry under loading enabling the assessment of the overall mechanical axis of the lower membrane, as well as the angle formed by the diaphyseal axes of the femur and of the tibia with this mechanical axis.</p>
-        <image-big src="{{vm.getImageUrl(05)}}"></image-big>
+        <image-big pic="vm.getImageByIdx(05)"></image-big>
     </section>
     <section>
         <md-subheader class="md-primary">INSTALLATION AND APPROACH</md-subheader>
@@ -57,8 +57,8 @@ cuts.</strong></p>
         <p><strong>Preoperative location of the precise entry point enables
 avoidance of axial errors that would lead to an oblique
 cut</strong>(either in the frontal plane or in the sagittal plane). A preliminary hole is made with a square point, then drilling to a diameter of 8 mm <strong>(Fig. 1)</strong>. The 8 mm diameter intramedullary stem is put in place <strong>(Fig. 2 & 3)</strong>.</p>
-        <image-big src="{{vm.getImageUrl(06)}}"></image-big>
-        <image-big src="{{vm.getImageUrl(07)}}"></image-big>
+        <image-big pic="vm.getImageByIdx(06)"></image-big>
+        <image-big pic="vm.getImageByIdx(07)"></image-big>
     </section>
     <section>
         <md-subheader class="md-primary">Positioning of the tibial cutting guide</md-subheader>
@@ -68,15 +68,15 @@ cut</strong>(either in the frontal plane or in the sagittal plane). A preliminar
             should bring the proximal stem in line with the internal third of the anterior tibial tuberosity. The rotation of the entire guide is then locked by the impaction of the second point.
             <br> • Extra medullar y ali gnment An extramedullary alignment is also possible (using the same assembly, but without the intramedullary stem), as well as the combined use of both types of alignment.<br> In any case, the extramedullary stem
             must be parallel to the axis of the tibia in both planes, to ensure the orthogonality of the cut <strong>(Fig. 5 & 6)</strong>.</p>
-        <image-big src="{{vm.getImageUrl(08)}}"></image-big>
-        <image-big src="{{vm.getImageUrl(09)}}"></image-big>
+        <image-big pic="vm.getImageByIdx(08)"></image-big>
+        <image-big pic="vm.getImageByIdx(09)"></image-big>
     </section>
     <section>
         <md-subheader class="md-primary">Determination of the level of cut</md-subheader>
         <p>The probe, marked at 10 mm, is placed on the cutting guide on the clean side and the assembly lowered until it enters into contact with the medial part of the tibia <strong>(Fig. 7)</strong>. A control feeler slid into the opening of the cut will
             enable verification of the quantity of bone resected. The marked side “2” of the probe can also be used to perform a measurement of the amount of compartment used. In this case the cut will be made 2 mm under the cup.<br> The cut made will
             be orthogonal with the axis of the tibia, but this will not, a priori, indicate the thickness of insert to be used.</p>
-        <image-big src="{{vm.getImageUrl(10)}}"></image-big>
+        <image-big pic="vm.getImageByIdx(10)"></image-big>
     </section>
     <section>
         <md-subheader class="md-primary">Validation of the level of the tibial cut</md-subheader>
@@ -89,14 +89,14 @@ cut</strong>(either in the frontal plane or in the sagittal plane). A preliminar
         <p>The cut is then made with an oscillating saw with a blade of thickness 1.27 mm, taking care, if the decision has been made to conserve it, to preserve the insertion of the posterior cruciate ligament [PCL] (especially if this cut is larger than
             10 mm), and at the same time protecting the medial and lateral capsular ligament planes <strong>(Fig. 8)</strong>.<br> The cutting block is provided to produce a cut that is orthogonal with the tibial axis in both planes.<br> The lateral pin
             is removed as well as the cutting guide.</p>
-        <image-big src="{{vm.getImageUrl(11)}}"></image-big>
+        <image-big pic="vm.getImageByIdx(11)"></image-big>
     </section>
     <section>
         <md-subheader class="md-primary">Validation of the flexion space</md-subheader>
         <p>At this stage one can validate the flexion space using the 10 mm spacer mounted on the handle of the external alignment stem: this must be strictly parallel to the tibia (or better still, to the axis of the fibula which can be viewed using the
             other extramedullary stem joining the centre of the tibial PE insert to the external malleolus) <strong>(Fig. 9a)</strong>.<br> The size of the tibia can also be evaluated by positioning tibial Trial.
             <br> The size of the base must in general be immediately inferior, equal to or immediately superior to that of the femoral component.</p>
-        <image-big src="{{vm.getImageUrl(12)}}"></image-big>
+        <image-big pic="vm.getImageByIdx(12)"></image-big>
     </section>
     <section>
         <md-subheader class="md-primary">PREPARATION OF THE FEMUR</md-subheader>
@@ -106,39 +106,39 @@ cut</strong>(either in the frontal plane or in the sagittal plane). A preliminar
             <br> In the first place we begin by locating the position of the pilot hole using a square awl. The same care with location must be taken as in the tibial phase in order to avoid piercing the femur too far forward or backwards and causing
             errors in assessment of the size and positioning of the implants.<br> The hole is drilled with a diameter of 8 <strong>(Fig. 11)</strong>, with the maximum depth possible.<br> The centromedullary stem is put in place, and the removable handle
             is removed<br></p>
-        <image-big src="{{vm.getImageUrl(13)}}"></image-big>
+        <image-big pic="vm.getImageByIdx(13)"></image-big>
     </section>
     <section>
         <md-subheader class="md-primary">CHOICE OF FEMORAL CUTS</md-subheader>
         <p><strong>>>>> According to the 1 + 4 technique</strong></p>
         <p><strong>Distal femoral cut</strong></p>
         <p>2 pins are put in place in the holes corresponding to the line marked “0”, a third, central, diverging pin can also be put in place to stabilise the assembly <strong>(Fig. 12)</strong>.</p>
-        <image-big src="{{vm.getImageUrl(14)}}"></image-big>
+        <image-big pic="vm.getImageByIdx(14)"></image-big>
         <p>The centromedullary stem is removed, the angle reference trial is separated from the assembly and the cut made using an oscillating saw <strong>(Fig. 13)</strong>.</p>
         <p>At this stage, the space in extension can be verified by assembly of the spacer (thickness 8 mm) and the spacer of 10 mm thickness <strong>(Fig. 13b)</strong>.</p>
-        <image-big src="{{vm.getImageUrl(15)}}"></image-big>
+        <image-big pic="vm.getImageByIdx(15)"></image-big>
         <p>The sizer is put in place, the knee moved back to 90° flexion
             <strong>(Fig. 14)</strong>. The use of the control probe slid into the opening corresponding to the selected size will enable visualisation of the exit of the saw blade above the trochlea, thereby ensuring the correct selection of size.</p>
-        <image-big src="{{vm.getImageUrl(16)}}"></image-big>
+        <image-big pic="vm.getImageByIdx(16)"></image-big>
     </section>
     <section>
         <md-subheader class="md-primary">Femoral anteroposterior and chamfer cuts</md-subheader>
         <p>The adjustment of the femoral rotation is performed according to the user’s choice according to the graduations of the positioning index (from 3° to 11°) respecting the direction (R or L) marked on the instrument <strong>(Fig. 15a and 15b)</strong>.</p>
-        <image-big src="{{vm.getImageUrl(17)}}"></image-big>
+        <image-big pic="vm.getImageByIdx(17)"></image-big>
         <p>The positioning index of the posterior pallet is locked on the line “0” (in this case, the posterior cut will correspond to the prosthetic thickness of 8 mm).<br> In the case where an extension has been measured with a different value (greater
             or less than 18 mm), this index may be positioned on the line “+2” or “-2” in order to carry out the corresponding posterior cut. The assembly is applied to the bone cut, and the posterior pallets placed in contact with the posterior condyles
             <strong>(Fig. 16)</strong>.</p>
-        <image-big src="{{vm.getImageUrl(18)}}"></image-big>
+        <image-big pic="vm.getImageByIdx(18)"></image-big>
         <p>The fixation of the guide is performed using 6.5 mm diameter cancellous screws, after a centring hole has been made using a centring rod and drilled to a 3.2 mm diameter <strong>(Fig. 17)</strong>. The choice of a different (or additional) fixation
             is possible using 3.2 mm pins placed in lateral holes of the cutting guide located on its sides. The rotation index is unscrewed from the guide, and the cuts performed <strong>(Fig. 18)</strong>.</p>
-        <image-big src="{{vm.getImageUrl(19)}}"></image-big>
+        <image-big pic="vm.getImageByIdx(19)"></image-big>
     </section>
     <section>
         <md-subheader class="md-primary">Preparation of the trochlea</md-subheader>
         <p>The cutting guide is left in place, and the trochlea Preparation chisel is presented and introduced into the curved opening. It is carefully driven in with a hammer until complete separation of the bone fragment <strong>(Fig. 19)</strong>. The
             guide fixation screws are removed using the motor end piece.
         </p>
-        <image-big src="{{vm.getImageUrl(20)}}"></image-big>
+        <image-big pic="vm.getImageByIdx(20)"></image-big>
         <p><strong> instrumentation offers the possibility of
 performing femoral cuts in anterior referencing.</strong><br> In this case the anterior probe is screwed to the upper part of the guide, the angle of axial rotation selected, and the screw tightened. The central screw is left free, the cutting guide is
             placed on the distal cut, with the probe in contact in contact with the anterior cortical, the posterior sliders are brought into contact with the posterior condyles and the central screw tightened.<br> The guide can then be fixed, and the
@@ -154,7 +154,7 @@ performing femoral cuts in anterior referencing.</strong><br> In this case the a
             the selected size, will enable visualisation of the exit of the saw blade at the top of the trochlea, and thus ensure the correct choice of size.<br> When a posterior pre-cut is necessary, either in order to increase the flexion space or because
             the measurer has indicated a value between 2 sizes, this must be performed through openings in the posterior second cut guide which represents a cut thickness of 1.5 mm <strong>(Fig. 22)</strong>. In the case of a second cut associated with
             the size measurement, the inferior size is the one that will be selected.</p>
-        <image-big src="{{vm.getImageUrl(21)}}"></image-big>
+        <image-big pic="vm.getImageByIdx(21)"></image-big>
     </section>
     <section>
         <md-subheader class="md-primary">Installation of the guide and performing the femoral cuts</md-subheader>
@@ -165,7 +165,7 @@ performing femoral cuts in anterior referencing.</strong><br> In this case the a
             stability for the assembly for as long as possible.<br> The cuts should be continued until the complete detachment of the bone blocks.<br> The removal of the fixing pins and cutting guide can then be performed.<br> The internal part of the
             femoral trials enables confirmation of the accuracy of the cuts (this can also be done using Trial femurs).
         </p>
-        <image-big src="{{vm.getImageUrl(22)}}"></image-big>
+        <image-big pic="vm.getImageByIdx(22)"></image-big>
     </section>
     <section>
         <md-subheader class="md-primary">TRIALS</md-subheader>
@@ -173,26 +173,26 @@ performing femoral cuts in anterior referencing.</strong><br> In this case the a
         <p><strong>• Fixed bearing</strong></p>
         <p>The axes are checked by placing a pin of 3.2 mm diameter in the femoral trial component and the external alignment stems in the shaft for the trial base <strong>(Fig. 25 and 26)</strong>. When the final positioning of the parts has been completed,
             the Trial base is fixed using short anterior nails <strong>(Fig. 27a)</strong>, and the anchorage studs for the femoral part are drilled with a drill with stop <strong>(Fig. 28).</strong></p>
-        <image-big src="{{vm.getImageUrl(23)}}"></image-big>
-        <image-big src="{{vm.getImageUrl(24)}}"></image-big>
+        <image-big pic="vm.getImageByIdx(23)"></image-big>
+        <image-big pic="vm.getImageByIdx(24)"></image-big>
         <p><strong>• Mobile bearing</strong></p>
         <p>The tibial trial base for the mobile bearing is introduced into the optimum anterioposterior location, and for the mediolateral and its rotation evaluated in relation to the standard anatomical reference points (internal third of the anterior
             tibial tuberosity). It is then locked off by a short nail which allows the possibility of self-positioning in rotation in relation to the femur, which can be achieved by a few flexion/ extension movements and knee joint reduced <strong>(Fig. 27b)</strong>.</p>
-        <image-big src="{{vm.getImageUrl(25)}}"></image-big>
+        <image-big pic="vm.getImageByIdx(25)"></image-big>
         <p><strong>• Femoral component</strong></p>
         <p>A grip extractor facilitates the positioning of the femur. Care must be taken at this point with its mediolateral positioning it is from this position that the centring holes will be drilled.</p>
         <p><strong>Drilling of plugs and preparation of the trochlea (5 in 1 technique)</strong></p>
         <p>The centring of the femoral component is checked, and the stud holes made using the drill with stop <strong>(Fig. 28)</strong>.
-            <image-big src="{{vm.getImageUrl(26)}}"></image-big>
+            <image-big pic="vm.getImageByIdx(26)"></image-big>
             <p>If the 5 in 1 technique was used, the trochlea must be prepared with a specific chisel introduced into the orifice provided for this purpose and driven in with a hammer <strong>(Fig. 29)</strong>.</p>
-            <image-big src="{{vm.getImageUrl(27)}}"></image-big>
+            <image-big pic="vm.getImageByIdx(27)"></image-big>
             <p><strong>Preparation of the posterior stabilisation cage for fixed bearing</strong></p>
             <p>The milling support is placed in the Preparation opening of the trochlea in the femoral Trial piece, it is fixed by a pin, and the milling tool then used with the motor, driven in to the end stop to create the posterior stabilisation cage
                 <strong>(Fig. 30)</strong>.</p>
-            <image-big src="{{vm.getImageUrl(28)}}"></image-big>
+            <image-big pic="vm.getImageByIdx(28)"></image-big>
             <p><strong>Preparation of the tibial stem</strong></p>
             <p>Preparation of the tibial stem is performed by placing the perforation guide on the Trial base and by impacting the perforator of the corresponding size up to the end stop (there is a perforator for two sizes of base) <strong>(Fig. 31)</strong>.<br>                According to the operator’s choice, the perforator enables the recovery of a bone core (which will seal off the entry hole of the femoral alignment) or compaction of the trabecular network <strong>(Fig. 32)</strong>.</p>
-            <image-big src="{{vm.getImageUrl(29)}}"></image-big>
+            <image-big pic="vm.getImageByIdx(29)"></image-big>
             <p>In the case of preparation in dense bone, it is recommended to begin by using a 3.2 mm drill in the slots of the guide.</p>
     </section>
     <section>
@@ -202,8 +202,8 @@ performing femoral cuts in anterior referencing.</strong><br> In this case the a
             anchorage hole for the patella will be created using the drill with stop passed through a specific stemhead fitting
             <strong>(Fig. 34)</strong>.</p>
         <p>Medialisation of the final implant is possible simply by offsetting the stemhead fitting.<br> The calliper trial will enable verification that the patella thickness has indeed been adhered to.</p>
-        <image-big src="{{vm.getImageUrl(30)}}"></image-big>
-        <image-big src="{{vm.getImageUrl(31)}}"></image-big>
+        <image-big pic="vm.getImageByIdx(30)"></image-big>
+        <image-big pic="vm.getImageByIdx(31)"></image-big>
     </section>
     <section>
         <md-subheader class="md-primary">ORDER OF IMPLANTATION</md-subheader>
@@ -216,27 +216,27 @@ performing femoral cuts in anterior referencing.</strong><br> In this case the a
         <p>The tibia will be dislocated forwards using a retractor to enable correct placement of the polyethylene insert. Its installation is performed by an oblique front to back and top to bottom movement to enable the posterior rims to engage properly
             in the throat of the base. Clip contact is achieved with an oblique blow applied with the specific impactor and patella if appropriate <strong>(Fig. 39a)</strong>.</p>
         <p><strong>>> Tibial component PS</strong></p>
-        <image-big src="{{vm.getImageUrl(32)}}"></image-big>
+        <image-big pic="vm.getImageByIdx(32)"></image-big>
         <p><strong>>> For a CR or MB prosthesis</strong></p>
         <p>The polyethylene insert will be installed just after the base, and the femoral component will be installed last
             <strong>(Fig. 37b, 38b, 39b and 40)</strong>.</p>
-        <image-big src="{{vm.getImageUrl(33)}}"></image-big>
+        <image-big pic="vm.getImageByIdx(33)"></image-big>
         <p><strong>>> Tibial component MB</strong></p>
-        <image-big src="{{vm.getImageUrl(34)}}"></image-big>
+        <image-big pic="vm.getImageByIdx(34)"></image-big>
     </section>
     <section>
         <md-subheader class="md-primary">INSTRUMENTATION</md-subheader>
-        <image-big src="{{vm.getImageUrl(35)}}"></image-big>
-        <image-big src="{{vm.getImageUrl(36)}}"></image-big>
+        <image-big pic="vm.getImageByIdx(35)"></image-big>
+        <image-big pic="vm.getImageByIdx(36)"></image-big>
     </section>
     <section>
         <md-subheader class="md-primary">INSTRUMENTATION (contd.)</md-subheader>
-        <image-big src="{{vm.getImageUrl(37)}}"></image-big>
-        <image-big src="{{vm.getImageUrl(38)}}"></image-big>
-        <image-big src="{{vm.getImageUrl(39)}}"></image-big>
+        <image-big pic="vm.getImageByIdx(37)"></image-big>
+        <image-big pic="vm.getImageByIdx(38)"></image-big>
+        <image-big pic="vm.getImageByIdx(39)"></image-big>
     </section>
     <section>
         <md-subheader class="md-primary">INSTRUMENTATIONS COMPOSITIONS</md-subheader>
-        <image-big src="{{vm.getImageUrl(40)}}"></image-big>
+        <image-big pic="vm.getImageByIdx(40)"></image-big>
     </section>
 </md-content>

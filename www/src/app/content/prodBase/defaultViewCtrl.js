@@ -14,7 +14,7 @@
         vm.title = vm.stateName;
         console.log($state);
 
-        vm.getImageUrl = getImageUrl;
+        vm.getImageByIdx = getImageByIdx;
         vm.images = cF.getImageList(vm.title);
         vm.menuShow = menuShow
         var parentState = statesHelp.getParent(vm.stateName);
@@ -23,8 +23,8 @@
 
         vm.settings = cF.settings;
 
-        function getImageUrl(idx) {
-            return cF.getImageUrl(idx, vm.title);
+        function getImageByIdx(idx) {
+            return vm.imagesObj[idx]
         }
 
         function menuShow() {

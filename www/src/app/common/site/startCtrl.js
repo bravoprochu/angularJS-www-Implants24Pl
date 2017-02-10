@@ -5,13 +5,23 @@
         .module('app')
         .controller('startCtrl', startCtrl);
 
-    startCtrl.$inject = ['$location']; 
+    startCtrl.$inject = ['$timeout', '$window','commonFunctions']; 
 
-    function startCtrl($location) {
+    function startCtrl($timeout, $window, cF) {
         /* jshint validthis:true */
         var vm = this;
         vm.title = 'start';
 
+
+
+
+        angular.element($window).bind('resize', function () {
+            angular.element($window).bind('resize', function () {
+                $timeout(function () {
+                    cF.settingsUpdate();
+                }, 500);
+            });
+        });
 
 
     }

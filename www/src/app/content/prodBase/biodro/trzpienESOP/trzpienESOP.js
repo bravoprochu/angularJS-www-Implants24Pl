@@ -14,13 +14,13 @@
 
 
         vm.images = cF.getImageList(vm.title);
-        vm.getImageUrl = getImageUrl;
+        vm.getImageByIdx = getImageByIdx;
         
         vm.menuShow = menuShow;
         vm.settings = cF.settings;
 
-        function getImageUrl(idx) {
-            return cF.getImageUrl(idx, vm.title);
+        function getImageByIdx(idx) {
+            return vm.imagesObj[idx]
         }
 
         function menuShow() {

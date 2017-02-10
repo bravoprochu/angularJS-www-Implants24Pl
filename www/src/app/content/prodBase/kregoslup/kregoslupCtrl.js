@@ -14,7 +14,7 @@
 
         vm.stateName = $state.current.name;
 
-        vm.getImageUrl = getImageUrl;
+        vm.getImageByIdx = getImageByIdx;
         vm.images = cF.getImageList(vm.title);
         vm.menu = statesHelp.prepMenu(vm.stateName);
         vm.settings = cF.settings;
@@ -26,8 +26,8 @@
             vm.isParent = statesHelp.isParent(toState.name);
         });
 
-        function getImageUrl(idx) {
-            return cF.getImageUrl(idx, vm.title);
+        function getImageByIdx(idx) {
+            return vm.imagesObj[idx]
         }
 
         imagePreload.preload(vm.images, vm.title).then(function (ok) {

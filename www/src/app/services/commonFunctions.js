@@ -10,14 +10,8 @@
     function commonFunctions($mdDialog, $mdMedia, $timeout, $window, $state, imagesUrl, toastr, statesHelp) {
 
         var configData = {};
-        var settings = {
-            height:$window.innerHeight,
-            isHorizontal: ($window.innerWidth*0.8) >= $window.innerHeight ? true: false,
-            size: function () { return $window.innerWidth >= $window.innerHeight ? Math.round($window.innerHeight * 0.9) : Math.round($window.innerWidth * 0.9) }(),
-            sizeFull: function () { return ($window.innerWidth) >= $window.innerHeight ? Math.round($window.innerHeight*0.9) : Math.round($window.innerWidth*0.9) }(),
-            width:$window.innerWidth
-        }
-
+        var settings = {}
+        settingsUpdate();
 
         return {
             checkMenuStates: checkMenuStates,
@@ -36,9 +30,8 @@
             menuShowIfState: menuShowIfState,
             menuPrepare: menuPrepare,
             slideToState: slideToState,
-            screenWidth: $window.innerWidth,
-            screenHeigh: $window.innerHeight,
             settings: settings,
+            settingsUpdate:settingsUpdate
         };
 
         
@@ -187,6 +180,18 @@
 
 
         };
+
+        function settingsUpdate() {
+            settings.partW = $mdMedia('gt-md') ? 0.65 : 0.88;
+            settings.partH = 0.85;
+            settings.height= $window.innerHeight;
+            settings.isHorizontal= ($window.innerWidth) >= $window.innerHeight ? true : false;
+            settings.viewHeight = Math.round($window.innerHeight * settings.partH);
+            settings.viewWidth = Math.round($window.innerWidth * settings.partW);
+            settings.width = $window.innerWidth;
+        }
+        
+
 
         function slideToState(menu, nextOrPrev) {
             //default direction is forward (true)

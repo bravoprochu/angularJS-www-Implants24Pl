@@ -1,7 +1,7 @@
-﻿<md-content style="height:{{vm.settings.size}}px">
+﻿<md-content style="height:{{vm.settings.viewHeight}}px">
     <section>
         <md-subheader class="md-primary">TRIAL GLENOSPHERE</md-subheader>
-        <image-big src="{{vm.getImageUrl(16)}}" />
+        <image-big pic="vm.getImageByIdx(16)"></image-big>
         <p>
             Remove the screw from the trial glenosphere.
             Put the trial glenosphere in place with the glenosphere
@@ -14,7 +14,7 @@
     </section>
     <section>
         <md-subheader class="md-primary">TRIAL HUMERAL INSERT</md-subheader>
-        <image-big src="{{vm.getImageUrl(17)}}" />
+        <image-big pic="vm.getImageByIdx(17)"></image-big>
         <p>
             Impact the trial humeral insert onto the trial rasp.
             Impaction handle: <strong>ref. 261 009</strong>
@@ -33,7 +33,7 @@
             <div flex>{{item.col2}}</div>
             <div>{{item.col3}}</div>
         </div>
-        <image-big src="{{vm.getImageUrl(18)}}" />
+        <image-big pic="vm.getImageByIdx(18)"></image-big>
     </section>
     <section>
         <md-subheader class="md-primary">FULL TRIAL TEST</md-subheader>

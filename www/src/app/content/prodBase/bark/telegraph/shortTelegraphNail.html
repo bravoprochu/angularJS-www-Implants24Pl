@@ -1,4 +1,4 @@
-﻿<md-content style="height:{{vm.settings.size}}px">
+﻿<md-content style="height:{{vm.settings.viewHeight}}px">
     <section>
         <md-subheader class="md-primary">2. SHORT TELEGRAPH ® NAIL</md-subheader>
         <p>
@@ -20,7 +20,7 @@
             by external manoeuvres or percutaneously using a spatula or a
             pin (joystick manoeuvre, fig. 9).
         </p>
-        <image-big src="{{vm.getImageUrl(5)}}"></image-big>
+        <image-big pic="vm.getImageByIdx(5)"></image-big>
         <p>
             short pre-acromion incision makes it possible to introduce
             the blunt scissors until they come into contact with the head
@@ -53,8 +53,8 @@
             acromiocoracoid ligament. This approach is direct for the
             various fragments and, in particular, the tuberosities (fig. 11).
         </p>
-        <image-big src="{{vm.getImageUrl(6)}}"></image-big>
-        <image-big src="{{vm.getImageUrl(7)}}"></image-big>
+        <image-big pic="vm.getImageByIdx(6)"></image-big>
+        <image-big pic="vm.getImageByIdx(7)"></image-big>
         <p>
             The fragments are reduced using a spatula, a Lambotte hook
             or external manoeuvres.
@@ -94,6 +94,6 @@
             head, to each other, to the nail and to the proximal part of the
             diaphysis. (fig. 15)
         </p>
-        <image-big src="{{vm.getImageUrl(8)}}"></image-big>
+        <image-big pic="vm.getImageByIdx(8)"></image-big>
     </section>
 </md-content>

@@ -19,12 +19,12 @@
 
         $stateProvider
 
-            .state('main', {
-            abstract: true,
-            templateUrl: 'app/common/site/start.html',
-            controller: 'startCtrl',
-            controllerAs: 'vm'
-        })
+        .state('main', {
+        abstract: true,
+        templateUrl: 'app/common/site/start.html',
+        controller: 'startCtrl',
+        controllerAs: 'vm'
+    })
 
         .state('home', {
             data: {

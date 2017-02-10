@@ -14,20 +14,19 @@
 
         vm.images = cF.getImageList(vm.title);
         vm.getImageUrl = getImageUrl;
-        
         vm.menuShow = menuShow;
         vm.settings = cF.settings;
-
-        function getImageUrl(idx) {
-            return cF.getImageUrl(idx, vm.title);
-        }
 
         function menuShow() {
             return cF.menuShowIfState(vm.title);
         };
 
 
-        imagePreload.preload(vm.images, vm.title).then(function (ok) {
+        function getImageUrl(idx) {
+            return cF.getImageUrl(idx, vm.title);
+        }
+
+        imagePreload.preload(vm.images, vm.title).then(function (images) {
             vm.startMode = true;
         }, function (error) {
             console.log(error);

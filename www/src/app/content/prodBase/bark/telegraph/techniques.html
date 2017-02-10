@@ -1,4 +1,4 @@
-﻿<md-content style="height:{{vm.settings.size}}px">
+﻿<md-content style="height:{{vm.settings.viewHeight}}px">
     <section>
         <md-subheader class="md-primary">Mixed Operating Technique<br>Humerus nail Short and Long</md-subheader>
     </section>
@@ -23,7 +23,7 @@
             tubercle or to perfect the osteosynthesis of the two
             frontal screws.
         </p>
-        <image-big src="{{vm.getImageUrl(3)}}"></image-big>
+        <image-big pic="vm.getImageByIdx(3)"></image-big>
     </section>
     <section>
         <md-subheader class="md-primary">1.5 Distal screwing</md-subheader>
@@ -38,6 +38,6 @@
             this level (cortical bone);<br>
             - locking.
         </p>
-        <image-big src="{{vm.getImageUrl(4)}}"></image-big>
+        <image-big pic="vm.getImageByIdx(4)"></image-big>
     </section>
 </md-content>

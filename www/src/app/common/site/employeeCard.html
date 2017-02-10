@@ -1,7 +1,7 @@
 ﻿<md-card layout="column" layout-padding layout-align="center center">
     <div class="md-title">{{name}}</div>
     <div layout layout-align="center center">
-        <div layout>
+        <div layout="column" layout-gt-md="row">
             <div ng-if="phone" layout layout-align="start center">
                 <md-button class="md-icon-button" aria-label="{{name}}_phone" ng-click="callMe()">
                     <md-icon md-svg-icon="phone"></md-icon>
