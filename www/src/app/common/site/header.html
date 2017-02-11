@@ -1,7 +1,7 @@
-﻿<md-sidenav class="md-sidenav-right" md-component-id="sidenav" md-disable-backdrop="" md-whiteframe="8">
+﻿<md-sidenav class="md-sidenav-right" md-component-id="sidenav" md-disable-backdrop="" md-whiteframe="8" md-is-open="sideNavIsOpen">
     <md-toolbar>
         <div class="md-toolbar-tools">
-            <md-button class="md-icon-button" ui-sref="home" aria-label="goHome">
+            <md-button class="md-icon-button" ui-sref="home" aria-label="goHome" ng-click="goTo()">
                 <md-icon md-svg-icon="home"></md-icon>
             </md-button>
             <span>MENU</span>
@@ -18,7 +18,7 @@
 
     <md-content layout-margin layout-align="start center">
         <md-list>
-            <md-list-item ng-repeat="m in menu" ui-sref="{{m.name}}" ng-if="menu">
+            <md-list-item ng-repeat="m in menu" ng-click="goTo(m.name)" ui-sref="{{m.name}}" ng-if="menu" ui-sref-active="listItemSelected">
                 <p>{{m.data.caption}}</p>
                 <md-divider></md-divider>
             </md-list-item>

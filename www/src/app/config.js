@@ -47,6 +47,8 @@
             .icon('login', 'fonts/login_24px.svg', 24)
             .icon('location', 'fonts/ic_location_on_black_24px.svg')
             .icon('menu', 'fonts/ic_menu_24px.svg', 24)
+            .icon('navNext', 'fonts/ic_navigate_next_black_24px.svg', 24)
+            .icon('navPrev', 'fonts/ic_navigate_before_black_24px.svg', 24)
             .icon('more_vert', 'fonts/ic_more_vert_24px.svg', 24)
             .icon('qrCode', 'fonts/qrcode-512px.svg', 24)
             .icon('pause', 'fonts/ic_pause_circle_outline_black_24px.svg', 24)

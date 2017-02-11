@@ -40,22 +40,24 @@
             return null;
         }
 
-        function goNext() {
-            var menu = prepMenu($state.current.name);
-            if (menu.length == 0) return;
-            var currState = $state.current;
-            var idx = menu.indexOf(currState);
-            if (idx - 1 < 0) return;
-            $state.go(menu[idx - 1].name);
+        function goNext(stateName) {
+            var menu = prepMenu(stateName.name);
+            if (menu.length == 0) return null;
+            //            var currState = $state.current;
+            var idx = menu.indexOf(stateName);
+            if (idx + 1 == menu.length) return null;
+            // $state.go(menu[idx + 1].name);
+            return menu[idx + 1];
         }
 
-        function goPrev(menu) {
-            var menu = prepMenu($state.current.name);
-            if (menu.length == 0) return;
-            var currState = $state.current;
-            var idx = menu.indexOf(currState);
-            if (idx + 1 == menu.length) return;
-            $state.go(menu[idx + 1].name);
+        function goPrev(stateName) {
+            var menu = prepMenu(stateName.name);
+            if (menu.length == 0) return null;
+            //            var currState = $state.current;
+            var idx = menu.indexOf(stateName);
+            if (idx - 1 < 0) return null;
+            // $state.go(menu[idx - 1].name);
+            return menu[idx - 1];
         }
 
         function isParent(stateName) {

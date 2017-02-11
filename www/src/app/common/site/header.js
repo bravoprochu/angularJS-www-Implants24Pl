@@ -30,12 +30,13 @@
             scope.menuCrumb = statesHelp.prepMenuCrumb(currState.name);
             scope.isHome = currState.name == 'home' ? true : false;
             scope.sidenavToggle = sidenavToggle;
-
+            scope.sideNavIsOpen = false;
 
 
 
             var parentState = statesHelp.getParent(currState.name);
             scope.parentState = parentState != null ? parentState.name : null;
+
 
             $rootScope.$on('$stateChangeSuccess',
             function (event, toState, toParams, fromState, fromParams) {
@@ -45,12 +46,18 @@
                 scope.menuCrumb = statesHelp.prepMenuCrumb(toState.name);
                 scope.isHome = toState.name == 'home' ? true : false;
             });
+
+            $rootScope.$watch('sideNavIsOpen', function (newVal) {
+
+            });
             
             function goTo(state) {
-                $state.go(state);
+//                $state.go(state);
+                scope.sideNavIsOpen = false;
             }
 
             function goParent() {
+                scope.sideNavIsOpen = false;
                 $state.go(scope.parentState);
             }
 

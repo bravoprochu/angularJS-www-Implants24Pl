@@ -1,3 +1,8 @@
+.listItemSelected {
+  background-color: #808080;
+  color:snow;
+}
+
 .tileHeaderBackground {
     /*background:#2b2b2b;*/
     background-color: #909090;
@@ -22,11 +27,7 @@ cursor:pointer;
     margin-bottom: 5px;
 }
 
-.swipeInfo{
-    position:absolute;
-    top:50px;
-    right:25px;
-}
+
 
 .podkreslenie {
 font-style:italic;
@@ -47,35 +48,3 @@ font-size:larger;
     color:#808080;
 }
 
-
-
-
-
-
-
-
-/*.ng-leave {
-    transition: all 0.1s linear;
-}*/
-
-
-.ng-enter {
-    transition: all 1.2s ease;
-}
-
-.ng-enter {
-    opacity:0;
-}
-
-
-.ng-enter-active{
-    opacity: 1;
-}
-
-.ng-leave {
-    opacity: 1;
-}
-
-.ng-leave-active {
-    opacity: 0;
-}

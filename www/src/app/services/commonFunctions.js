@@ -107,11 +107,15 @@
             fileName.reverse().splice(fileName.length - 1, 1);
             urlArr.reverse().splice(urlArr.length - 1, 1);
 
-            return {
+            var result = {
                 fileName : fileName.join(""),
                 rozszerzenie : rozszerzenie.join(""),
-                domena : urlArr.join("")
+                domena: urlArr.join(""),
             }
+            result.fileNameBig = result.domena +"/"+ result.fileName + "_big." + result.rozszerzenie;
+
+
+            return result;
         }
 
         function getImageList(key) {
