@@ -552,17 +552,33 @@
                 controller: 'kolanoFHKCtrl',
                 controllerAs: 'vm',
             })
-            .state('kolanoFHKTechnikiOperacyjne', {
-                parent: 'kolanoFHK',
+                .state('kolanoFHKTechnikiOperacyjne', {
+                    parent: 'kolanoFHK',
+                    data: {
+                        caption: 'Techniki operacyjne'
+                    },
+                    url: "/technikiOperacyjne",
+                    templateUrl: "app/content/prodBase/kolano/fhk/technikiOperacyjne.html",
+                })
+
+            .state('kolanoTLS', {
+                parent: 'kolano',
                 data: {
-                    caption: 'Techniki operacyjne'
+                    caption: 'TLS'
                 },
-                url: "/technikiOperacyjne",
-                templateUrl: "app/content/prodBase/kolano/fhk/technikiOperacyjne.html",
+                url: "/TLS",
+                templateUrl: "app/content/prodBase/prodBaseSpecyfikacje.html",
+                controller: 'kolanoTLSCtrl',
+                controllerAs: 'vm',
             })
-
-
-
+                .state('kolanoTLSTechnikiOperacyjne', {
+                    parent: 'kolanoTLS',
+                    data: {
+                        caption: 'Techniki operacyjne'
+                    },
+                    url: "/technikiOperacyjne",
+                    templateUrl: "app/content/prodBase/kolano/tls/technikiOperacyjne.html",
+                })
 
 
 

@@ -17,9 +17,9 @@
         vm.goParent = goParent;
         vm.goTo = goTo;
         vm.images = cF.getImageList(vm.title);
+        vm.isParent = statesHelp.isParent(vm.stateName)
         vm.menu = statesHelp.prepMenu(vm.stateName);
         vm.settings = cF.settings;
-        vm.isParent = statesHelp.isParent(vm.stateName)
         vm.stateNext = statesHelp.goNext($state.current);
         vm.statePrev = statesHelp.goPrev($state.current);
 
