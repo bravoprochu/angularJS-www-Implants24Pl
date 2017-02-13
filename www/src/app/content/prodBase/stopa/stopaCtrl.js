@@ -3,43 +3,30 @@
 
     angular
         .module('app')
-        .controller('kregoslupCtrl', kregoslupCtrl);
+        .controller('stopaCtrl', stopaCtrl);
 
-    kregoslupCtrl.$inject = ['$rootScope', '$state', 'commonFunctions', 'imagePreload', 'statesHelp'];
+    stopaCtrl.$inject = ['$rootScope', '$state', 'commonFunctions', 'imagePreload', 'statesHelp'];
 
-    function kregoslupCtrl($rootScope, $state, cF, imagePreload, statesHelp) {
+    function stopaCtrl($rootScope, $state, cF, imagePreload, statesHelp) {
         /* jshint validthis:true */
         var vm = this;
         vm.title = 'stopa';
 
-        vm.stateName = $state.current.name;
-
-        vm.getImageByIdx = getImageByIdx;
         vm.images = cF.getImageList(vm.title);
-        vm.menu = statesHelp.prepMenu(vm.stateName);
+        vm.getImageUrl = getImageUrl;
+        vm.menuShow = menuShow;
         vm.settings = cF.settings;
-        vm.isParent = statesHelp.isParent(vm.stateName);
-        vm.stateNext = statesHelp.goNext;
-        vm.statePrev = statesHelp.goPrev;
 
-        $rootScope.$on('$stateChangeStart', function (event, toState, toParams, fromState, fromParams) {
-            vm.isParent = statesHelp.isParent(toState.name);
-        });
+        function menuShow() {
+            return cF.menuShowIfState(vm.title);
+        };
 
-        function getImageByIdx(idx) {
-            return vm.imagesObj[idx]
+
+        function getImageUrl(idx) {
+            return cF.getImageUrl(idx, vm.title);
         }
 
-        imagePreload.preload(vm.images, vm.title).then(function (ok) {
-            vm.startMode = true;
-        }, function (error) {
-            console.log(error);
-        }, function (notify) {
-            vm.preloadInfo = notify;
-        });
-
-
-        imagePreload.preload(vm.images, vm.title).then(function (ok) {
+        imagePreload.preload(vm.images, vm.title).then(function (images) {
             vm.startMode = true;
         }, function (error) {
             console.log(error);

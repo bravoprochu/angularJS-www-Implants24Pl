@@ -284,7 +284,28 @@
             ],
 
 
+            kregoslup: [
+                "images/kregoslup/kregoslup_cervicalProsthesis1.png",
+                "images/kregoslup/kregoslup_cervicalProsthesis2.png",
+                "images/kregoslup/kregoslup_cervicalProsthesis3.png",
+                "images/kregoslup/kregoslup_cervicalProsthesis4.png",
+                "images/kregoslup/kregoslup_lumbarProsthesis1.png",
+                "images/kregoslup/kregoslup_lumbarProsthesis2.png",
+                "images/kregoslup/kregoslup_lumbarProsthesis3.png",
+                "images/kregoslup/kregoslup_lumbarProsthesis4.png",
+                "images/kregoslup/kregoslup_lumbarProsthesis5.png",
+                "images/kregoslup/kregoslup_esp1.png",
 
+            ],
+
+            stopa: [
+                "images/stopa/calcanailLogo.png",
+            ],
+            stopaCalcanail: [
+                "images/stopa/calcanail/technikaSkrocona_00_jakToDziala.png",
+                "images/stopa/calcanail/technikaSkrocona_01_zalety.png",
+                "images/stopa/calcanail/technikaSkrocona_02_gwozdzie.png",
+            ],
 
         }
 
