@@ -1,0 +1,140 @@
+﻿<div label="Origin" layout-gt-sm="row" layout-wrap>
+    <md-card flex-sm="100" flex-xs="100" flex-md="50" flex-gt-md="45">
+        <img ng-src="images/spine_esp1.png" class="md-card-image" alt="tibial1" />
+        <md-card-content>
+            <div class="md-subhead">Concept of a "Silent Block" ESP</div>
+            <div class="md-body-1">
+                <p>
+                    The development of the ESP disc range originally came from Professor Roy
+                    Camille, from La Pitié Salpétrière Teaching Hospital in Paris (France). After
+                    inventing the pedicle screw which became the gold standard for Spine fusions,
+                    Pr. Roy Camille started to work on analysing the natural disc properties and
+                    designed a prosthesis to restore these.
+                </p>
+            </div>
+            <div class="md-subhead">LP-ESP Indications</div>
+            <div class="md-body-1">
+                <p>
+                    <ul>
+                        <li>Lumbar discopathy that is resistant to medical treatment</li>
+                        <li>Lumbar discopathy disease after treatment of a herniated disc</li>
+                        <li>Radiculopathy by a recurrence of a disc hernia (except for excluded hernias)</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="md-subhead">CP-ESP Indications</div>
+            <div class="md-body-1">
+                <p>
+                    The CP-ESP cervical disc prosthesis is designed for specific indications
+                    detailed in the sales literature, such as:<br />
+                    Symptomatic cervical discopathy, defined as (radicular) pain and/or a
+                    functional/neurological deficit in the neck the arm with at least one of the
+                    following pathologies confirmed by imaging (computerised tomography, MRI
+                    or radiography) and having resisted medical treatment for at least 6 months.
+                    <ul>
+                        <li>Herniated nucleus pulposus</li>
+                        <li>Spondylitis (defined by the presence of osteophytes)</li>
+                        <li>Radicular compression</li>
+                        <li>Discal hernia</li>
+                        <li>Nerve compression</li>
+                    </ul>
+                </p>
+            </div>
+        </md-card-content>
+    </md-card>
+    <md-card flex-sm="100" flex-xs="100" flex-md="50" flex-gt-md="45">
+        <md-card-content>
+            <md-content>
+                <div class="md-title">Cervical discs</div>
+                <md-divider></md-divider>
+                <div layout layout-padding layout-align="space between start" ng-repeat="item in vm.cervicalDiscs" style="line-height: 0.5em" ng-class="{'md-body-2': $first}">
+                    <div>{{item.c1}}</div>
+                    <div>{{item.c2}}</div>
+                </div>
+            </md-content>
+            <div>&nbsp;</div>
+            <md-content>
+                <div class="md-title">Lumbar discs</div>
+                <md-divider></md-divider>
+                <div layout layout-padding layout-align="space between start" ng-repeat="item in vm.lumbarDiscs" style="line-height: 0.5em" ng-class="{'md-body-2': $first}">
+                    <div>{{item.c1}}</div>
+                    <div>{{item.c2}}</div>
+                </div>
+            </md-content>
+        </md-card-content>
+    </md-card>
+    <md-card flex="100">
+        <md-card-content>
+            <div class="md-subhead">Bibliography</div>
+            <div class="md-body-1">
+                <ul>
+                    <li>
+                        Concept and early results of the ESP six degrees of freedom total disc replacement
+                        Rousseau MA, Lazennec JY, Pascal-Mousselard H, Ricart O, Saillant.
+                        G Spine Arthroplasty Society 2007.
+                    </li>
+                    <li>
+                        Pioneering experience with the first bi-composite polymeric disc prosthesis : technical aspects,
+                        experimental data and 3 years multicentric clinical evaluation.
+                        Lazennec JY, Pascal-Mousselard H, Ricart O, Rakover JP, Rousseau MA..
+                        Spine Arthroplasty Society 2009.
+                    </li>
+                    <li>
+                        6 years clinical experience with the first bi-elastomeric lumbar disc prosthesis.
+                        Lazennec JY.<br />
+                        EFORT meeting 2011.
+                    </li>
+                    <li>
+                        6 years clinical experience with the first bi elastomeric lumbar disc prosthesis.
+                        Lazennec JY, Rakover JP, Aaron A, Mousselard HP , Rousseau MA.
+                        J. Bone Joint Surg Br 2012 94-B:(SUPP XXXVII) 273.
+                    </li>
+                    <li>
+                        The LP-ESP Lumbar Disc Prosthesis: Concept, Development and Clinical Experience.
+                        Lazennec JY, Aaron A, Brusson A, Rakover JP, Rousseau MA.
+                        InTech 2013. (Arthroplasty Update) Plamen Kinov Ed ,ISBN 978-953-51-0995-2
+                        doi:10.5772/53726.
+                    </li>
+                    <li>
+                        The Viscoelastic LP-ESP Lumbar Disc Prosthesis With 6 Degrees of Freedom : A Prospective Study
+                        of 120 Patients With Two Years Minimum Follow-Up.
+                        Lazennec JY, Brusson A, Rakover JP , Rousseau MA.
+                        Bone Joint J. 2013 95-B:(SUPP 34) 389.
+                    </li>
+                    <li>
+                        The LP-ESP(®) lumbar disc prosthesis with 6 degrees of freedom: development and 7 years of
+                        clinical experience.
+                        Lazennec JY, Aaron A, Brusson A, Rakover JP, Rousseau MA.
+                        Eur J Orthop Surg Traumatol. 2013 Feb;23(2):131-43. doi: 10.1007/s00590-012-1166-x.
+                    </li>
+                    <li>
+                        The Viscoelastic LP ESP Lumbar Disc Prosthesis With 6 Degrees of Freedom: A Prospective Study
+                        of 120 Patients With 2 Years Minimum FollowUp.
+                        Lazennec JY.<br />
+                        ISTA meeting 2013.
+                    </li>
+                    <li>
+                        Clinical outcomes, radiologic kinematics, and effects on sagittal balance of the 6-degrees-offreedom
+                        LP-ESP® lumbar disc prosthesis.
+                        Lazennec JY, Even J, Skalli W, Rakover JP, Brusson A, Rousseau MA.
+                        Spine J. 2013 Nov 18. doi:pii: S1529-9430(13)01726-9. 10.1016/j.spinee.2013.11.016.
+                    </li>
+                    <li>
+                        The viscoelastic LP-ESP lumbar disc prosthesis with 6 degrees of freedom: a prospective study of
+                        120 patients with 2 years minimum follow-up.
+                        Lazennec JY, Aaron A, Brusson A, Rakover JP, Rousseau MA.<br />
+                        The Spine society of Australia 2013 (24th annual meeting).
+                    </li>
+                    <li>
+                        The viscoelastic CP-ESP cervical disc prosthesis with 6 degrees of freedom : a prospective study
+                        of 49 patients with 1 year follow-up.
+                        Lazennec JY, Brusson A, Ricart O, Rakover JP.<br />
+                        The Spine society of Australia 2014 (25th annual meeting).
+                    </li>
+                </ul>
+
+            </div>
+        </md-card-content>
+    </md-card>
+
+</div>

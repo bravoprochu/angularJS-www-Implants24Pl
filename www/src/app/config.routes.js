@@ -580,21 +580,56 @@
                     templateUrl: "app/content/prodBase/kolano/tls/technikiOperacyjne.html",
                 })
 
-
-
-
         .state('kregoslup', {
             parent: 'prodBase',
             data: {
-                caption: 'Kregos�up'
+                caption: 'kregoslup'
             },
-            url: "/kolano",
-            templateUrl: "app/content/prodBase/kolano/kolano.html",
+            url: "/kregoslup",
+            templateUrl: "app/content/prodBase/prodBaseSpecyfikacje.html",
             controller: 'kregoslupCtrl',
             controllerAs: 'vm',
         })
+                       .state('kregoslupOrigin', {
+                           parent: 'kregoslup',
+                           data: {
+                               caption: 'Origin of the development'
+                           },
+                           url: "/origin",
+                           templateUrl: "app/content/prodBase/kregoslup/origin.html",
+                       })
+                       .state('kregoslupLumbarProsthesis', {
+                           parent: 'kregoslup',
+                           data: {
+                               caption: 'Lumbar prosthesis'
+                           },
+                           url: "/lumbarProsthesis",
+                           templateUrl: "app/content/prodBase/kregoslup/lumbarProsthesis.html",
+                       })
+                       .state('kregoslupCervicalProsthesis', {
+                           parent: 'kregoslup',
+                           data: {
+                               caption: 'Cervical prosthesis'
+                           },
+                           url: "/cervicalProsthesis",
+                           templateUrl: "app/content/prodBase/kregoslup/cervicalProsthesis.html",
+                       })
 
 
+
+
+
+
+        .state('stopa', {
+            parent: 'prodBase',
+            data: {
+                caption: 'Stopa'
+            },
+            url: "/stopa",
+            templateUrl: "app/content/prodBase/stopa/stopa.html",
+            controller: 'stopaCtrl',
+            controllerAs: 'vm',
+        })
 
 
 
@@ -850,40 +885,7 @@
         //                   templateUrl: "app/content/prodBase/knee/customInstumentation.html",
         //               })
 
-        //.state('spine', {
-        //    parent: 'prodBase',
-        //    data: {
-        //        caption: 'Spine'
-        //    },
-        //    url: "/spine",
-        //    templateUrl: "app/content/prodBase/prodBaseSpecyfikacje.html",
-        //    controller: 'spineCtrl',
-        //    controllerAs: 'vm',
-        //})
-        //               .state('spineOrigin', {
-        //                   parent: 'spine',
-        //                   data: {
-        //                       caption: 'Origin of the development'
-        //                   },
-        //                   url: "/origin",
-        //                   templateUrl: "app/content/prodBase/spine/origin.html",
-        //               })
-        //               .state('spineLumbarProsthesis', {
-        //                   parent: 'spine',
-        //                   data: {
-        //                       caption: 'Lumbar prosthesis'
-        //                   },
-        //                   url: "/lumbarProsthesis",
-        //                   templateUrl: "app/content/prodBase/spine/lumbarProsthesis.html",
-        //               })
-        //               .state('spineCervicalProsthesis', {
-        //                   parent: 'spine',
-        //                   data: {
-        //                       caption: 'Cervical prosthesis'
-        //                   },
-        //                   url: "/cervicalProsthesis",
-        //                   templateUrl: "app/content/prodBase/spine/cervicalProsthesis.html",
-        //               })
+
 
 
         //.state('hip', {
