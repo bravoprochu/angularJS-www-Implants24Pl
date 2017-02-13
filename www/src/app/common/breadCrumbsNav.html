@@ -8,8 +8,8 @@
         <span>&nbsp;|&nbsp;</span>
     </div>
     <div ng-repeat="m in menuCrumb track by $index">
-        <span ng-if="!$last" ng-click="goTo(m.name)" style="cursor:pointer" >{{m.data.caption}}</span>
+        <span ng-if="!$last" ui-sref="{{m.name}}" style="cursor:pointer" >{{m.data.caption}}</span>
         <span ng-if="!$last">|&nbsp;</span>
-        <span ng-if="$last" ng-click="goTo(m.name)" style="cursor:pointer">{{m.data.caption}}</span>
+        <span ng-if="$last" ui-sref="{{m.name}}" style="cursor:pointer">{{m.data.caption}}</span>
     </div>
 </div>

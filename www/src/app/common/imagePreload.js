@@ -49,18 +49,22 @@
         }
 
         function preload(imagesLinks, fromWho) {
+
             var defer = $q.defer();
             var deferAll = [];
             resolved = [];
             rejected = [];
             imagesTotal = imagesLinks.length;
 
-            angular.forEach(imagesLinks, function (img) {
-                if (img != null) { deferAll.push(preloadImage(img)); }
-            });
+
+            for (var i = 0; i < imagesLinks.length; i++) {
+                deferAll[i] = preloadImage(imagesLinks[i], i);
+            }
+
 
             $q.all(deferAll).then(function (ok) {
                 defer.resolve(resolved);
+                
             }, function (error) {
                 defer.reject(rejected);
             });
@@ -68,20 +72,18 @@
             return defer.promise;
 
 
-            function preloadImage(srcImg) {
+            function preloadImage(srcImg, idx) {
                 var deferImg = $q.defer();
                 var img = new Image();
                 img.src = srcImg;
                 img.onload = function ($event) {
-                    resolved.push(img);
+                    resolved[idx]=img;
                     deferImg.resolve(img);
-                    setInfo("Trwa pobieranie: " + fromWho+" "+ resolved.length + "/" + imagesTotal);
                     defer.notify('pobrałem: ' + srcImg);
                 }
                 img.onerror = function ($event) {
-                    rejected.push(srcImg)
+                    rejected[idx] = srcImg;
                     deferImg.reject(srcImg);
-                    setInfo("Trwa pobieranie: " + fromWho+" "+ resolved.length + "/" + imagesTotal);
                     defer.notify('błąd: ' + srcImg);
                 }
                 return deferImg.promise;

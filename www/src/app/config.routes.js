@@ -630,6 +630,33 @@
             controller: 'stopaCtrl',
             controllerAs: 'vm',
         })
+            .state('stopaCalcanail', {
+                parent: 'stopa',
+                data: {
+                    caption: 'Calcanail'
+                },
+                url: "/calcanail",
+                templateUrl: "app/content/prodBase/prodBaseSpecyfikacje.html",
+                controller: 'stopaCalcanailCtrl',
+                controllerAs: 'vm',
+            })
+                       .state('stopaCalcanailTechnikaOperacyjna', {
+                           parent: 'stopaCalcanail',
+                           data: {
+                               caption: 'Technika operacyjna'
+                           },
+                           url: "/technikaOperacyjna",
+                           templateUrl: "app/content/prodBase/stopa/calcanail/technikaOperacyjna.html",
+                       })
+                       .state('stopaCalcanailTechnikaSkrocona', {
+                           parent: 'stopaCalcanail',
+                           data: {
+                               caption: 'Technika skrócona'
+                           },
+                           url: "/technikaOperacyjna",
+                           templateUrl: "app/content/prodBase/stopa/calcanail/technikaSkrocona.html",
+                       })
+
 
 
 

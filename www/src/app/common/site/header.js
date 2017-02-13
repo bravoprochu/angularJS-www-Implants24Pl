@@ -27,9 +27,6 @@
                 cF.settingsUpdate();
             }, false);
 
-            
-            console.log(cF.settings);
-
             var currState = $state.current;
             scope.emailSend = cF.emailSend;
             scope.goParent = goParent;
