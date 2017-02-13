@@ -190,7 +190,8 @@
             settings.partH = 0.85;
             settings.height= $window.innerHeight;
             settings.isHorizontal= ($window.innerWidth) >= $window.innerHeight ? true : false;
-            settings.viewHeight = Math.round($window.innerHeight * settings.partH);
+            //settings.viewHeight = Math.round($window.innerHeight * settings.partH);
+            settings.viewHeight = Math.round(($window.innerHeight - (2*settings.headerHeight))*0.9);
             settings.viewWidth = Math.round($window.innerWidth * settings.partW);
             settings.width = $window.innerWidth;
         }

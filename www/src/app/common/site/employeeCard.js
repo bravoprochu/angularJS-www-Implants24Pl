@@ -19,7 +19,8 @@
                 fax:'@',
                 name:'@',
                 phone:'@',
-                email: '@'
+                email: '@',
+                stanowisko:'@'
 
                 
             },

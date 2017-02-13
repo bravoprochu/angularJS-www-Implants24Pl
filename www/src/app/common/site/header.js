@@ -5,9 +5,9 @@
         .module('app')
         .directive('header', header);
 
-    header.$inject = ['$mdSidenav','$rootScope', '$state', 'commonFunctions','statesHelp'];
+    header.$inject = ['$mdSidenav','$rootScope', '$state', '$timeout','commonFunctions','statesHelp'];
     
-    function header ($mdSidenav, $rootScope, $state, cF, statesHelp) {
+    function header ($mdSidenav, $rootScope, $state, $timeout, cF, statesHelp) {
         // Usage:
         //     <header></header>
         // Creates:
@@ -21,6 +21,15 @@
         return directive;
 
         function link(scope, element, attrs) {
+            
+            $timeout(function () {
+                cF.settings.headerHeight = element[0].clientHeight;
+                cF.settingsUpdate();
+            }, false);
+
+            
+            console.log(cF.settings);
+
             var currState = $state.current;
             scope.emailSend = cF.emailSend;
             scope.goParent = goParent;
@@ -36,6 +45,8 @@
 
             var parentState = statesHelp.getParent(currState.name);
             scope.parentState = parentState != null ? parentState.name : null;
+
+
 
 
             $rootScope.$on('$stateChangeSuccess',
