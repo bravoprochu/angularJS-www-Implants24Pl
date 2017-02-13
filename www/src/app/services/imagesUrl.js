@@ -277,12 +277,10 @@
             "images/kolano/tls/technikiOperacyjne_17_PassingTheThreads.png",
             "images/kolano/tls/technikiOperacyjne_18_PassingTheThreadsInTheFemur.png",
             "images/kolano/tls/technikiOperacyjne_19_impl.png",
-            "images/kolano/tls/technikiOperacyjne_19_impl_big.png",
             "images/kolano/tls/technikiOperacyjne_20_fixingTheFemur.png",
             "images/kolano/tls/technikiOperacyjne_21_fixingTheTibia.png",
             "images/kolano/tls/technikiOperacyjne_22_xRays.png",
             "images/kolano/tls/technikiOperacyjne_23_tlsTabs.png",
-            "images/kolano/tls/technikiOperacyjne_23_tlsTabs_big.png",
             ],
 
 
