@@ -328,6 +328,14 @@
 
 
             ],
+            stopaNarzedziaDoMiniinwazyjnejChirurgiiStopyMISCtrl: [
+                "images/stopa/narzedziaDoMiniinwazyjnejChirurgiiStopyMIS/narzedziaDoMiniinwazyjnejChirurgiiStopyMIS_22_completeSolution.png",
+                "images/stopa/narzedziaDoMiniinwazyjnejChirurgiiStopyMIS/narzedziaDoMiniinwazyjnejChirurgiiStopyMIS_23_instrumentation.png",
+                "images/stopa/narzedziaDoMiniinwazyjnejChirurgiiStopyMIS/narzedziaDoMiniinwazyjnejChirurgiiStopyMIS_24_set.png",
+
+
+
+            ],
 
         }
 
