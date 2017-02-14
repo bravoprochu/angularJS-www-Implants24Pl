@@ -640,14 +640,6 @@
                 controller: 'stopaCalcanailCtrl',
                 controllerAs: 'vm',
             })
-                       .state('stopaCalcanailTechnikaOperacyjna', {
-                           parent: 'stopaCalcanail',
-                           data: {
-                               caption: 'Technika operacyjna'
-                           },
-                           url: "/technikaOperacyjna",
-                           templateUrl: "app/content/prodBase/stopa/calcanail/technikaOperacyjna.html",
-                       })
                        .state('stopaCalcanailTechnikaSkrocona', {
                            parent: 'stopaCalcanail',
                            data: {
@@ -656,9 +648,40 @@
                            url: "/technikaOperacyjna",
                            templateUrl: "app/content/prodBase/stopa/calcanail/technikaSkrocona.html",
                        })
-
-
-
+                       .state('stopaCalcanailTechnikaOperacyjnaFracture', {
+                           parent: 'stopaCalcanail',
+                           data: {
+                               caption: 'Technika operacyjna fracture'
+                           },
+                           url: "/technikaOperacyjnaFracture",
+                           templateUrl: "app/content/prodBase/stopa/calcanail/technikaOperacyjnaFracture.html",
+                       })
+                       .state('stopaCalcanailTechnikaOperacyjnaSubtalarArthrodesis', {
+                           parent: 'stopaCalcanail',
+                           data: {
+                               caption: 'Technika operacyjna subtalar arthrodesis'
+                           },
+                           url: "/technikaOperacyjnaSubtalarArthrodesis",
+                           templateUrl: "app/content/prodBase/stopa/calcanail/technikaOperacyjnaSubtalarArthrodesis.html",
+                       })
+            .state('stopaNarzedziaDoMiniinwazyjnejChirurgiiStopyMIS', {
+                parent: 'stopa',
+                data: {
+                    caption: 'Narzedzia do miniinwazyjnej chirurgii stopy MIS'
+                },
+                url: "/narzedziaDoMiniinwazyjnejChirurgiiStopyMIS",
+                templateUrl: "app/content/prodBase/prodBaseSpecyfikacje.html",
+                controller: 'stopaNarzedziaDoMiniinwazyjnejChirurgiiStopyMISCtrl',
+                controllerAs: 'vm',
+            })
+                       .state('narzedziaDoMiniinwazyjnejChirurgiiStopyMIS', {
+                           parent: 'stopaNarzedziaDoMiniinwazyjnejChirurgiiStopyMIS',
+                           data: {
+                               caption: 'Technika operacyjna subtalar arthrodesis'
+                           },
+                           url: "/narzedziaDoMiniinwazyjnejChirurgiiStopyMIS",
+                           templateUrl: "app/content/prodBase/stopa/narzedziaDoMiniinwazyjnejChirurgiiStopyMIS/narzedziaDoMiniinwazyjnejChirurgiiStopyMIS.html",
+                       })
 
         //.state('calcanail', {
         //    parent: 'foot',

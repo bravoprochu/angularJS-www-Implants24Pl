@@ -300,6 +300,7 @@
 
             stopa: [
                 "images/stopa/calcanailLogo.png",
+                "images/stopa/narzedziaDoMiniinwazyjnejChirurgiiStopyMISLOGO.png"
             ],
             stopaCalcanail: [
                 "images/stopa/calcanail/technikaSkrocona_00_jakToDziala.png",
