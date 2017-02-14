@@ -333,8 +333,6 @@
                 "images/stopa/narzedziaDoMiniinwazyjnejChirurgiiStopyMIS/narzedziaDoMiniinwazyjnejChirurgiiStopyMIS_23_instrumentation.png",
                 "images/stopa/narzedziaDoMiniinwazyjnejChirurgiiStopyMIS/narzedziaDoMiniinwazyjnejChirurgiiStopyMIS_24_set.png",
 
-
-
             ],
 
         }
