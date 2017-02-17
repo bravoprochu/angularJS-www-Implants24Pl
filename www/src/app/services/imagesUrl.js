@@ -362,7 +362,7 @@
                     "images/stopa/srubyDoPrzestopia/technikiOperacyjne_33_2.png",
                     "images/stopa/srubyDoPrzestopia/technikiOperacyjne_34_3.png",
                     "images/stopa/srubyDoPrzestopia/technikiOperacyjne_35_4.png",
-                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/chevron_4_.png",
+                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/chevron_4.png",
                     "images/stopa/srubyDoPrzestopia/technikiOperacyjne/chevron_5_exosto.png",
                     "images/stopa/srubyDoPrzestopia/technikiOperacyjne/chevron_6_exosto.png",
                     "images/stopa/srubyDoPrzestopia/technikiOperacyjne/chevron_7_exosto.png",
