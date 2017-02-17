@@ -683,6 +683,129 @@
                            templateUrl: "app/content/prodBase/stopa/narzedziaDoMiniinwazyjnejChirurgiiStopyMIS/narzedziaDoMiniinwazyjnejChirurgiiStopyMIS.html",
                        })
 
+            .state('stopaSrubyDoPrzedstopia', {
+                parent: 'stopa',
+                data: {
+                    caption: 'Śruby do przedstopia'
+                },
+                url: "/srubyDoPrzedstopia",
+                templateUrl: "app/content/prodBase/stopa/srubyDoPrzedstopia/stopaSrubyDoPrzedstopia.html",
+                controller: 'stopaSrubyDoPrzedstopiaCtrl',
+                controllerAs: 'vm',
+            })
+                       .state('stopaSrubyDoPrzedstopiaSruby', {
+                           parent: 'stopaSrubyDoPrzedstopia',
+                           data: {
+                               caption: 'Śruby'
+                           },
+                           url: "/sruby",
+                           templateUrl: "app/content/prodBase/prodBaseSpecyfikacje.html",
+                           controller: 'stopaSrubyDoPrzedstopiaSrubyCtrl',
+                           controllerAs: 'vm',
+                       })
+                                .state('stopaSrubyDoPrzedstopiaSrubyDoPrzedstopia', {
+                                    parent: 'stopaSrubyDoPrzedstopiaSruby',
+                                    data: {
+                                        caption: 'Śruby do przedstopia'
+                                    },
+                                    url: "/srubyDoPrzedstopia",
+                                    templateUrl: "app/content/prodBase/stopa/srubyDoPrzedstopia/sruby/srubyDoPrzedstopia.html",
+                                })
+                                .state('stopaSrubyDoPrzedstopiaSrubyKaniulowane', {
+                                    parent: 'stopaSrubyDoPrzedstopiaSruby',
+                                    data: {
+                                        caption: 'Śruby kaniulowane'
+                                    },
+                                    url: "/srubyDoPrzedstopiaSrubyKaniulowane",
+                                    templateUrl: "app/content/prodBase/stopa/srubyDoPrzedstopia/sruby/srubyKaniulowane.html",
+                                })
+                    .state('stopaSrubyDoPrzedstopiaTechnikiOperacyjne', {
+                        parent: 'stopaSrubyDoPrzedstopia',
+                        data: {
+                            caption: 'Techniki operacyjne'
+                        },
+                        url: "/technikiOperacyjne",
+                        templateUrl: "app/content/prodBase/prodBaseSpecyfikacje.html",
+                        controller: 'stopaSrubyDoPrzedstopiaTechnikiOperacyjneCtrl',
+                        controllerAs: 'vm',
+                    })
+                                .state('stopaSrubyDoPrzedstopiaTechnikiOperacyjneArthrodesisOfThe1StMetatarsophalangealJoint', {
+                                    parent: 'stopaSrubyDoPrzedstopiaTechnikiOperacyjne',
+                                    data: {
+                                        caption: 'Arthrodesis of the 1st metatarsophalangeal joint'
+                                    },
+                                    url: "/arthrodesisOfThe1StMetatarsophalangealJoint",
+                                    templateUrl: "app/content/prodBase/stopa/srubyDoPrzedstopia/technikiOperacyjne/arthrodesisOfThe1StMetatarsophalangealJoint.html",
+                                })
+                                .state('stopaSrubyDoPrzedstopiaTechnikiOperacyjneChevronOsteotomy', {
+                                    parent: 'stopaSrubyDoPrzedstopiaTechnikiOperacyjne',
+                                    data: {
+                                        caption: 'Chevron osteotomy'
+                                    },
+                                    url: "/chevronOsteotomy",
+                                    templateUrl: "app/content/prodBase/stopa/srubyDoPrzedstopia/technikiOperacyjne/chevronOsteotomy.html",
+                                })
+                                .state('stopaSrubyDoPrzedstopiaTechnikiOperacyjneClinicalSituations', {
+                                    parent: 'stopaSrubyDoPrzedstopiaTechnikiOperacyjne',
+                                    data: {
+                                        caption: 'Clinical situations'
+                                    },
+                                    url: "/clinicalSituations",
+                                    templateUrl: "app/content/prodBase/stopa/srubyDoPrzedstopia/technikiOperacyjne/clinicalSituations.html",
+                                })
+                                .state('stopaSrubyDoPrzedstopiaTechnikiOperacyjneMinimallyInvasiveSurgery', {
+                                    parent: 'stopaSrubyDoPrzedstopiaTechnikiOperacyjne',
+                                    data: {
+                                        caption: 'Minimally invasive surgery'
+                                    },
+                                    url: "/minimallyInvasiveSurgery",
+                                    templateUrl: "app/content/prodBase/stopa/srubyDoPrzedstopia/technikiOperacyjne/minimallyInvasiveSurgery.html",
+                                })
+                                .state('stopaSrubyDoPrzedstopiaTechnikiOperacyjnePhalangealOsteotomy', {
+                                    parent: 'stopaSrubyDoPrzedstopiaTechnikiOperacyjne',
+                                    data: {
+                                        caption: 'Phalangeal osteotomy'
+                                    },
+                                    url: "/phalangealOsteotomy",
+                                    templateUrl: "app/content/prodBase/stopa/srubyDoPrzedstopia/technikiOperacyjne/phalangealOsteotomy.html",
+                                })
+                                .state('stopaSrubyDoPrzedstopiaTechnikiOperacyjneScarfOsteotomy', {
+                                    parent: 'stopaSrubyDoPrzedstopiaTechnikiOperacyjne',
+                                    data: {
+                                        caption: 'Scarf osteotomy'
+                                    },
+                                    url: "/scarfOsteotomy",
+                                    templateUrl: "app/content/prodBase/stopa/srubyDoPrzedstopia/technikiOperacyjne/scarfOsteotomy.html",
+                                })
+                                .state('stopaSrubyDoPrzedstopiaTechnikiOperacyjneSurgicalPlaning', {
+                                    parent: 'stopaSrubyDoPrzedstopiaTechnikiOperacyjne',
+                                    data: {
+                                        caption: 'Surgical planing'
+                                    },
+                                    url: "/surgicalPlaning",
+                                    templateUrl: "app/content/prodBase/stopa/srubyDoPrzedstopia/technikiOperacyjne/surgicalPlaning.html",
+                                })
+
+
+
+            .state('stopaSrubyDoTylstopia', {
+                parent: 'stopa',
+                data: {
+                    caption: 'Śruby do tyłstopia'
+                },
+                url: "/srubyDoTylstopia",
+                templateUrl: "app/content/prodBase/stopa/srubyDoTylstopia/stopaSrubyDoTylstopia.html",
+                controller: 'stopaSrubyDoTylstopiaCtrl',
+                controllerAs: 'vm',
+            })
+
+
+
+
+
+
+
+
         //.state('calcanail', {
         //    parent: 'foot',
         //    data: {
