@@ -368,6 +368,10 @@
                     "images/stopa/srubyDoPrzestopia/technikiOperacyjne/chevron_7_exosto.png",
                     "images/stopa/srubyDoPrzestopia/technikiOperacyjne/chevron_8_associatedActs.png",
                     "images/stopa/srubyDoPrzestopia/technikiOperacyjne/chevron_9_postopCare.png",
+                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/clinicalSituations_10_1.png",
+                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/clinicalSituations_11_2.png",
+                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/clinicalSituations_12_3.png",
+                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/clinicalSituations_13_4.png",
                     
             ],
 
