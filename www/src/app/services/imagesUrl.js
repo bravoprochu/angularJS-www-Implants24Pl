@@ -334,24 +334,24 @@
             ],
             stopaSrubyDoPrzedstopia:[
        
-                "images/stopa/OsteotomiaWeilaLOGO.png"
+                "images/stopa/OsteotomiaWeilaLOGO.png",
             ],
 
                 stopaSrubydoPrzedstopiaOsteotomiaWeila:[
-                    "images/stopa/srubyDoPrzestopia/osteotomiaWeila_25_snapOff.png"
-                    "images/stopa/srubyDoPrzestopia/osteotomiaWeila_26_fixation.png"
+                    "images/stopa/srubyDoPrzestopia/osteotomiaWeila_25_snapOff.png",
+                    "images/stopa/srubyDoPrzestopia/osteotomiaWeila_26_fixation.png",
                 ]
                 stopaSrubyDoPrzedstopiaSruby:[
-                    "images/stopa/srubyDoPrzestopia/srubyDoPrzedstopia_27_set.png"
-                    "images/stopa/srubyDoPrzestopia/srubyDoPrzedstopia_28_range1.png"
-                    "images/stopa/srubyDoPrzestopia/srubyDoPrzedstopia_29_range2.png"
-                    "images/stopa/srubyDoPrzestopia/srubyKaniulowane_30_powerDriven.png"
-                    "images/stopa/srubyDoPrzestopia/srubyKaniulowane_31_3aSrew.png"
+                    "images/stopa/srubyDoPrzestopia/srubyDoPrzedstopia_27_set.png",
+                    "images/stopa/srubyDoPrzestopia/srubyDoPrzedstopia_28_range1.png",
+                    "images/stopa/srubyDoPrzestopia/srubyDoPrzedstopia_29_range2.png",
+                    "images/stopa/srubyDoPrzestopia/srubyKaniulowane_30_powerDriven.png",
+                    "images/stopa/srubyDoPrzestopia/srubyKaniulowane_31_3aSrew.png",
               
                
                 ],
                 stopaSrubyDoPrzedstopiaTechnikiOperacyjne:[
-                     "images/stopa/srubyDoPrzestopia/technikiOperacyjne_32_postoperative.png"
+                     "images/stopa/srubyDoPrzestopia/technikiOperacyjne_32_postoperative.png",
                 ],
 
             stopaSrubyDoTylstopia:[
