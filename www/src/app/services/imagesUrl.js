@@ -372,6 +372,14 @@
                     "images/stopa/srubyDoPrzestopia/technikiOperacyjne/clinicalSituations_11_2.png",
                     "images/stopa/srubyDoPrzestopia/technikiOperacyjne/clinicalSituations_12_3.png",
                     "images/stopa/srubyDoPrzestopia/technikiOperacyjne/clinicalSituations_13_4.png",
+                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/minimallyInvasiveSurgery_14_mis.png",
+                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/minimallyInvasiveSurgery_15_positioning.png",
+                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/minimallyInvasiveSurgery_16_1st.png",
+                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/minimallyInvasiveSurgery_17_1stB.png",
+                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/minimallyInvasiveSurgery_18_2nd.png",
+                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/minimallyInvasiveSurgery_19_3rd.png",
+                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/minimallyInvasiveSurgery_20_closure.png",
+                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/minimallyInvasiveSurgery_21_postOpManagement.png",
                     
             ],
 
