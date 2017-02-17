@@ -335,6 +335,7 @@
             stopaSrubyDoPrzedstopia:[
        
                 "images/stopa/OsteotomiaWeilaLOGO.png",
+                "images/stopa/srubyDoPrzestopiaTechnikiOperacyjneLOGO.png",
             ],
 
                 stopaSrubydoPrzedstopiaOsteotomiaWeila:[
