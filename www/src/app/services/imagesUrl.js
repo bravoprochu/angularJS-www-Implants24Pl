@@ -364,10 +364,12 @@
                     "images/stopa/srubyDoPrzestopia/technikiOperacyjne_35_4.png",
             ],
 
-            stopaSrubyDoTylstopia:[
+            stopaSrubyDoTylstopiaSrubyDoTylstopia: [
                
             ],
-            stopaTenolig:[
+
+
+            stopaTenoligTenolig: [
                 
             ]
 
