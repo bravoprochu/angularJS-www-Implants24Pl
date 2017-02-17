@@ -300,7 +300,15 @@
 
             stopa: [
                 "images/stopa/calcanailLogo.png",
-                "images/stopa/narzedziaDoMiniinwazyjnejChirurgiiStopyMISLOGO.png"
+                "images/stopa/narzedziaDoMiniinwazyjnejChirurgiiStopyMISLOGO.png",
+                "images/stopa/srubyLOGO.png",
+                "images/stopa/srubyDoTylstopiaLOGO.png.png",
+                "images/stopa/tenoligLOGO.png",
+           
+
+
+
+
             ],
             stopaCalcanail: [
                 "images/stopa/calcanail/technikaSkrocona_00_jakToDziala.png",
@@ -333,11 +341,12 @@
             ],
             stopaSrubyDoPrzedstopia:[
                 "images/stopa/OsteotomiaWeilaLOGO.png",
+                "images/stopa/srubyLOGO.png",
                 "images/stopa/srubyDoPrzestopiaTechnikiOperacyjneLOGO.png",
             ],
 
             stopaSrubyDoPrzedstopiaOsteotomiaWeila:[
-                "images/stopa/srubyDoPrzestopia/srubyDoPrzedstopia_29_range2.png",
+         
                 "images/stopa/srubyDoPrzestopia/osteotomiaWeila_25_snapOff.png",
                 "images/stopa/srubyDoPrzestopia/osteotomiaWeila_26_fixation.png",
             ],
