@@ -337,6 +337,7 @@
             ],
 
             stopaSrubyDoPrzedstopiaOsteotomiaWeila:[
+                "images/stopa/srubyDoPrzestopia/srubyDoPrzedstopia_29_range2.png",
                 "images/stopa/srubyDoPrzestopia/osteotomiaWeila_25_snapOff.png",
                 "images/stopa/srubyDoPrzestopia/osteotomiaWeila_26_fixation.png",
             ],
