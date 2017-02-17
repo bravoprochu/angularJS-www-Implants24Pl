@@ -811,13 +811,38 @@
                     caption: 'Śruby do tyłstopia'
                 },
                 url: "/srubyDoTylstopia",
-                templateUrl: "app/content/prodBase/stopa/srubyDoTylstopia/stopaSrubyDoTylstopia.html",
+                templateUrl: "app/content/prodBase/prodBaseSpecyfikacje.html",
                 controller: 'stopaSrubyDoTylstopiaCtrl',
                 controllerAs: 'vm',
             })
+                                .state('stopaSrubyDoTylstopiaSrubyDoTylstopia', {
+                                    parent: 'stopaSrubyDoTylstopia',
+                                    data: {
+                                        caption: 'Śruby do tyłstopia'
+                                    },
+                                    url: "/srubyDoTylstopia",
+                                    templateUrl: "app/content/prodBase/stopa/srubyDoTylstopia/srubyDoTylstopia.html",
+                                })
 
 
-
+            .state('stopaTenolig', {
+                parent: 'stopa',
+                data: {
+                    caption: 'Tenolig'
+                },
+                url: "/Tenolig",
+                templateUrl: "app/content/prodBase/prodBaseSpecyfikacje.html",
+                controller: 'stopaTenoligCtrl',
+                controllerAs: 'vm',
+            })
+                                .state('stopaTenoligTenolig', {
+                                    parent: 'stopaTenolig',
+                                    data: {
+                                        caption: 'Tenolig'
+                                    },
+                                    url: "/tenolig",
+                                    templateUrl: "app/content/prodBase/stopa/tenolig/tenolig.html",
+                                })
 
 
 

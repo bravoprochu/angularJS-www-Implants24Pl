@@ -3,14 +3,14 @@
 
     angular
         .module('app')
-        .controller('stopaSrubyDoPrzedstopiaSrubyCtrl', stopaSrubyDoPrzedstopiaSrubyCtrl);
+        .controller('stopaSrubyDoTylstopiaCtrl', stopaSrubyDoTylstopiaCtrl);
 
-    stopaSrubyDoPrzedstopiaSrubyCtrl.$inject = ['$state', '$rootScope', 'commonFunctions', 'imagePreload', 'statesHelp'];
+    stopaSrubyDoTylstopiaCtrl.$inject = ['$state', '$rootScope', 'commonFunctions', 'imagePreload', 'statesHelp'];
 
-    function stopaSrubyDoPrzedstopiaSrubyCtrl($state, $rootScope, cF, imagePreload, statesHelp) {
+    function stopaSrubyDoTylstopiaCtrl($state, $rootScope, cF, imagePreload, statesHelp) {
         /* jshint validthis:true */
         var vm = this;
-        vm.title = 'stopaSrubyDoPrzedstopiaSruby';
+        vm.title = 'stopaSrubyDoTylstopia';
 
         vm.stateName = $state.current.name;
         vm.getImageByIdx = getImageByIdx;
@@ -41,7 +41,7 @@
             $state.go(stateName);
         }
 
-        imagePreload.preload(cF.getImageList(vm.title)).then(function (images) {
+        imagePreload.preload(vm.images).then(function (images) {
             vm.imagesObj = images;
             vm.startMode = true;
         }, function (error) {
