@@ -352,6 +352,9 @@
                 ],
                 stopaSrubyDoPrzedstopiaTechnikiOperacyjne:[
                      "images/stopa/srubyDoPrzestopia/technikiOperacyjne_32_postoperative.png",
+                     "images/stopa/srubyDoPrzestopia/technikiOperacyjne_33_2.png",
+                     "images/stopa/srubyDoPrzestopia/technikiOperacyjne_34_3.png",
+                     "images/stopa/srubyDoPrzestopia/technikiOperacyjne_35_4.png",
                 ],
 
             stopaSrubyDoTylstopia:[
