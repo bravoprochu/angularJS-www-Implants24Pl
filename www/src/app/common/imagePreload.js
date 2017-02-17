@@ -48,7 +48,7 @@
             return info.length > 0 ? info : null;
         }
 
-        function preload(imagesLinks, fromWho) {
+        function preload(imagesLinks) {
 
             var defer = $q.defer();
             var deferAll = [];

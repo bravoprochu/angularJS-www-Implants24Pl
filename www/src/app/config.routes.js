@@ -785,7 +785,24 @@
                                     url: "/surgicalPlaning",
                                     templateUrl: "app/content/prodBase/stopa/srubyDoPrzedstopia/technikiOperacyjne/surgicalPlaning.html",
                                 })
-
+                    .state('stopaSrubyDoPrzedstopiaOsteotomiaWeila', {
+                        parent: 'stopaSrubyDoPrzedstopia',
+                        data: {
+                            caption: 'Osteotomia Weila'
+                        },
+                        url: "/osteotomiaWeila",
+                        templateUrl: "app/content/prodBase/prodBaseSpecyfikacje.html",
+                        controller: 'stopaSrubyDoPrzedstopiaOsteotomiaWeilaCtrl',
+                        controllerAs: 'vm',
+                    })
+                                .state('stopaSrubyDoPrzedstopiastopaOsteotomiaWeila', {
+                                    parent: 'stopaSrubyDoPrzedstopiaOsteotomiaWeila',
+                                    data: {
+                                        caption: 'Arthrodesis of the 1st metatarsophalangeal joint'
+                                    },
+                                    url: "/osteotomiaWeila",
+                                    templateUrl: "app/content/prodBase/stopa/srubyDoPrzedstopia/osteotomiaWeila/osteotomiaWeila.html",
+                                })
 
 
             .state('stopaSrubyDoTylstopia', {
