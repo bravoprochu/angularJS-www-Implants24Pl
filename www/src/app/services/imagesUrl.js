@@ -302,7 +302,7 @@
                 "images/stopa/calcanailLogo.png",
                 "images/stopa/narzedziaDoMiniinwazyjnejChirurgiiStopyMISLOGO.png",
                 "images/stopa/srubyLOGO.png",
-                "images/stopa/srubyDoTylstopiaLOGO.png.png",
+                "images/stopa/srubyDoTylstopiaLOGO.png",
                 "images/stopa/tenoligLOGO.png",
            
 
