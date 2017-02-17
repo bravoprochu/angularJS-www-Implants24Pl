@@ -58,9 +58,9 @@
 
 
 
-                function updateSize() {
+                 function updateSize() {
+                   var ratio = 0.9;
                    if (isHorizontal) {
-                        var ratio = 0.9;
                         var _width = cF.settings.viewWidth*ratio;
                         var _height = _width*picRatio;
 
@@ -74,7 +74,7 @@
                         }
                     }
                    else {
-                       var _height = cF.settings.viewHeight* ratio;
+                       var _height = cF.settings.viewHeight * ratio;
                        var _width = _height / picRatio;
                        if (_width <= cF.settings.viewWidth) {
                            scope.pic.height = _height;
