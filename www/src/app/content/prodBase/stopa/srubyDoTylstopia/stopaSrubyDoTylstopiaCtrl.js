@@ -10,7 +10,7 @@
     function stopaSrubyDoTylstopiaCtrl($state, $rootScope, cF, imagePreload, statesHelp) {
         /* jshint validthis:true */
         var vm = this;
-        vm.title = 'stopaSrubyDoTylstopia';
+        vm.title = 'stopaSrubyDoTylstopiaSrubyDoTylstopia';
 
         vm.stateName = $state.current.name;
         vm.getImageByIdx = getImageByIdx;

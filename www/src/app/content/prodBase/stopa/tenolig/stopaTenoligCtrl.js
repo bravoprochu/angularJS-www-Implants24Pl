@@ -10,7 +10,7 @@
     function stopaTenoligCtrl($state, $rootScope, cF, imagePreload, statesHelp) {
         /* jshint validthis:true */
         var vm = this;
-        vm.title = 'stopaTenolig';
+        vm.title = 'stopaTenoligTenolig';
 
         vm.stateName = $state.current.name;
         vm.getImageByIdx = getImageByIdx;

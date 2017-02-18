@@ -402,11 +402,16 @@
               "images/stopa/srubyDoTylstopia/srubyDoTylstopia_1_bePod.png",
               "images/stopa/srubyDoTylstopia/srubyDoTylstopia_2_ancillary.png", 
               "images/stopa/srubyDoTylstopia/srubyDoTylstopia_3_hindfootSelfCompressong.png", 
-              "images/stopa/srubyDoTylstopiasrubyDoTylstopia_4_hindfootAncillary.png", 
+              "images/stopa/srubyDoTylstopia/srubyDoTylstopia_4_hindfootAncillary.png", 
             ],
 
 
             stopaTenoligTenolig: [
+                "images/stopa/tenolig/tenolig_0_surgicalTech.png",
+                "images/stopa/tenolig/tenolig_1_surgicalTech.png",
+                "images/stopa/tenolig/tenolig_2_surgicalTech.png",
+                "images/stopa/tenolig/tenolig_3_surgicalTech.png",
+                "images/stopa/tenolig/tenolig_4_surgicalTech.png",
                 
             ]
 
