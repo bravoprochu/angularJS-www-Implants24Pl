@@ -1,1 +1,6 @@
-﻿<div class="md-body-2"><strong>{{vm.title}}</strong>&nbsp;&ndash;&nbsp;{{vm.preloadInfo}}</div>
+﻿<div class="md-body-2" layout layout-padding>
+    <strong>{{vm.title}}</strong>&nbsp;&ndash;&nbsp;{{vm.preloadInfo}}
+    <div layout="column" ng-if="vm.error.length>0">
+
+    </div>
+</div>
