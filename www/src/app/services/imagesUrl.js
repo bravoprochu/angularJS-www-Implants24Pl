@@ -409,6 +409,9 @@
             stopaTenoligTenolig: [
                 "images/stopa/tenolig/tenolig_0_surgicalTech.png",
                 "images/stopa/tenolig/tenolig_1_surgicalTech.png",
+                "images/stopa/tenolig/tenolig_2_surgicalTech.png",
+                "images/stopa/tenolig/tenolig_3_surgicalTech.png",
+                "images/stopa/tenolig/tenolig_4_surgicalTech.png",
                 
             ]
 
