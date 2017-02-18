@@ -1,6 +1,9 @@
-﻿<div class="md-body-2" layout layout-padding>
-    <strong>{{vm.title}}</strong>&nbsp;&ndash;&nbsp;{{vm.preloadInfo}}
-    <div layout="column" ng-if="vm.error.length>0">
-
+﻿<div layout="column" layout-padding>
+    <strong class="md-subhead">{{vm.title}}</strong>
+    <div class="md-body-2">{{vm.preloadInfo}}</div>
+    <div layout="column" ng-if="vm.errorImageObj.length>0">
+        <ol>
+            <li ng-repeat="err in vm.errorImageObj" class="md-body-1">{{err}}</li>
+        </ol>
     </div>
 </div>

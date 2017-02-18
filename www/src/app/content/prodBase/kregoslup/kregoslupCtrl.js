@@ -16,7 +16,6 @@
         vm.getImageByIdx = getImageByIdx;
         vm.goParent = goParent;
         vm.goTo = goTo;
-        vm.images = cF.getImageList(vm.title);
         vm.menu = statesHelp.prepMenu(vm.stateName);
         vm.settings = cF.settings;
         vm.isParent = statesHelp.isParent(vm.stateName)
@@ -40,10 +39,12 @@
         function goTo(stateName) {
             $state.go(stateName);
         }
-        imagePreload.preload(vm.images, vm.title).then(function (images) {
+
+        imagePreload.preload(cF.getImageList(vm.title)).then(function (images) {
             vm.imagesObj = images;
             vm.startMode = true;
         }, function (error) {
+            vm.errorImageObj = error;
             console.log(error);
         }, function (notify) {
             vm.preloadInfo = notify;
