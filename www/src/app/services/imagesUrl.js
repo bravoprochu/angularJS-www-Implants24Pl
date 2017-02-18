@@ -380,6 +380,8 @@
                     "images/stopa/srubyDoPrzestopia/technikiOperacyjne/minimallyInvasiveSurgery_19_3rd.png",
                     "images/stopa/srubyDoPrzestopia/technikiOperacyjne/minimallyInvasiveSurgery_20_closure.png",
                     "images/stopa/srubyDoPrzestopia/technikiOperacyjne/minimallyInvasiveSurgery_21_postOpManagement.png",
+                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/phalangealOsteotomy_22_osteotomy.png",
+                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/phalangealOsteotomy_23_fixation.png",
                     
             ],
 
