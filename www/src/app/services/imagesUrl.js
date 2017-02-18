@@ -389,6 +389,11 @@
                     "images/stopa/srubyDoPrzestopia/technikiOperacyjne/scarfOsteotomy_28_fixation.png",
                     "images/stopa/srubyDoPrzestopia/technikiOperacyjne/scarfOsteotomy_29_associatedActs.png",
                     "images/stopa/srubyDoPrzestopia/technikiOperacyjne/scarfOsteotomy_30_care.png",
+                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/surgicalPlanning_31_surgicalPlanning.png",
+                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/surgicalPlanning_32_analysis.png",
+                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/surgicalPlanning_33_analysis2.png",
+                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/surgicalPlanning_34_analysis3.png",
+                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/surgicalPlanning_35_morphological.png",
                     
             ],
 
