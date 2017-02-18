@@ -382,6 +382,13 @@
                     "images/stopa/srubyDoPrzestopia/technikiOperacyjne/minimallyInvasiveSurgery_21_postOpManagement.png",
                     "images/stopa/srubyDoPrzestopia/technikiOperacyjne/phalangealOsteotomy_22_osteotomy.png",
                     "images/stopa/srubyDoPrzestopia/technikiOperacyjne/phalangealOsteotomy_23_fixation.png",
+                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/scarfOsteotomy_24_medialIncision.png",
+                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/scarfOsteotomy_25_exostosectomy.png",
+                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/scarfOsteotomy_26_lateralView.png",
+                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/scarfOsteotomy_27_fixation.png",
+                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/scarfOsteotomy_28_fixation.png",
+                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/scarfOsteotomy_29_associatedActs.png",
+                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/scarfOsteotomy_30_care.png",
                     
             ],
 
