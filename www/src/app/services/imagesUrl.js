@@ -402,7 +402,7 @@
               "images/stopa/srubyDoTylstopia/srubyDoTylstopia_1_bePod.png",
               "images/stopa/srubyDoTylstopia/srubyDoTylstopia_2_ancillary.png", 
               "images/stopa/srubyDoTylstopia/srubyDoTylstopia_3_hindfootSelfCompressong.png", 
-              "images/stopa/srubyDoTylstopiasrubyDoTylstopia_4_hindfootAncillary.png", 
+              "images/stopa/srubyDoTylstopia/srubyDoTylstopia_4_hindfootAncillary.png", 
             ],
 
 
