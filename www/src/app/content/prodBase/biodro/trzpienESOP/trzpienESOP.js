@@ -5,9 +5,9 @@
         .module('app')
         .controller('trzpienESOPCtrl', trzpienESOPCtrl);
 
-    trzpienESOPCtrl.$inject = ['commonFunctions', 'imagePreload'];
+    trzpienESOPCtrl.$inject = ['$rootScope', '$state', 'commonFunctions', 'imagePreload', 'statesHelp'];
 
-    function trzpienESOPCtrl(cF, imagePreload) {
+    function trzpienESOPCtrl($rootScope, $state, cF, imagePreload, statesHelp) {
         /* jshint validthis:true */
         var vm = this;
         vm.title = 'trzpienESOP';

@@ -13,10 +13,7 @@
     height: 100%;
 }
 
-.gridWybrany {
-background-color:white;
 
-}
 .pointer {
 cursor:pointer;
 }
@@ -36,9 +33,22 @@ font-size:larger;
 }
 
 .splashPage {
-    position: absolute;
-    top: 45%;
-    left: 45%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.centerBottom {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  font-size:medium;
+  line-height:1.5em;
+  text-align:center;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
 }
 
 .splashPageTextBox {

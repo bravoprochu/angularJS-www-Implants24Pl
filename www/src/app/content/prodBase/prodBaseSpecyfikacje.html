@@ -2,26 +2,6 @@
     <div ng-if="!vm.isParent" layout layout-padding layout-wrap layout-fill layout-align="center space-between">
         <ui-view flex="100" flex-gt-md="70"></ui-view>
         <spis-specyfikacji hide show-gt-md flex-gt-md="30" menu="vm.menu"></spis-specyfikacji>
-            <div layout layout-align="space-around start" flex="100" flex-gt-md="70" hide-gt-md>
-                <md-button class="md-fab" ng-click="vm.goTo(vm.statePrev.name)" ng-disabled="!vm.statePrev" aria-label="PrzejdzDo{{vm.statePrev.name}}">
-                    <md-tooltip md-direction="top">Wróć do {{vm.statePrev.data.caption}}</md-tooltip>
-                    <md-icon md-svg-icon="navPrev"></md-icon>
-                </md-button>
-                <div>
-                    <md-button class="md-fab" ng-click="vm.goParent()" aria-label="goParent">
-                        <md-tooltip md-direction="top">Poziom wyżej</md-tooltip>
-                        <md-icon md-svg-icon="arrowUpward"></md-icon>
-                    </md-button>
-                    <md-button class="md-fab" ui-sref="home" aria-label="goHome">
-                        <md-icon md-svg-icon="home"></md-icon>
-                    </md-button>
-                </div>
-                <md-button class="md-fab" ng-click="vm.goTo(vm.stateNext.name)" ng-disabled="!vm.stateNext" aria-label="PrzejdzDo{{vm.stateNext.name}}">
-                    <md-tooltip md-direction="top">Przejdź do {{vm.stateNext.data.caption}}</md-tooltip>
-                    <md-icon md-svg-icon="navNext"></md-icon>
-                </md-button>
-            </div>
-
     </div>
     <div ng-if="vm.isParent" layout layout-padding layout-wrap>
         <spis-specyfikacji flex="100" menu="vm.menu"></spis-specyfikacji>

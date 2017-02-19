@@ -79,7 +79,7 @@
                 img.onload = function ($event) {
                     resolved[idx]=img;
                     deferImg.resolve(img);
-                    defer.notify('pobrałem: ' + srcImg);
+                    defer.notify('Pobrałem: ' + srcImg);
                 }
                 img.onerror = function ($event) {
                     rejected[idx] = srcImg;
