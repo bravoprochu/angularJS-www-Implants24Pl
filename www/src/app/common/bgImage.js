@@ -6,8 +6,8 @@
         .directive('bgImage', bgImage);
 
     bgImage.$inject = [];
-
-    function bgImage() {
+    
+    function bgImage () {
         // Usage:
         //     <bgImage></bgImage>
         // Creates:
@@ -19,11 +19,8 @@
         return directive;
 
         function link(scope, element, attrs) {
-            // scope.filter = angular.isDefined(attrs['filter']) ? attrs['filter'] : "grayscale"
-            // scope.filterValue = angular.isDefined(attrs['filterValue']) ? attrs['filterValue'] : 80
 
-
-            element.css('transition', 'all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.75s')
+            element.css('transition', 'all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s')
             element.css('background-image', 'url("' + attrs['bgImage'] + '")');
             element.css('background-size', '100%');
             element.css('background-repeat', 'no-repeat');
@@ -31,18 +28,21 @@
             element.css('-webkit-filter', 'grayscale(60%)')
 
 
-            element.bind('mouseleave', function($event) {
+            element.bind('mouseleave', function ($event) {
                 element.css('background-image', 'url("' + attrs['bgImage'] + '")');
                 element.css('background-size', '100%');
                 element.css('background-repeat', 'no-repeat');
                 element.css('background-position', 'center');
-                element.css('-webkit-filter', 'grayscale(60%)')
-
+                element.css('-webkit-filter','grayscale(60%)')
+               
             });
 
-            element.bind('mouseover', function($event) {
+            element.bind('mouseover', function ($event) {
                 element.css('background-image', 'url("' + attrs['bgImage'] + '")');
-                element.css('background-size', '110%');
+                //element.css('position', 'static');
+                //element.css('left', '-50px');
+                //element.css('top', '-50px');
+                element.css('background-size', '115%');
                 element.css('background-repeat', 'no-repeat');
                 element.css('background-position', 'center');
                 element.css('-webkit-filter', 'grayscale(0%)')
