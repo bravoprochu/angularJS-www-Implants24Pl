@@ -209,7 +209,8 @@
             //KOLANO
 
             kolano: [
-
+                "images/kolano/kolanoFhkLOGO.png",
+                "images/kolano/kolanoTlsLOGO.png",
 
             ],
 
@@ -304,7 +305,7 @@
                 "images/stopa/srubyLOGO.png",
                 "images/stopa/srubyDoTylstopiaLOGO.png",
                 "images/stopa/tenoligLOGO.png",
-           
+
 
 
 
@@ -339,70 +340,70 @@
                 "images/stopa/narzedziaDoMiniinwazyjnejChirurgiiStopyMIS/narzedziaDoMiniinwazyjnejChirurgiiStopyMIS_23_instrumentation.png",
                 "images/stopa/narzedziaDoMiniinwazyjnejChirurgiiStopyMIS/narzedziaDoMiniinwazyjnejChirurgiiStopyMIS_24_set.png",
             ],
-            stopaSrubyDoPrzedstopia:[
+            stopaSrubyDoPrzedstopia: [
                 "images/stopa/OsteotomiaWeilaLOGO.png",
                 "images/stopa/srubyLOGO.png",
                 "images/stopa/srubyDoPrzestopiaTechnikiOperacyjneLOGO.png",
             ],
 
-            stopaSrubyDoPrzedstopiaOsteotomiaWeila:[
-         
+            stopaSrubyDoPrzedstopiaOsteotomiaWeila: [
+
                 "images/stopa/srubyDoPrzestopia/osteotomiaWeila_25_snapOff.png",
                 "images/stopa/srubyDoPrzestopia/osteotomiaWeila_26_fixation.png",
             ],
-            stopaSrubyDoPrzedstopiaSruby:[
+            stopaSrubyDoPrzedstopiaSruby: [
                 "images/stopa/srubyDoPrzestopia/srubyDoPrzedstopia_27_set.png",
                 "images/stopa/srubyDoPrzestopia/srubyDoPrzedstopia_28_range1.png",
                 "images/stopa/srubyDoPrzestopia/srubyDoPrzedstopia_29_range2.png",
                 "images/stopa/srubyDoPrzestopia/srubyKaniulowane_30_powerDriven.png",
                 "images/stopa/srubyDoPrzestopia/srubyKaniulowane_31_3aSrew.png",
             ],
-            stopaSrubyDoPrzedstopiaTechnikiOperacyjne:[
-                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne_32_postoperative.png",
-                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne_33_2.png",
-                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne_34_3.png",
-                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne_35_4.png",
-                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/chevron_4.png",
-                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/chevron_5_exosto.png",
-                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/chevron_6_exosto.png",
-                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/chevron_7_exosto.png",
-                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/chevron_8_associatedActs.png",
-                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/chevron_9_postopCare.png",
-                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/clinicalSituations_10_1.png",
-                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/clinicalSituations_11_2.png",
-                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/clinicalSituations_12_3.png",
-                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/clinicalSituations_13_4.png",
-                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/minimallyInvasiveSurgery_14_mis.png",
-                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/minimallyInvasiveSurgery_15_positioning.png",
-                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/minimallyInvasiveSurgery_16_1st.png",
-                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/minimallyInvasiveSurgery_17_1stB.png",
-                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/minimallyInvasiveSurgery_18_2nd.png",
-                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/minimallyInvasiveSurgery_19_3rd.png",
-                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/minimallyInvasiveSurgery_20_closure.png",
-                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/minimallyInvasiveSurgery_21_postOpManagement.png",
-                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/phalangealOsteotomy_22_osteotomy.png",
-                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/phalangealOsteotomy_23_fixation.png",
-                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/scarfOsteotomy_24_medialIncision.png",
-                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/scarfOsteotomy_25_exostosectomy.png",
-                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/scarfOsteotomy_26_lateralView.png",
-                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/scarfOsteotomy_27_fixation.png",
-                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/scarfOsteotomy_28_fixation.png",
-                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/scarfOsteotomy_29_associatedActs.png",
-                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/scarfOsteotomy_30_care.png",
-                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/surgicalPlanning_31_surgicalPlanning.png",
-                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/surgicalPlanning_32_analysis.png",
-                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/surgicalPlanning_33_analysis2.png",
-                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/surgicalPlanning_34_analysis3.png",
-                    "images/stopa/srubyDoPrzestopia/technikiOperacyjne/surgicalPlanning_35_morphological.png",
-                    
+            stopaSrubyDoPrzedstopiaTechnikiOperacyjne: [
+                "images/stopa/srubyDoPrzestopia/technikiOperacyjne_32_postoperative.png",
+                "images/stopa/srubyDoPrzestopia/technikiOperacyjne_33_2.png",
+                "images/stopa/srubyDoPrzestopia/technikiOperacyjne_34_3.png",
+                "images/stopa/srubyDoPrzestopia/technikiOperacyjne_35_4.png",
+                "images/stopa/srubyDoPrzestopia/technikiOperacyjne/chevron_4.png",
+                "images/stopa/srubyDoPrzestopia/technikiOperacyjne/chevron_5_exosto.png",
+                "images/stopa/srubyDoPrzestopia/technikiOperacyjne/chevron_6_exosto.png",
+                "images/stopa/srubyDoPrzestopia/technikiOperacyjne/chevron_7_exosto.png",
+                "images/stopa/srubyDoPrzestopia/technikiOperacyjne/chevron_8_associatedActs.png",
+                "images/stopa/srubyDoPrzestopia/technikiOperacyjne/chevron_9_postopCare.png",
+                "images/stopa/srubyDoPrzestopia/technikiOperacyjne/clinicalSituations_10_1.png",
+                "images/stopa/srubyDoPrzestopia/technikiOperacyjne/clinicalSituations_11_2.png",
+                "images/stopa/srubyDoPrzestopia/technikiOperacyjne/clinicalSituations_12_3.png",
+                "images/stopa/srubyDoPrzestopia/technikiOperacyjne/clinicalSituations_13_4.png",
+                "images/stopa/srubyDoPrzestopia/technikiOperacyjne/minimallyInvasiveSurgery_14_mis.png",
+                "images/stopa/srubyDoPrzestopia/technikiOperacyjne/minimallyInvasiveSurgery_15_positioning.png",
+                "images/stopa/srubyDoPrzestopia/technikiOperacyjne/minimallyInvasiveSurgery_16_1st.png",
+                "images/stopa/srubyDoPrzestopia/technikiOperacyjne/minimallyInvasiveSurgery_17_1stB.png",
+                "images/stopa/srubyDoPrzestopia/technikiOperacyjne/minimallyInvasiveSurgery_18_2nd.png",
+                "images/stopa/srubyDoPrzestopia/technikiOperacyjne/minimallyInvasiveSurgery_19_3rd.png",
+                "images/stopa/srubyDoPrzestopia/technikiOperacyjne/minimallyInvasiveSurgery_20_closure.png",
+                "images/stopa/srubyDoPrzestopia/technikiOperacyjne/minimallyInvasiveSurgery_21_postOpManagement.png",
+                "images/stopa/srubyDoPrzestopia/technikiOperacyjne/phalangealOsteotomy_22_osteotomy.png",
+                "images/stopa/srubyDoPrzestopia/technikiOperacyjne/phalangealOsteotomy_23_fixation.png",
+                "images/stopa/srubyDoPrzestopia/technikiOperacyjne/scarfOsteotomy_24_medialIncision.png",
+                "images/stopa/srubyDoPrzestopia/technikiOperacyjne/scarfOsteotomy_25_exostosectomy.png",
+                "images/stopa/srubyDoPrzestopia/technikiOperacyjne/scarfOsteotomy_26_lateralView.png",
+                "images/stopa/srubyDoPrzestopia/technikiOperacyjne/scarfOsteotomy_27_fixation.png",
+                "images/stopa/srubyDoPrzestopia/technikiOperacyjne/scarfOsteotomy_28_fixation.png",
+                "images/stopa/srubyDoPrzestopia/technikiOperacyjne/scarfOsteotomy_29_associatedActs.png",
+                "images/stopa/srubyDoPrzestopia/technikiOperacyjne/scarfOsteotomy_30_care.png",
+                "images/stopa/srubyDoPrzestopia/technikiOperacyjne/surgicalPlanning_31_surgicalPlanning.png",
+                "images/stopa/srubyDoPrzestopia/technikiOperacyjne/surgicalPlanning_32_analysis.png",
+                "images/stopa/srubyDoPrzestopia/technikiOperacyjne/surgicalPlanning_33_analysis2.png",
+                "images/stopa/srubyDoPrzestopia/technikiOperacyjne/surgicalPlanning_34_analysis3.png",
+                "images/stopa/srubyDoPrzestopia/technikiOperacyjne/surgicalPlanning_35_morphological.png",
+
             ],
 
             stopaSrubyDoTylstopiaSrubyDoTylstopia: [
-              "images/stopa/srubyDoTylstopia/srubyDoTylstopia_0_selfCompressing.png", 
-              "images/stopa/srubyDoTylstopia/srubyDoTylstopia_1_bePod.png",
-              "images/stopa/srubyDoTylstopia/srubyDoTylstopia_2_ancillary.png", 
-              "images/stopa/srubyDoTylstopia/srubyDoTylstopia_3_hindfootSelfCompressong.png", 
-              "images/stopa/srubyDoTylstopia/srubyDoTylstopia_4_hindfootAncillary.png", 
+                "images/stopa/srubyDoTylstopia/srubyDoTylstopia_0_selfCompressing.png",
+                "images/stopa/srubyDoTylstopia/srubyDoTylstopia_1_bePod.png",
+                "images/stopa/srubyDoTylstopia/srubyDoTylstopia_2_ancillary.png",
+                "images/stopa/srubyDoTylstopia/srubyDoTylstopia_3_hindfootSelfCompressong.png",
+                "images/stopa/srubyDoTylstopia/srubyDoTylstopia_4_hindfootAncillary.png",
             ],
 
 
@@ -412,7 +413,7 @@
                 "images/stopa/tenolig/tenolig_2_surgicalTech.png",
                 "images/stopa/tenolig/tenolig_3_surgicalTech.png",
                 "images/stopa/tenolig/tenolig_4_surgicalTech.png",
-                
+
             ]
 
 
