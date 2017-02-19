@@ -25,7 +25,7 @@
             element.css('background-size', '100%');
             element.css('background-repeat', 'no-repeat');
             element.css('background-position', 'center');
-            element.css('-webkit-filter', 'sepia(80%)')
+            element.css('-webkit-filter', 'grayscale(60%)')
 
 
             element.bind('mouseleave', function ($event) {
@@ -33,7 +33,7 @@
                 element.css('background-size', '100%');
                 element.css('background-repeat', 'no-repeat');
                 element.css('background-position', 'center');
-                element.css('-webkit-filter','sepia(80%)')
+                element.css('-webkit-filter','grayscale(60%)')
                
             });
 
@@ -45,7 +45,7 @@
                 element.css('background-size', '115%');
                 element.css('background-repeat', 'no-repeat');
                 element.css('background-position', 'center');
-                element.css('-webkit-filter', 'sepia(0%)')
+                element.css('-webkit-filter', 'grayscale(0%)')
 
             });
         }
