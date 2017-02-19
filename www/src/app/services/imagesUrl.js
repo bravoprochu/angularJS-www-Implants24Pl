@@ -335,7 +335,7 @@
                 "images/stopa/calcanail/technikaOperacyjnaSubtalarArthrodesis_20_final.png",
                 "images/stopa/calcanail/technikaOperacyjnaSubtalarArthrodesis_21_set.png",
             ],
-            stopaNarzedziaDoMiniinwazyjnejChirurgiiStopyMISCtrl: [
+            stopaNarzedziaDoMiniinwazyjnejChirurgiiStopyMIS: [
                 "images/stopa/narzedziaDoMiniinwazyjnejChirurgiiStopyMIS/narzedziaDoMiniinwazyjnejChirurgiiStopyMIS_22_completeSolution.png",
                 "images/stopa/narzedziaDoMiniinwazyjnejChirurgiiStopyMIS/narzedziaDoMiniinwazyjnejChirurgiiStopyMIS_23_instrumentation.png",
                 "images/stopa/narzedziaDoMiniinwazyjnejChirurgiiStopyMIS/narzedziaDoMiniinwazyjnejChirurgiiStopyMIS_24_set.png",
