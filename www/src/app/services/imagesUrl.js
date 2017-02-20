@@ -103,6 +103,7 @@
                 'images/bark/arrow/protezaBarkuOdwrocona/ar_definitiveImplants5.png',
                 'images/bark/arrow/protezaBarkuOdwrocona/ar_arrowOptional.png',
                 'images/bark/arrow/protezaBarkuOdwrocona/ar_arrowClosure1.png',
+                'images/bark/arrow/protezaBarkuOdwrocona/ar_arrowClosureX.png',
                 'images/bark/arrow/protezaBarkuOdwrocona/ar_arrowClosure2.png',
                 'images/bark/arrow/protezaBarkuOdwrocona/ar_arrowClosure3.png'
             ],
