@@ -13,6 +13,7 @@
 
         vm.images = cF.getImageList(vm.title);
         vm.getImageUrl = getImageUrl;
+        vm.idzDo = idzDo
         vm.menuShow = menuShow;
         vm.settings = cF.settings;
 
@@ -24,6 +25,12 @@
         function getImageUrl(idx) {
             return cF.getImageUrl(idx, vm.title);
         }
+
+        function idzDo(state) {
+            console.log(state);
+            $state.go(state);
+        }
+        
 
         imagePreload.preload(vm.images, vm.title).then(function (images) {
             vm.startMode = true;

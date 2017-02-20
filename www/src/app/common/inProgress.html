@@ -1,9 +1,7 @@
-﻿<md-card flex-sm="100" flex-xs="100" flex-md="60" flex-gt-md="50" >
-    <img ng-src="images/inProgress.png" class="md-card-image" alt="inProgress" />
-    <md-card-content>
-        
-        <div layout>
-            <div class="md-title">
+﻿<div layout="column" layout-gt-sm="row" layout-padding layout-align="center center">
+    <div>
+        <div layout layout-align="center center">
+            <div class="md-subhead">
                 <md-icon style="color:red;" md-svg-icon="warning"></md-icon>
                 &nbsp;&nbsp;
                 Zawartość strony w przygotowaniu..
@@ -14,8 +12,11 @@
         <div>&nbsp;</div>
         <div class="md-subhead">Materiały już wkrótce będą opublikowane. Zainteresownych prosimy o kontakt: </div>
         <div>&nbsp;&nbsp;</div>
-        <adres-implants24 layout="column"></adres-implants24>
+        <employee-card flex name="BIURO" phone="+48 61 863 81 27" fax="+48 61 863 81 28" email="biuro@implants24.pl"></employee-card>
+        <employee-card flex name="Adam Gozdalski" stanowisko="Przedstawiciel medyczny" phone="662 007 142" email="adam.gozdalski@implants24.pl"></employee-card>
+        <employee-card flex name="Michał Kociecki" stanowisko="Przedstawiciel medyczny" phone="602 173 302" email="michal.kociecki@implants24.pl"></employee-card>
+    </div>
+    <img ng-src="images/inProgress.png" width="70%" />
 
-
-    </md-card-content>
-</md-card>
+</div>
+        

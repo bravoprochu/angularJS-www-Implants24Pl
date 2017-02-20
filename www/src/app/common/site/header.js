@@ -70,7 +70,7 @@
             }
 
             function sidenavToggle() {
-                $mdSidenav("sidenav").toggle();
+                $state.is("home") ? null : $mdSidenav("sidenav").toggle()
             }
 
         }

@@ -5,9 +5,9 @@
         .module('app')
         .controller('systemProtezyBipolarnejPharoCtrl', systemProtezyBipolarnejPharoCtrl);
 
-    systemProtezyBipolarnejPharoCtrl.$inject = ['commonFunctions', 'imagePreload'];
+    systemProtezyBipolarnejPharoCtrl.$inject = ['$rootScope', '$state', 'commonFunctions', 'imagePreload', 'statesHelp'];
 
-    function systemProtezyBipolarnejPharoCtrl(cF, imagePreload) {
+    function systemProtezyBipolarnejPharoCtrl($rootScope, $state, cF, imagePreload, statesHelp) {
         /* jshint validthis:true */
         var vm = this;
         vm.title = 'systemProtezyBipolarnejPharo';
