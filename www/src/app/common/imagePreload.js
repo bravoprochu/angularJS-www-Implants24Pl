@@ -5,9 +5,9 @@
         .module('app')
         .factory('imagePreload', imagePreload);
 
-    imagePreload.$inject = ['$q'];
+    imagePreload.$inject = ['$q', 'commonFunctions'];
 
-    function imagePreload($q) {
+    function imagePreload($q, cF) {
         var imagesTotal = 0;
         var info = "";
         var resolved = [];
@@ -79,7 +79,7 @@
                 img.onload = function ($event) {
                     resolved[idx]=img;
                     deferImg.resolve(img);
-                    defer.notify('Pobrałem: ' + srcImg);
+                    defer.notify('Pobrałem: ' + cF.fileNameFromUrl(srcImg).fileName);
                 }
                 img.onerror = function ($event) {
                     rejected[idx] = srcImg;
