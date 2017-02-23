@@ -515,11 +515,31 @@
                 caption: 'System protezy bipolarnej Pharo'
             },
             url: "/systemProtezyBipolarnejPharo",
-            templateUrl: 'app/common/inProgress.html',
-            //templateUrl: "app/content/prodBase/prodBaseSpecyfikacje.html",
+//            templateUrl: 'app/common/inProgress.html',
+            templateUrl: "app/content/prodBase/prodBaseSpecyfikacje.html",
             controller: 'systemProtezyBipolarnejPharoCtrl',
             controllerAs: 'vm',
         })
+            .state('cementedAndCementlessBipolarFemoralImplants', {
+                parent: 'systemProtezyBipolarnejPharo',
+                data: {
+                    caption: 'Cemented and cementless bipolar femoral implants'
+                },
+                url: "/cementedAndCementlessBipolarFemoralImplants",
+                templateUrl: "app/content/prodBase/biodro/systemProtezyBipolarnejPharo/cementedAndCementlessBipolarFemoralImplants.html",
+            })
+            .state('pharoBipolarHead', {
+                parent: 'systemProtezyBipolarnejPharo',
+                data: {
+                    caption: 'Pharo bipolar head'
+                },
+                url: "/pharoBipolarHead",
+                templateUrl: "app/content/prodBase/biodro/systemProtezyBipolarnejPharo/pharoBipolarHead.html",
+            })
+
+
+
+
 
         .state('trzpienESOP', {
             parent: 'biodro',

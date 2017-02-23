@@ -45,7 +45,7 @@
 
 
 
-//        siteMap();
+        siteMap();
 
 
 
@@ -94,7 +94,8 @@
                             isDefined = foundParent === true ? true : false;
                         }
 
-                    result.push(addUrlTag(parents.reverse().join("")));
+                        result.push(addUrlTagHttp(parents.reverse().join("")));
+                        result.push(addUrlTagWww(parents.reverse().join("")));
                 }
                 //console.log('parents join:');
                 //console.log(parents.join());
@@ -102,9 +103,12 @@
             })
 
            
-            function addUrlTag(data) {
+            function addUrlTagHttp(data) {
+                return '<url><loc>http://implants24.pl' + data + '</loc></url>'+' <url><loc>http://implants24.pl' + data + '</loc></url>';
+            }
 
-                return '<url><loc>http://www.implants24.pl' + data + '</loc></url>'+' <url><loc>http://implants24.pl' + data + '</loc></url>';
+            function addUrlTagWww(data) {
+                return '<url><loc>http://www.implants24.pl' + data + '</loc></url>' + ' <url><loc>http://implants24.pl' + data + '</loc></url>';
             }
 
 

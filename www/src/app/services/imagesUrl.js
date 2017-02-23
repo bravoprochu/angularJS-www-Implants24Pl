@@ -152,6 +152,7 @@
             biodro: [
                 'images/biodro/atlas_logo.png',
                 'images/biodro/hipAndGo_logo.png',
+                'images/biodro/pharo_logo.png',
             ],
 
             panewkaAtlas: [
@@ -204,7 +205,10 @@
             ],
 
             systemProtezyBipolarnejPharo: [
-
+                "images/biodro/systemProtezyBipolarnejPharo/tiges_pharo.png",
+                "images/biodro/systemProtezyBipolarnejPharo/tete_pharo_1.png",
+                "images/biodro/systemProtezyBipolarnejPharo/tete_pharo_2.png",
+                "images/biodro/systemProtezyBipolarnejPharo/cephalicHeadWithAdjustableNeck.png",
             ],
             trzpienESOP: [
 

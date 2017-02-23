@@ -28,7 +28,7 @@
 </md-sidenav>
 <md-toolbar>
     <div class="md-toolbar-tools">
-        <md-button aria-label="menu" class="md-icon-button" ng-click="sidenavToggle()" ng-if="!('home' | isState)">
+        <md-button aria-label="menu" class="md-icon-button" ng-click="sidenavToggle()" ng-if="!('home' | isState) && !(isScreenSize('gt-md'))">
             <md-icon md-svg-src="menu">ds</md-icon>
         </md-button>
         <img ng-src="images/home/implants24_logo.png" style="max-height:80%; margin-right:0.5em;" ui-sref="home" ng-if="isScreenSize('gt-md')" />
