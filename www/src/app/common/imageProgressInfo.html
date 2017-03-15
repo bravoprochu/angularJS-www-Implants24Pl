@@ -1,5 +1,6 @@
-﻿<div layout="column" layout-padding>
-    <strong class="md-subhead">{{vm.title}}</strong>
+﻿<div layout="column" layout-padding layout-align="center center">
+    <strong class="md-subhead">{{vm.title | uppercase}}</strong>
+    <div class="md-body-2">Trwa pobieranie ilustracji, proszę czekać...</div><i></i>
     <div class="md-caption">{{vm.preloadInfo}}</div>
     <div layout="column" ng-if="vm.errorImageObj.length>0">
         <ol>

@@ -16,6 +16,7 @@
             link: link,
             restrict: 'E',
             scope: {
+                adres:'@',
                 fax:'@',
                 name:'@',
                 phone:'@',

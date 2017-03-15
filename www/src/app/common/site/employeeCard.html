@@ -2,7 +2,8 @@
 <div layout="column" layout-align="center center">
     <div class="md-title">{{name}}</div>
     <div style="line-height:0.3em">&nbsp;</div>
-    <div class="md-body-1">{{stanowisko}}</div>
+    <div ng-if="stanowisko" class="md-body-1">{{stanowisko}}</div>
+    <div ng-if="adres" class="md-body-1">{{adres}}</div>
 </div>
     <div layout layout-align="center center">
         <div layout="column" layout-gt-md="row">
