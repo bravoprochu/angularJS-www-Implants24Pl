@@ -1,6 +1,6 @@
 {
   "name": "implants24",
-  "version": "2.0.7",
+  "version": "2.0.8",
   "private": true,
   "dependencies": {
     "angular": "^1.6.1",
