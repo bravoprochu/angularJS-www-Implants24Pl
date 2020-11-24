@@ -1,6 +1,6 @@
 {
   "name": "implants24",
-  "version": "2.0.9",
+  "version": "2.0.10",
   "private": true,
   "dependencies": {
     "angular": "^1.6.1",
@@ -20,14 +20,7 @@
     "videogular-poster": "^1.4.4",
     "videogular-overlay-play": "^1.4.4",
     "videogular-buffering": "^1.4.4",
-    "ng-youtube-embed": "^0.4.3",
-    "angular-scroll": "^1.0.0",
-    "angular-video-bg": "^0.3.4"
-
-      
-
-
-
+    "angular-scroll": "^1.0.0"
       
   },
   "overrides": {

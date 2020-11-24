@@ -58,3 +58,23 @@ font-size:larger;
     color:#808080;
 }
 
+.powered-by {
+  margin: 10px;
+  font-size: 14px;
+  padding: 5px;
+  
+}
+.powered-by a {
+ text-decoration: none;
+ cursor: pointer;
+}
+
+.www-newid {
+  font-size: medium;
+  color: #808080;
+  transition: all 0.5s;
+}
+
+.www-newid:hover {
+  color: red;
+}
