@@ -1,0 +1,11 @@
+﻿<div ng-if="vm.startMode">
+    <div ng-if="!vm.isParent" layout layout-padding layout-wrap layout-fill layout-align="center space-between">
+        <ui-view flex="100" flex-gt-md="70"></ui-view>
+        <spis-specyfikacji hide show-gt-md flex-gt-md="30" menu="vm.menu"></spis-specyfikacji>
+    </div>
+    <div ng-if="vm.isParent" layout layout-padding layout-wrap>
+        <spis-specyfikacji flex="100" menu="vm.menu"></spis-specyfikacji>
+    </div>
+
+</div>
+<image-progress-info ng-if="!vm.startMode"></image-progress-info>

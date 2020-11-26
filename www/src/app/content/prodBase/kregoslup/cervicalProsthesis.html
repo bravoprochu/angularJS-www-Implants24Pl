@@ -1,0 +1,61 @@
+﻿<md-content style="height:{{vm.settings.viewHeight}}px">
+    <section>
+        <md-subheader class="md-primary">The cervical prosthesis</md-subheader>
+        <image-big pic="vm.getImageByIdx(0)"></image-big>
+        <ul>
+            <li>Heights from 5mm to 7mm</li>
+            <li>Improved stability thanks to its anatomical design and spikes</li>
+            <li>Easy and fast implantation</li>
+            <li>Benefits from over 10 years of development</li>
+            <li>6 degrees of freedom</li>
+            <li>Adaptive center of rotation</li>
+            <li>No surface bearing for increased lifetime</li>
+            <li>Improved stability</li>
+            <li>Shock absorbing</li>
+        </ul>
+    </section>
+    <section>
+        <md-subheader class="md-primary">Designed to reproduce natural properties</md-subheader>
+        <md-content>
+            <div class="md-subhead">Natural disc</div>
+            <md-divider></md-divider>
+            <div layout layout-padding layout-align="space between start" ng-repeat="item in vm.cervicalDesignToReproduce1" style="line-height: 0.5em">
+                <md-content>{{item.c1}}</md-content>
+                <md-content>{{item.c2}}</md-content>
+            </div>
+        </md-content>
+        <div>&nbsp;</div>
+        <md-content>
+            <div class="md-subhead">LP-ESP</div>
+            <md-divider></md-divider>
+            <div layout layout-padding layout-align="space between start" ng-repeat="item in vm.cervicalDesignToReproduce2" style="line-height: 0.5em">
+                <md-content>{{item.c1}}</md-content>
+                <md-content>{{item.c2}}</md-content>
+            </div>
+        </md-content>
+    </section>
+    <section>
+        <md-subheader class="md-primary">A monobloc total that restores</md-subheader>
+        <p>
+            The ESP disc prosthesis is made of 2 titanium alloy end-plates
+            and an elastomeric cushion. The spikes on the end-plates
+            outer surfaces improve primary fixation. The combination of a
+            hydroxyapatite (HA) coating on top of a T40 rough surface are
+            considered as one of the best existing coating insuring good
+            bony fixation over time. The titanium alloy used for the end
+            plates allows clear medical imaging.
+        </p>
+    </section>
+    <section>
+        <md-subheader class="md-primary">Norma positio</md-subheader>
+        <image-big pic="vm.getImageByIdx(1)"></image-big>
+    </section>
+    <section>
+        <md-subheader class="md-primary">Flexion</md-subheader>
+        <image-big pic="vm.getImageByIdx(2)"></image-big>
+    </section>
+    <section>
+        <md-subheader class="md-primary">Axial rotation</md-subheader>
+        <image-big pic="vm.getImageByIdx(3)"></image-big>
+    </section>
+</md-content>

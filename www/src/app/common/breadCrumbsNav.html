@@ -1,0 +1,15 @@
+﻿<div layout layout-align="start center" hide show-gt-md>
+    <div layout layout-align="start center" ng-if="!isHome">
+        <span>|</span>
+        <span>|</span>
+        <md-button class="md-icon-button" ui-sref="home" aria-label="goHome">
+            <md-icon md-svg-icon="home"></md-icon>
+        </md-button>
+        <span>&nbsp;|&nbsp;</span>
+    </div>
+    <div ng-repeat="m in menuCrumb track by $index" class="bread-crumbs-nav">
+        <span ng-if="!$last" ui-sref="{{m.name}}" style="cursor:pointer" >{{m.data.caption}}</span>
+        <span ng-if="!$last">|&nbsp;</span>
+        <span ng-if="$last" ui-sref="{{m.name}}" style="cursor:pointer">{{m.data.caption}}</span>
+    </div>
+</div>

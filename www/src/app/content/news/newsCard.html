@@ -1,0 +1,28 @@
+﻿<md-card >
+    <md-card-header>
+        <md-card-header-text>
+            <div class="md-title">{{title}}</div>
+            <div class="md-body-2">{{subtitle}}</div>
+        </md-card-header-text>
+    </md-card-header>
+
+    <md-card-content>
+        <div layout layout-align="start center" layout-padding>
+            <div class="md-media-xl">
+                <a href="{{link}}" target="_blank">
+                    <img style="width:100%" ng-src="images/{{image}}" />
+                </a>
+            </div>
+
+            <div flex="50" layout layout-align="center center">
+                <div class="md-body-1" ng-bind-html="descr"></div>
+
+            </div>
+
+        </div>
+    </md-card-content>
+    <md-card-actions layout="row" layout-align="space-between center">
+        <div class="md-caption">Source: <i>{{source}}</i></div>
+        <md-button class="md-raised" href="{{link}}" target="_blank" aria-label="{{link}}">{{przejdzDalej}}</md-button>
+    </md-card-actions>
+</md-card>

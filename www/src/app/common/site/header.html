@@ -1,0 +1,41 @@
+﻿<md-sidenav class="md-sidenav-right" md-component-id="sidenav" md-disable-backdrop="" md-whiteframe="8" md-is-open="sideNavIsOpen">
+    <md-toolbar>
+        <div class="md-toolbar-tools">
+            <md-button class="md-icon-button" ui-sref="home" aria-label="goHome" ng-click="goTo()">
+                <md-icon md-svg-icon="home"></md-icon>
+            </md-button>
+            <span>MENU</span>
+            <div flex></div>
+            <md-button class="md-icon-button" ng-click="goParent()" aria-label="goUp" ng-if="parentState">
+                <md-tooltip>Przejdź do: {{parentState.name}}</md-tooltip>
+                <md-icon md-svg-icon="arrowUpward"></md-icon>
+            </md-button>
+            <md-button ng-click="sidenavToggle()" class="md-icon-button" aria-label="menuToggle">
+                <md-icon md-svg-icon="exit"></md-icon>
+            </md-button>
+        </div>
+    </md-toolbar>
+
+    <md-content layout-margin layout-align="start center">
+        <md-list>
+            <md-list-item ng-repeat="m in menu" ng-click="goTo(m.name)" ui-sref="{{m.name}}" ng-if="menu" ui-sref-active="listItemSelected">
+                <div>{{m.data.caption}}</div    >
+                <md-divider></md-divider>
+            </md-list-item>
+        </md-list>
+    </md-content>
+
+</md-sidenav>
+<md-toolbar>
+    <div class="md-toolbar-tools">
+        <md-button aria-label="menu" class="md-icon-button" ng-click="sidenavToggle()" ng-if="!('home' | isState) && !(isScreenSize('gt-md'))">
+            <md-icon md-svg-src="menu"></md-icon>
+        </md-button>
+        <img ng-src="images/home/fh_ortho_polska_hor.png" ui-sref="home" ng-if="isScreenSize('gt-md')" />
+        
+        <bread-crumbs-nav></bread-crumbs-nav>
+        <div flex></div>
+        <img ng-src="images/home/fh_ortho_polska_hor.png" ui-sref="home" ng-if="!isScreenSize('gt-md')" />
+        
+    </div>
+</md-toolbar>

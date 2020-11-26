@@ -1,0 +1,16 @@
+<div ng-if="vm.startMode">
+    <md-grid-list md-row-height=1:1 md-cols="2" md-cols-gt-sm="3" style="cursor:pointer" ng-show="vm.menuShow()">
+        <md-grid-tile style="background-color:orange" ui-sref="arrow" bg-image="{{vm.getImageUrl(0)}}">
+            <md-grid-tile-header class="tileHeaderBackground">
+                <h3>Arrow</h3>
+            </md-grid-tile-header>
+        </md-grid-tile>
+        <md-grid-tile style="background-color:white" ui-sref="telegraphCommonRules" bg-image="{{vm.getImageUrl(1)}}">
+            <md-grid-tile-header class="tileHeaderBackground"> 
+                <h3>Telegraph</h3>
+            </md-grid-tile-header>
+        </md-grid-tile>
+    </md-grid-list>
+    <ui-view></ui-view>
+</div>
+<image-progress-info ng-if="!vm.startMode"></image-progress-info>
