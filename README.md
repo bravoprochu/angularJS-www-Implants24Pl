@@ -2,6 +2,9 @@
 read www/info.nfo
 
 
+`cd www` 
+
+`code .`
   
 1) node_modules init
 npm install
