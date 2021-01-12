@@ -2,12 +2,12 @@
 read www/info.nfo
 
 SPA website w angularjs;
-* preloading all images (promiseAll)
+* preloading all images (promise.all)
 * dynamic breadcrumb nav
-* image component - dynamic hint/large img laod
+* image component - dynamic hint/large img loading
 * responsive design
 * angular material design components
-* dev gulp pipes
+* devOps gulp pipes
 
 
 
