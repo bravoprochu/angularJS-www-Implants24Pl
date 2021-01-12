@@ -1,5 +1,4 @@
 # angularJS-www-Implants24Pl
-read www/info.nfo
 
 SPA website w angularjs;
 * preloading all images (promise.all)
@@ -12,6 +11,8 @@ SPA website w angularjs;
 
 
 
+
+read www/info.nfo
 
 `cd www` 
 
