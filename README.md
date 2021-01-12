@@ -10,7 +10,7 @@ SPA website w angularjs;
 
 
 
-
+-------------------------------------
 
 read www/info.nfo
 
