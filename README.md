@@ -1,6 +1,17 @@
 # angularJS-www-Implants24Pl
 read www/info.nfo
 
+SPA website w angularjs;
+* preloading all images (promiseAll)
+* dynamic breadcrumb nav
+* image component - dynamic hint/large img laod
+* responsive design
+* angular material design components
+* dev gulp pipes
+
+
+
+
 
 `cd www` 
 
